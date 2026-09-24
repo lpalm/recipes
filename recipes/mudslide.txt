@@ -14,5 +14,4 @@ chocolate twirls, optional
 kitchen:
 3 oz ice
 
-vodka + Baileys + Kahlúa + double cream + cocoa powder + ice > blend: Blend until the ice is small. [blender]
-blend + chocolate twirls > dress: Dress with a few chocolate twirls.
+vodka + Baileys + Kahlúa + double cream + cocoa powder + ice + chocolate twirls > blend: Blend until the ice is small and dress with a few chocolate twirls. [blender]

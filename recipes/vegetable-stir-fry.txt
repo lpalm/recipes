@@ -20,5 +20,4 @@ kitchen:
 125 ml water
 
 toasted sesame oil for the pan + stir fry vegetables + garlic > fry: Heat the oil in a thick frying pan until hot and fry the vegetables and garlic. ~4 min [frying pan]
-soy sauce + water + toasted sesame oil + rice vinegar + honey + ginger + vegetable stock + cornstarch > sauce: Blend everything. [blender]
-fry + sauce > glaze: Pour the sauce over the vegetables and cook 1 minute. ~1 min
+fry + soy sauce + water + toasted sesame oil + rice vinegar + honey + ginger + vegetable stock + cornstarch > glaze: Blend the sauce ingredients, pour over the vegetables and cook 1 minute. ~1 min [blender]

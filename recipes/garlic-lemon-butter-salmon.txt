@@ -18,9 +18,6 @@ dairy:
 spices:
 salt and freshly ground black pepper
 
-unsalted butter + garlic > sauté: Melt the butter in a small saucepan over medium and sauté the garlic until lightly golden. ~2 min [small saucepan]
-sauté + low-sodium chicken broth + fresh lemon juice > reduce: Pour in and simmer until reduced by half, to about 3 tbsp. ~3 min
-reduce + unsalted butter for the sauce + honey > sauce: Whisk in the butter and honey and set aside.
-skinless salmon fillets + salt and freshly ground black pepper > season: Rest the salmon 10 minutes at room temperature, dab dry and season both sides.
-olive oil + season > sear: Heat the oil in a heavy 12 inch non-stick skillet over medium-high until shimmering; cook about 4 minutes until golden underneath, flip and cook 2 to 3 minutes more until cooked through. ~7 min [non-stick skillet]
+unsalted butter + garlic + low-sodium chicken broth + fresh lemon juice + unsalted butter for the sauce + honey > sauce: Melt the butter in a small saucepan over medium, sauté the garlic until lightly golden, pour in the broth and lemon juice and simmer until reduced by half, to about 3 tbsp; whisk in the butter and honey and set aside. ~5 min [small saucepan]
+skinless salmon fillets + salt and freshly ground black pepper + olive oil > sear: Rest the salmon 10 minutes at room temperature, dab dry and season both sides; heat the oil in a heavy 12 inch non-stick skillet over medium-high until shimmering, cook about 4 minutes until golden underneath, flip and cook 2 to 3 minutes more until cooked through. ~7 min [non-stick skillet]
 sear + sauce + fresh parsley > plate: Spoon the sauce over the salmon and sprinkle with parsley.

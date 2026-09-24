@@ -19,8 +19,7 @@ spices:
 kitchen:
 water, enough to cover well
 
-stew beef + olive oil + garlic powder + onion powder + black pepper + dried rosemary > season: Stir the beef with the oil and spices in the pot until evenly coated. [instant pot]
-season > brown: Brown over medium-high on all sides; it needn't cook through. ~8 min
+stew beef + olive oil + garlic powder + onion powder + black pepper + dried rosemary > brown: Stir the beef with the oil and spices in the pot until evenly coated, then brown over medium-high on all sides; it needn't cook through. ~8 min [instant pot]
 brown + celery + carrots > soften: Add the celery and carrots and cook, stirring, until the celery starts to soften. ~5 min
 soften + beef bouillon + water > simmer: Add the bouillon cubes and water, bring to a simmer and cook. ~45 min
 simmer + egg noodles > noodles: Add the noodles, lower to a gentle simmer, cover and cook until the noodles are tender and the beef is done. ~20 min

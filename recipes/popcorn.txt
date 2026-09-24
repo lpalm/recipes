@@ -12,6 +12,4 @@ kitchen:
 1 tbsp water
 
 salt + nutritional yeast > grind: Grind finely in a blender so it sticks to the popcorn. [blender]
-popcorn kernels + water + toasted sesame oil > coat: Mix the kernels with the water and oil. [pot]
-coat > pop: Pop with the lid on until the popping slows.
-pop + grind > toss: Add the yeast mix and toss.
+popcorn kernels + water + toasted sesame oil + grind > pop: Mix the kernels with the water and oil, pop with the lid on until the popping slows, then toss with the yeast mix. [pot]

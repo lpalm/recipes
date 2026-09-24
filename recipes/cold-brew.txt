@@ -7,6 +7,4 @@ pantry:
 kitchen:
 water
 
-coffee beans > fill: Put the coffee into the paper filter bag in the Toddy maker. [Toddy maker]
-fill + water > steep: Pour water over the coffee in the open filter bag until the top is half full and steep at room temperature. ~18 h
-steep > drain: Drain into the glass jug.
+coffee beans + water > steep: Coffee into the paper filter bag in the Toddy maker, water over it until the top is half full, then steep at room temperature and drain into the glass jug. ~18 h [Toddy maker]

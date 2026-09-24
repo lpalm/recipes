@@ -15,7 +15,4 @@ pantry:
 spices:
 grated nutmeg
 
-half and half + vanilla maple walnut liqueur + bourbon + brandy + egg white > dry shake: Dry shake without ice. [shaker]
-dry shake + Dutch's Colonial bitters > shake: Add the bitters and ice and shake again.
-shake + seltzer > build: Pour into a highball glass with ice and top with the seltzer. [highball glass]
-build + grated nutmeg > garnish: Garnish with grated nutmeg.
+half and half + vanilla maple walnut liqueur + bourbon + brandy + egg white + Dutch's Colonial bitters + seltzer + grated nutmeg > shake: Dry shake without ice, add the bitters and ice and shake again; pour into a highball glass with ice, top with the seltzer and grate nutmeg over. [shaker]

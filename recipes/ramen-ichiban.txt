@@ -19,12 +19,8 @@ kitchen:
 120 ml water for the chicken
 
 eggs > boil eggs: Boil 6 to 7 minutes, cool and peel. ~7 min [small pot]
-soy sauce + mirin > marinade: Mix equal parts. [bowl]
-boil eggs + marinade > marinate eggs: Marinate the peeled eggs at least 30 minutes, up to 3 hours; halve after marinating to keep the yolk soft. ~30 min
+boil eggs + soy sauce + mirin > marinate eggs: Marinate the peeled eggs in the soy and mirin at least 30 minutes, up to 3 hours; halve after marinating to keep the yolk soft. ~30 min [bowl]
 boneless chicken breast + soy sauce for the chicken + mirin for the chicken + sugar > marinate chicken: Marinate 20 minutes at room temperature, or up to 60 in the fridge. ~20 min [bowl]
-neutral oil + marinate chicken > sear: Heat the oil and sear 2 minutes a side on high. ~4 min [pan]
-sear + water for the chicken > steam: Add the water, cover and steam until 74 C inside. ~8 min
-steam > slice: Rest 3 minutes and slice 3 to 4 mm thick. ~3 min
-water > boil: Bring to a boil. [pot]
-boil + instant ramen > noodles: Add both noodle portions, cook 2 minutes 30 seconds, turn off the heat and stir in both soup packets. ~3 min
-noodles + marinate eggs + slice > bowls: Pour into bowls and top with the eggs and chicken.
+neutral oil + marinate chicken + water for the chicken > cook chicken: Heat the oil and sear 2 minutes a side on high; add the water, cover and steam 7 to 10 minutes until 74 C inside; rest 3 minutes and slice 3 to 4 mm thick. ~12 min [pan]
+water + instant ramen > noodles: Boil the water, add both noodle portions, cook 2 minutes 30 seconds, turn off the heat and stir in both soup packets. ~3 min [pot]
+noodles + marinate eggs + cook chicken > bowls: Pour into bowls and top with the eggs and chicken.

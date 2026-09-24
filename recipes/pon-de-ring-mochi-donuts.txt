@@ -11,9 +11,6 @@ dairy:
 100 g milk
 1 egg, beaten
 
-milk + sugar + vegetable oil > heat: Heat in a saucepan until steaming. [saucepan]
-heat + plain flour > paste: Add the flour and mix until smooth.
-paste + tapioca starch > dough: Off the heat, add the tapioca starch and mix until a smooth ball forms.
-dough + egg > batter: Move to a bowl and add the beaten egg slowly, stopping when the batter hangs from the spatula in a V shape.
-batter > pipe: Pipe rings of small circles that just touch onto baking paper, using a round nozzle. [piping bag]
-pipe > bake: Bake until lightly golden. ~13 min [oven 350 F]
+milk + sugar + vegetable oil + plain flour > paste: Heat the milk, sugar and oil in a saucepan until steaming, add the flour and mix until smooth. [saucepan]
+paste + tapioca starch + egg > batter: Off the heat mix in the tapioca starch until a smooth ball forms; move to a bowl and add the beaten egg slowly, stopping when the batter hangs from the spatula in a V shape.
+batter > bake: Pipe rings of small circles that just touch onto baking paper with a round nozzle and bake until lightly golden. ~13 min [oven 350 F] [piping bag]

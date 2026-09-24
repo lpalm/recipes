@@ -17,5 +17,4 @@ kitchen:
 oil for the griddle
 
 uncooked oatmeal + buttermilk + egg whites > soak: Combine and let stand at least half an hour, or refrigerate up to 24 hours. ~30 min [bowl]
-soak + whole wheat flour + baking soda + salt + banana > batter: Stir in just until the dry ingredients are moistened.
-batter + oil for the griddle > cook: Cook on a hot, lightly oiled griddle. [griddle]
+soak + whole wheat flour + baking soda + salt + banana + oil for the griddle > cook: Stir in the rest just until the dry ingredients are moistened and cook on a hot, lightly oiled griddle. [griddle]

@@ -11,6 +11,4 @@ bar:
 pantry:
 cinnamon sugar
 
-ginger liqueur + blackstrap rum + allspice dram + tiki bitters > shake: Shake hard with ice and strain into a wine goblet. [shaker]
-shake + milk stout > top: Top with the milk stout.
-top + cinnamon sugar > dust: Dust with cinnamon sugar.
+ginger liqueur + blackstrap rum + allspice dram + tiki bitters + milk stout + cinnamon sugar > shake: Shake hard with ice, strain into a wine goblet, top with the milk stout and dust with cinnamon sugar. [shaker]

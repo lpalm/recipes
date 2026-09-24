@@ -10,5 +10,4 @@ produce:
 kitchen:
 water
 
-mate Leão + water > steep: Steep the tea bags in hot water. [jug]
-steep + Splenda + lime > sweeten: Stir in the Splenda and the juice of the lime, then chill.
+mate Leão + water + Splenda + lime > steep: Steep the bags in hot water, stir in the Splenda and the juice of the lime, then chill. [jug]

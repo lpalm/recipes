@@ -22,10 +22,7 @@ spices:
 kitchen:
 1/4 cup water
 
-firm tofu + cornstarch > coat: Shake together in a zip bag to coat. [zip bag]
-coat + olive oil spray > air fry: Spread on the air fryer sheet, spray with oil, and cook at 375 F until crispy, shaking halfway and adding oil to dry spots. ~20 min [air fryer 375 F]
+firm tofu + cornstarch + olive oil spray > air fry: Shake the tofu with the cornstarch in a zip bag, spread on the air fryer sheet, spray with oil, and cook at 375 F until crispy, shaking halfway and adding oil to dry spots. ~20 min [air fryer 375 F]
 oil for the pan + medium red onion + pineapple + medium bell pepper > sauté: In a pan over medium-high with a little oil, sauté until the onion is translucent and the pineapple slightly browned. ~5 min [pan]
-sugar + ketchup + vinegar + water + soy sauce + garlic powder > sauce: Whisk together in a bowl. [bowl]
-sauté + sauce > simmer: Pour the sauce over the vegetables, bring to a slight boil, then simmer until thickened. ~5 min
-simmer + air fry > combine: Add the crisp tofu and stir; adjust sugar or soy sauce.
-combine + sesame seeds + scallion > garnish: Off the heat, top with sesame seeds and scallion.
+sauté + sugar + ketchup + vinegar + water + soy sauce + garlic powder > simmer: Whisk the sauce together, pour it over the vegetables, bring to a slight boil, then simmer until thickened. ~5 min
+simmer + air fry + sesame seeds + scallion > combine: Add the crisp tofu and stir; adjust sugar or soy sauce; off the heat top with sesame seeds and scallion.

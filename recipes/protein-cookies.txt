@@ -17,8 +17,5 @@ dairy:
 kitchen:
 60 g water
 
-peanut butter + micellar casein + all-purpose flour + sucralose + vanilla extract + baking powder + white miso paste + xanthan gum + large eggs + water > dough: Mix everything into a dough. [mixer]
-dough + dark chocolate chips > fold: Fold in the chocolate chips.
-fold > shape: Scoop 60 g balls onto a lined baking sheet and flatten to 1/2 inch; they barely spread. [baking sheet]
-shape > bake: Bake until the edges are slightly golden. ~15 min [oven 350 F]
-bake > cool: Cool 5 minutes on the sheet, then on a rack. ~5 min
+peanut butter + micellar casein + all-purpose flour + sucralose + vanilla extract + baking powder + white miso paste + xanthan gum + large eggs + water + dark chocolate chips > dough: Mix everything but the chips into a dough, then fold in the chocolate chips. [mixer]
+dough > bake: Scoop 60 g balls onto a lined baking sheet, flatten to 1/2 inch (they barely spread) and bake until the edges are slightly golden; cool 5 minutes on the sheet, then on a rack. ~15 min [oven 350 F]

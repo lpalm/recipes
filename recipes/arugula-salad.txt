@@ -14,5 +14,4 @@ spices:
 0.6 g salt
 0.15 g black pepper
 
-arugula + olive oil + balsamic vinegar + salt + black pepper > dress: Toss the leaves with the oil, vinegar, salt and pepper. [bowl]
-dress + goat cheese + toasted pecans > top: Top with the goat cheese and pecans.
+arugula + olive oil + balsamic vinegar + salt + black pepper + goat cheese + toasted pecans > dress: Toss the leaves with the oil, vinegar, salt and pepper and top with the goat cheese and pecans. [bowl]

@@ -15,6 +15,5 @@ dairy:
 produce:
 3 leaves fresh basil
 
-Neapolitan pizza dough + tomato sauce + fior di latte mozzarella + Gorgonzola dolce + Fontina + Parmigiano Reggiano + fresh basil > build: Stretch, sauce, the four cheeses and the basil.
-build > bake: Bake in the Ooni at about 80% of its maximum. ~2 min [Ooni]
+Neapolitan pizza dough + tomato sauce + fior di latte mozzarella + Gorgonzola dolce + Fontina + Parmigiano Reggiano + fresh basil > bake: Stretch, sauce, the four cheeses and the basil, and bake in the Ooni at about 80% of its maximum. ~2 min [Ooni]
 bake + olive oil > finish: Drizzle with oil.

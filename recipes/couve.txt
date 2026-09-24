@@ -12,5 +12,4 @@ spices:
 0.7 g salt
 
 olive oil + garlic > sizzle: Heat a large pan on medium-high for 90 seconds, add the oil, then the garlic; cook 25 seconds, stirring. [large pan]
-sizzle + collard greens + salt > wilt: Add the greens and salt and cook, tossing continuously. ~3 min
-wilt + lime juice > finish: Off the heat, add the lime juice and mix for 10 seconds.
+sizzle + collard greens + salt + lime juice > wilt: Add the greens and salt and cook 3 minutes, tossing continuously; turn off the heat and mix in the lime juice. ~3 min

@@ -26,13 +26,10 @@ spices:
 kitchen:
 salted water for the pasta
 
-butter + garlic > gold: Pan 1 on medium: butter, then the garlic for 90 seconds until light gold. [frying pan]
-gold + onion + mushrooms > vegetables: Add the onion and mushrooms and cook until the onion is very soft and the mushrooms are dry and well browned. ~30 min
+butter + garlic + onion + mushrooms > vegetables: Pan 1 on medium: butter, then the garlic for 90 seconds until light gold; add the onion and mushrooms and cook until the onion is very soft and the mushrooms are dry and well browned. ~30 min [frying pan]
 high-heat oil + ground beef > brown: Pan 2 on high while the vegetables cook: oil, then beef; brown hard. ~7 min [frying pan]
-brown + tomato paste > paste: Add the tomato paste and cook until deep brick red. ~3 min
-paste + white wine > deglaze: Add the wine and reduce. ~2 min
-deglaze + vegetables + Rao's roasted garlic sauce + Worcestershire sauce + beef bouillon powder + thyme + black pepper + chili flakes > combine: Add the vegetables to the beef pan with the sauce and seasonings.
-combine > simmer: Simmer uncovered on low. ~28 min
+brown + tomato paste + white wine > paste: Add the tomato paste and cook 2 to 3 minutes until deep brick red, then the wine, reduced 1 to 2 minutes. ~4 min
+paste + vegetables + Rao's roasted garlic sauce + Worcestershire sauce + beef bouillon powder + thyme + black pepper + chili flakes > simmer: Add the vegetables, the sauce and the seasonings to the beef pan and simmer uncovered on low. ~28 min
 simmer + heavy cream > cream: Add the cream for the final 5 minutes. ~5 min
 salted water for the pasta + mezze rigatoni > boil: Boil the pasta during the final 14 minutes of the simmer. ~14 min [pasta pot]
 cream + boil > toss: Toss the pasta with the sauce.

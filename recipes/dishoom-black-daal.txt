@@ -18,10 +18,7 @@ spices:
 kitchen:
 4 l water
 
-whole black urad dal > rinse: Cover with water in a large bowl, whisk 10 seconds, let settle and pour off; repeat 3 or 4 times until the water runs clear. [bowl]
-rinse + water > boil: Tip into the instant pot with the water and pressure cook on high, skimming the scum, 30 minutes, then 30 minutes more, skimming again. ~1 h [instant pot]
-boil > drain: Pour off the cooking water and top up with fresh water to cover the daal by 3 to 4 cm.
-garlic paste + ginger paste > paste: Blend with 1/4 cup of water into a fine paste. [blender]
-drain + paste + tomato purée + salt + deggi mirch chili powder + unsalted butter + garam masala > season: Add and stir until well blended.
+whole black urad dal + water > boil: Rinse in a bowl, whisking, until the water runs clear; tip into the instant pot with the water and pressure cook on high, skimming the scum, 30 minutes, then 30 minutes more, skimming again. ~1 h [instant pot]
+boil + garlic paste + ginger paste + tomato purée + salt + deggi mirch chili powder + unsalted butter + garam masala > season: Pour off the cooking water and top up with fresh water to cover the daal by 3 to 4 cm; blend the garlic and ginger with 1/4 cup of water, add with the rest and stir until well blended.
 season > pressure: Pressure cook on high, 1 hour, try 3. ~1 h
 pressure + double cream > finish: Add the cream and cook 10 minutes more; it should be very thick. ~10 min

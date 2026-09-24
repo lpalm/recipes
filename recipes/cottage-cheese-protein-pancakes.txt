@@ -12,6 +12,5 @@ pantry:
 spices:
 1/2 tsp salt
 
-cottage cheese + eggs > blend: Blend until smooth. [blender]
-blend + oat flour + baking powder + salt > batter: Blend again and let rest. ~10 min
+cottage cheese + eggs + oat flour + baking powder + salt > batter: Blend the cottage cheese and eggs smooth, add the flour, baking powder and salt, blend again and let rest. ~10 min [blender]
 batter + unsalted butter > cook: Coat a hot skillet with butter and dollop 1/3 cup of batter per pancake. Cook until golden, 2 to 3 minutes a side. [skillet]

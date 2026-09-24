@@ -15,5 +15,4 @@ spices:
 1/4 tsp cinnamon
 
 eggs + milk + sugar + vanilla extract + cinnamon > whisk: Whisk until smooth. [bowl]
-whisk + croissant bread > dip: Dip each slice into the egg mixture, coating both sides.
-dip + butter for the pan > fry: Fry in a lightly buttered non-stick pan over medium heat until golden, 3 to 5 minutes a side. [non-stick pan]
+whisk + croissant bread + butter for the pan > fry: Dip each slice in the egg mixture on both sides and fry in a lightly buttered non-stick pan over medium heat until golden, 3 to 5 minutes a side. [non-stick pan]

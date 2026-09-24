@@ -11,5 +11,4 @@ kitchen:
 15 g hot water
 ice
 
-decaf instant coffee + sugar + hot water > whip: Whisk until beige and fluffy. [bowl]
-whip + full fat milk + ice > pour: Pour the milk into a glass, add ice and spoon the coffee foam on top.
+decaf instant coffee + sugar + hot water + full fat milk + ice > whip: Whisk the coffee, sugar and hot water until beige and fluffy, then spoon over a glass of milk with ice. [bowl]

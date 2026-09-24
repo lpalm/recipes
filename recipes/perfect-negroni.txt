@@ -10,5 +10,4 @@ bar:
 produce:
 1 slice orange
 
-gin + Campari + sweet vermouth + dry vermouth > stir: Stir with ice and strain over ice. [mixing glass]
-stir + orange > garnish: Add the slice of orange.
+gin + Campari + sweet vermouth + dry vermouth + orange > stir: Stir with ice, strain over ice and add the slice of orange. [mixing glass]

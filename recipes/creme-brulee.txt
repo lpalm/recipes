@@ -15,10 +15,8 @@ kitchen:
 hot water, 75 to 82 C, enough to come halfway up the ramekins
 
 heavy cream + fine salt > heat: Heat to 70 to 75 C, then take off the heat. [saucepan]
-egg yolk + caster sugar > whisk: Whisk gently together. [mixing bowl]
-heat + whisk + vanilla extract > temper: Pour the hot cream slowly into the yolks while whisking, then mix in the vanilla.
-temper > strain: Strain through a fine sieve into a jug and divide between 4 shallow ramekins set in a deep baking dish. [fine sieve]
-strain + hot water > bath: Put the dish on the partly pulled-out oven rack and pour the hot water around the ramekins to halfway up their sides.
+heat + egg yolk + caster sugar + vanilla extract > temper: Whisk the yolks and sugar gently, pour the hot cream in slowly while whisking, then mix in the vanilla. [mixing bowl]
+temper + hot water > bath: Strain through a fine sieve into a jug, divide between 4 shallow ramekins in a deep baking dish, set the dish on the partly pulled-out oven rack and pour the hot water around the ramekins to halfway up their sides. [fine sieve]
 bath > bake: Bake until the centre of one custard reaches 77 to 79 C; start checking after 25 minutes. ~35 min [oven 130]
 bake > chill: Take the ramekins out of the water, cool 1 hour at room temperature, then refrigerate at least 4 hours, preferably overnight. ~4 h
 chill + white sugar for the top > torch: Blot any condensation, sprinkle 6 g of sugar over each custard and torch, keeping the flame moving, until golden amber. Serve at once. [kitchen torch]

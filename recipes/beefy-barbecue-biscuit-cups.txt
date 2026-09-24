@@ -14,9 +14,7 @@ frozen:
 dairy:
 1 cup mild Cheddar, shredded
 
-ground beef + red onion > brown: Cook in a skillet over medium until no longer pink; drain the grease. [skillet]
-brown + barbecue sauce + frozen corn > filling: Mix in thoroughly.
+ground beef + red onion + barbecue sauce + frozen corn > filling: Cook the beef and onion in a skillet over medium until no longer pink, drain the grease, then mix in the barbecue sauce and corn. [skillet]
 flaky refrigerated biscuits > cups: Split each biscuit in half along the layers, flatten each half to a 4 to 5 inch circle and press into sprayed muffin cups. [muffin tin]
-cups + filling > fill: Spoon 2 to 3 tbsp of beef into each cup.
-fill > bake: Bake. ~10 min [oven 400 F]
+cups + filling > bake: Spoon 2 to 3 tbsp of beef into each cup and bake. ~10 min [oven 400 F]
 bake + mild Cheddar > melt: Sprinkle with cheese and bake until bubbly. To freeze instead, cool without cheese, freeze, and reheat at 350 F for 10 to 15 minutes before adding the cheese. ~4 min

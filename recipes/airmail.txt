@@ -10,5 +10,4 @@ bar:
 produce:
 0.35 oz lime juice
 
-aged rum + lime juice + honey syrup > shake: Shake with ice and double strain into a flute. Leon's way: no shaking, served on ice. [shaker]
-shake + champagne + aromatic bitters > top: Top with the champagne and a drop of aromatic bitters.
+aged rum + lime juice + honey syrup + champagne + aromatic bitters > shake: Shake the rum, lime and honey syrup with ice, double strain into a flute and top with the champagne and a drop of bitters. Leon's way: no shaking, served on ice. [shaker]

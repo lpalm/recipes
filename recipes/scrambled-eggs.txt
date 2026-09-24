@@ -10,6 +10,4 @@ spices:
 1 pinch salt and pepper
 
 egg + salt and pepper > beat: Crack the egg into a measuring jug, add a tiny pinch of salt and pepper and beat well with a fork. [jug]
-butter > melt: Melt slowly in a frying pan over low heat until it starts to bubble. [frying pan]
-melt + beat > scramble: Pour in the egg and stir slowly with a spatula, right to the edges, until silky, slightly runny and a little underdone, then take off the heat.
-scramble + Parmigiano Reggiano > finish: Fold in the Parmigiano and serve with buttered toast.
+butter + beat + Parmigiano Reggiano > scramble: Melt the butter slowly in a frying pan over low heat until it bubbles, pour in the egg and stir slowly right to the edges until silky and a little underdone; off the heat fold in the Parmigiano. Serve with buttered toast. [frying pan]

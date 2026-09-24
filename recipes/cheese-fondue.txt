@@ -20,10 +20,7 @@ spices:
 0.3 g nutmeg, ground
 
 Gruyère + Fontina + sharp white Cheddar > grate: Grate and mix in a bowl. [bowl]
-garlic > rub: Rub the pot with the cut garlic. [fondue pot]
-rub + Sauvignon Blanc > heat: Add the wine and bring to 80 to 85 C, steaming but not boiling.
+garlic + Sauvignon Blanc > heat: Rub the pot with the cut garlic, add the wine and bring to 80 to 85 C, steaming but not boiling. [fondue pot]
 heat + grate > melt: Stir in the cheese by handfuls in a figure 8, waiting for each to melt before the next.
-cornstarch + brandy > slurry: Dissolve the cornstarch in the brandy. [cup]
-melt + slurry > thicken: Add the slurry and stir 1 to 2 minutes until glossy and lightly thickened.
-thicken + black pepper + nutmeg > season: Stir in the pepper and nutmeg.
-season + baguette > serve: Serve at once with the bread, keeping the pot at 55 to 60 C.
+melt + cornstarch + brandy + black pepper + nutmeg > thicken: Add the cornstarch dissolved in the brandy and stir 1 to 2 minutes until glossy and lightly thickened, then stir in the pepper and nutmeg.
+thicken + baguette > serve: Serve at once with the bread, keeping the pot at 55 to 60 C.

@@ -21,11 +21,8 @@ salt and pepper
 kitchen:
 1 l boiling water
 
-dried porcini mushrooms + boiling water > soak: Pour the boiling water over the porcini in a large bowl and soak 20 minutes; drain into a bowl, leaving the last gritty spoonfuls behind, and squeeze the mushrooms. ~20 min [bowl]
-soak + vegetable stock > stock: Crumble the stock cube into the mushroom liquid; keep the squeezed porcini for the pan.
-olive oil + onion + garlic > soften: Heat the oil in a deep frying pan over medium and fry until soft. ~5 min [deep frying pan]
-soften + chestnut mushrooms + salt and pepper > mushrooms: Stir in the chestnut mushrooms and the soaked porcini, season, and cook until the fresh mushrooms soften. ~8 min
-mushrooms + risotto rice > toast: Tip in the rice and cook 1 minute. ~1 min
-toast + white wine > wine: Pour in the wine and let it bubble to nothing.
-wine + stock > simmer: Over medium heat add a quarter of the stock at a time, stirring often and letting each be absorbed before the next, until the rice is creamy, plump and tender; a splash of water if undercooked. ~25 min
+dried porcini mushrooms + boiling water + vegetable stock > stock: Pour the boiling water over the porcini in a large bowl and soak 20 minutes; drain the liquid into a bowl, leaving the last gritty spoonfuls, squeeze the mushrooms and keep them for the pan; crumble the stock cube into the liquid. ~20 min [bowl]
+olive oil + onion + garlic + chestnut mushrooms + salt and pepper > mushrooms: Heat the oil in a deep frying pan over medium and fry the onion and garlic until soft, about 5 minutes; stir in the chestnut mushrooms and the soaked porcini, season, and cook until the fresh mushrooms soften. ~13 min [deep frying pan]
+mushrooms + risotto rice + white wine > toast: Tip in the rice and cook 1 minute, then pour in the wine and let it bubble to nothing.
+toast + stock > simmer: Over medium heat add a quarter of the stock at a time, stirring often and letting each be absorbed before the next, until the rice is creamy, plump and tender; a splash of water if undercooked. ~25 min
 simmer + butter + Parmesan + parsley > finish: Off the heat add the butter, half the cheese and half the parsley; cover and rest a few minutes, stir, and serve topped with the rest of the cheese and parsley.

@@ -15,5 +15,4 @@ spices:
 
 olive oil + garlic > sizzle: Heat a wide frying pan on medium, add the oil and garlic and cook 30 to 45 seconds until fragrant, without browning. [wide frying pan]
 sizzle + asparagus > cook: Add the asparagus, raise to medium-high and cook uncovered, tossing now and then, until lightly browned. ~7 min
-cook + lemon juice > reduce: Push the asparagus aside, pour the lemon juice onto the empty part of the pan and let it reduce by half, 30 to 60 seconds, then turn off the heat and mix.
-reduce + black pepper + Parmigiano Reggiano > finish: Add the pepper and Parmigiano, toss and serve.
+cook + lemon juice + black pepper + Parmigiano Reggiano > finish: Push the asparagus aside, let the lemon juice reduce by half on the empty part of the pan, turn off the heat, add the pepper and Parmigiano, toss and serve.

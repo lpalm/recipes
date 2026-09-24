@@ -16,5 +16,4 @@ bar:
 kitchen:
 4 oz boiling water
 
-slightly salted butter + brown sugar + ground nutmeg + ground cinnamon + ground cloves + vanilla extract + boiling water > melt: Mix in a heat-resistant cup until the butter is liquid. [mug]
-melt + dark rum > finish: Add the rum.
+slightly salted butter + brown sugar + ground nutmeg + ground cinnamon + ground cloves + vanilla extract + boiling water + dark rum > mix: Mix everything but the rum in a heat-resistant cup until the butter is liquid, then add the rum. [mug]

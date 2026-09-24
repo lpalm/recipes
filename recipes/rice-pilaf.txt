@@ -21,5 +21,4 @@ spices:
 low-sodium chicken broth + unsalted butter + kosher salt + garlic powder + ground black pepper + paprika + onion powder > broth: Heat in a saucepan over medium until it simmers, then keep on low. [saucepan]
 olive oil + vermicelli > brown: Heat the oil in a large skillet over medium-low and cook the vermicelli until brown. ~5 min [large skillet]
 brown + long grain white rice > toast: Add the rice and cook until it turns bright white. ~6 min
-toast + broth > simmer: Pour in the warm broth, stir, and once it simmers cover and cook. ~15 min
-simmer + fresh parsley > steam: Add the parsley, cover and cook until the broth is absorbed, then fluff with a fork. ~5 min
+toast + broth + fresh parsley > simmer: Pour in the warm broth, stir, cover once it simmers and cook 15 minutes; add the parsley, cover 5 minutes more until the broth is absorbed, then fluff with a fork. ~20 min

@@ -12,5 +12,4 @@ pantry:
 spices:
 grated nutmeg
 
-milk + bourbon + simple syrup + vanilla extract > shake: Shake with ice and strain into a glass. [shaker]
-shake + grated nutmeg > garnish: Grate nutmeg over the top.
+milk + bourbon + simple syrup + vanilla extract + grated nutmeg > shake: Shake with ice, strain into a glass and grate nutmeg over the top. [shaker]

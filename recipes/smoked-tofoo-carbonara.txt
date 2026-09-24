@@ -21,11 +21,8 @@ salt and pepper
 kitchen:
 salted water
 
-olive oil + smoked Tofoo + salt and pepper > fry: Heat a frying pan with the oil, add the Tofoo, season, and fry until lightly golden. [frying pan]
-fry + shallots + garlic > soften: Add and cook until softened, not too long.
+olive oil + smoked Tofoo + salt and pepper + shallots + garlic > fry: Heat a frying pan with the oil, add the Tofoo, season, and fry until lightly golden; add the shallots and garlic and cook until softened, not too long. [frying pan]
 salted water + spaghetti > boil: Boil the pasta per the packet, about 10 minutes; start it around now. ~10 min [pot]
-soften + chestnut mushrooms > mushrooms: Add and stir; cook a couple of minutes. ~2 min
-mushrooms + white wine > reduce: Add the wine and cook until reduced. ~5 min
+fry + chestnut mushrooms + white wine > reduce: Add the mushrooms, stir and cook a couple of minutes; add the wine and cook until reduced. ~7 min
 reduce + soya single cream > thicken: Add the cream, drop to medium-low and cook to thicken the sauce, not too much; season. ~5 min
-thicken + boil > toss: Add the drained pasta and mix well.
-toss + vegan Parmesan + fresh flat leaf parsley > serve: Serve with a grating of Parmesan and the parsley.
+thicken + boil + vegan Parmesan + fresh flat leaf parsley > toss: Add the drained pasta, mix well and serve with a grating of Parmesan and the parsley.

@@ -20,10 +20,7 @@ spices:
 1/2 tsp kosher salt
 1/4 tsp black pepper
 
-lean ground beef + small onion + garlic > brown: Cook in a skillet over medium-high, stirring to break up, until no longer pink. [skillet]
-brown + chili powder + ground cumin + kosher salt + black pepper > spice: Stir in the spices.
-spice + tomatoes with green chiles > simmer: Stir in the tomatoes and the chopped pepper tops, drop to medium and cook. ~5 min
+lean ground beef + small onion + garlic + chili powder + ground cumin + kosher salt + black pepper + tomatoes with green chiles > filling: Cook the beef, onion and garlic in a skillet over medium-high, breaking up, until no longer pink; stir in the spices, then the tomatoes and the chopped pepper tops, and cook 5 minutes on medium. ~5 min [skillet]
 large bell peppers > hollow: Cut off the tops and chop them for the beef; discard seeds and membranes and stand the peppers in the sprayed air fry basket. [air fry basket]
-hollow + simmer > fill: Spoon the beef mixture into the peppers.
-fill + crushed tortilla chips + queso + vegetable cooking spray > top: Top each with the chips and cheese and spray with cooking spray.
-top > air fry: Air fry at 350 F until the peppers are fork-tender and the filling hot. ~20 min [air fryer 350 F]
+hollow + filling + crushed tortilla chips + queso + vegetable cooking spray > fill: Spoon the beef into the peppers, top each with the chips and cheese and spray with cooking spray.
+fill > air fry: Air fry at 350 F until the peppers are fork-tender and the filling hot. ~20 min [air fryer 350 F]

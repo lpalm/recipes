@@ -11,5 +11,4 @@ pantry:
 kitchen:
 ice
 
-limes + white sugar > muddle: Put the sugar and lime in a short glass and muddle on the smooth side. [short glass]
-muddle + unaged cachaça + ice > mix: Add the cachaça and ice and mix with a spoon.
+limes + white sugar + unaged cachaça + ice > muddle: Muddle the sugar and lime in a short glass on the smooth side, add the cachaça and ice and mix with a spoon. [short glass]
