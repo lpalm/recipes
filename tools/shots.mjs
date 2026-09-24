@@ -22,15 +22,15 @@ const shot = async (name, hash, after) => {
 
 await shot('library', '/');
 await shot('search', '/', () => page.fill('#search', 'garlic'));
-await shot('recipe', '/r/aglio-e-olio');
-await shot('recipe-map', '/r/aglio-e-olio/map');
-await shot('step', '/r/aglio-e-olio/3');
-await shot('step-timer', '/r/aglio-e-olio/3', () => page.click('#timer'));
-await shot('recipe-progress', '/r/aglio-e-olio/map');
-await shot('bolognese', '/r/bolognese/map');
-await shot('chicken-step-us', '/r/roast-chicken-thighs', async () => { await page.click('[data-units=imperial]'); await page.goto(`${url}#/r/roast-chicken-thighs/3`); await page.waitForSelector('.stepview'); });
-await shot('chicken-map-us', '/r/roast-chicken-thighs/map');
-await shot('bolognese-step-6', '/r/bolognese/6');
+await shot('recipe', '/r/garlic-lemon-butter-salmon');
+await shot('recipe-map', '/r/garlic-lemon-butter-salmon/map');
+await shot('step', '/r/garlic-lemon-butter-salmon/2');
+await shot('step-timer', '/r/garlic-lemon-butter-salmon/2', () => page.click('#timer'));
+await shot('recipe-progress', '/r/garlic-lemon-butter-salmon/map');
+await shot('big-map', '/r/rigatoni-bolognese/map');
+await shot('oven-step-us', '/r/pork-tenderloin-chimichurri', async () => { await page.click('[data-units=imperial]'); await page.goto(`${url}#/r/pork-tenderloin-chimichurri/3`); await page.waitForSelector('.stepview'); });
+await shot('oven-map-us', '/r/pork-tenderloin-chimichurri/map');
+await shot('long-step', '/r/rigatoni-bolognese/6');
 
 await browser.close();
 server.close();
