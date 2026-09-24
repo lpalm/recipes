@@ -3,7 +3,7 @@ portions 1
 category Spice mixes
 
 spices:
-2 tbsp paprika, try smoked
+2 tbsp paprika
 2 tbsp cumin powder
 2 tsp onion powder
 1 tsp dried oregano

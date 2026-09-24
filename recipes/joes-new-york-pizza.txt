@@ -13,10 +13,10 @@ dairy:
 spices:
 4.8 g salt
 kitchen:
-101 g water, try 105
+101 g water
 
 All Trumps flour + water + salt + sugar + active dry yeast > dough: Mix into a dough. [mixer]
 dough > ferment: Room temperature 1.5 hours depending on the ambient temperature, cold ferment 12 to 48 hours, then 1.5 hours at room temperature before baking. ~1 h 30 min
-Nina tomatoes D.O.P + sugar for the sauce > sauce: Run through a hand food mill (Tellier #3) and stir in the sugar; the sauce is used raw. Less sugar if the tomatoes are strained. [food mill]
-ferment + sauce + Grande low-moisture part-skim mozzarella > build: Stretch to 12 inches, sauce, then the cheese shredded on the Pelican; the grate decides how it melts. [Pelican shredder]
+Nina tomatoes D.O.P + sugar for the sauce > sauce: Run through a hand food mill (Tellier #3) and stir in the sugar; the sauce is used raw. [food mill]
+ferment + sauce + Grande low-moisture part-skim mozzarella > build: Stretch to 12 inches, sauce, then the cheese shredded on the Pelican. [Pelican shredder]
 build > bake: Bake at 625 F measured at the back, about 2 minutes, then finish on a screen for even cooking. ~2 min [pizza oven 625 F]
