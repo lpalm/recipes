@@ -1,6 +1,17 @@
 // Lays the steps out as the recipe map: one row per ingredient, a pot's steps stack downward in one column,
 // and a new column opens only where separate pots merge.
 
+// The steps of the pot that ends at step s: s and the single-pot continuations behind it, as 1-based numbers in order.
+export function chainOf(steps, s) {
+  const chain = [];
+  for (let cur = s; cur !== null;) {
+    chain.push(cur + 1);
+    const pots = steps[cur].inputs.filter(i => i.kind === 'step');
+    cur = pots.length === 1 ? pots[0].index : null;
+  }
+  return chain.sort((a, b) => a - b);
+}
+
 export function layoutMap({ ingredients, steps }) {
   const consumerOf = { ingredient: ingredients.map(() => null), step: steps.map(() => null) };
   steps.forEach((step, s) => step.inputs.forEach(({ kind, index }) => { consumerOf[kind][index] = s; }));

@@ -1,11 +1,13 @@
 // Screens and navigation: library → recipe (list, map) → one step per screen. State lives in localStorage.
 import { parseRecipe } from './parser.js';
-import { layoutMap } from './map.js';
+import { layoutMap, chainOf } from './map.js';
 import { formatAmount, formatOven, formatDuration, clock } from './units.js';
 
 const app = document.getElementById('app');
 const MAP_FONT_PX = [11, 18]; // the map shrinks to fit the screen, never grows past a comfortable size
 const STEP_SCALE = [0.6, 1.15]; // same for the step text, as a multiple of its base size
+const CATEGORY_ORDER = ['Breakfast', 'Non-vegan Mains', 'Other Vegan Mains', 'Tofu Vegan Mains', 'Pizza Making', 'Sides', 'Snacks', 'Toddler', 'Dessert', 'Creami', 'Drinks', 'Cocktail', 'Spice mixes'];
+const HOUR = 3600000;
 const store = {
   get(key, fallback) { const raw = localStorage.getItem(key); return raw === null ? fallback : JSON.parse(raw); },
   set(key, value) { localStorage.setItem(key, JSON.stringify(value)); },
@@ -21,6 +23,14 @@ const ICON = {
   back: '<svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>',
   map: '<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="4" width="7" height="6" rx="1.5"/><rect x="3" y="14" width="7" height="6" rx="1.5"/><rect x="14" y="4" width="7" height="16" rx="1.5"/></svg>',
   play: '<svg viewBox="0 0 24 24" width="0.9em" height="0.9em" fill="currentColor"><path d="M7 4.5v15l12-7.5z"/></svg>',
+  chevron: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>',
+};
+const portionsLabel = n => `${n} ${n === 1 ? 'portion' : 'portions'}`;
+// "step 9", "steps 1–6" or "steps 1–3, 6" for a pot's step numbers.
+const stepRange = nums => {
+  const runs = [];
+  nums.forEach(n => { const last = runs[runs.length - 1]; if (last && last[1] === n - 1) last[1] = n; else runs.push([n, n]); });
+  return `${nums.length > 1 ? 'steps' : 'step'} ${runs.map(([a, b]) => a === b ? a : `${a}–${b}`).join(', ')}`;
 };
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 // Amount and name as two aligned columns; the name spans both when there is no amount.
@@ -65,24 +75,46 @@ function showLibrary() {
   app.innerHTML = `
     <div class="page library">
       <h1 class="title">Recipes</h1>
-      <input id="search" type="search" placeholder="Search recipes or ingredients" autocomplete="off">
+      <input id="search" type="search" placeholder="Search" autocomplete="off">
       <ul class="list" id="list"></ul>
     </div>`;
   const input = document.getElementById('search'), list = document.getElementById('list');
-  const category = e => (e.recipe && e.recipe.category) || '';
-  const matches = (e, q) => e.id.includes(q) || category(e).toLowerCase().includes(q)
-    || (e.recipe && (e.recipe.title.toLowerCase().includes(q) || e.recipe.ingredients.some(i => i.name.toLowerCase().includes(q))));
-  const row = e => e.recipe
-    ? `<li><a href="#/r/${e.id}"><span class="name">${esc(e.recipe.title)}</span><span class="meta">${e.recipe.steps.length} steps · ${e.recipe.ingredients.length} ingredients</span></a></li>`
-    : `<li class="broken">${esc(e.id)}.txt<small>${esc(e.error)}</small></li>`;
+  const row = e => `<li><a href="#/r/${e.id}"><span class="name">${esc(e.recipe.title)}</span><span class="meta">${e.recipe.steps.length} steps · ${e.recipe.ingredients.length} ingredients</span></a></li>`;
+  const header = (key, count, open) => `<li class="section"><button data-toggle="${esc(key)}"><span>${esc(key)}</span><small>${count}</small>${open === undefined ? '' : `<i class="chev${open ? ' open' : ''}">${ICON.chevron}</i>`}</button></li>`;
+  const broken = library.filter(e => !e.recipe).map(e => `<li class="broken">${esc(e.id)}.txt<small>${esc(e.error)}</small></li>`).join('');
+  // Search ranks by where the words appear: title first, then category, ingredients, steps.
+  const TIERS = [
+    ['Title', e => e.recipe.title], ['Category', e => e.recipe.category || ''],
+    ['Ingredients', e => e.recipe.ingredients.map(i => i.name).join('\n')],
+    ['Steps', e => e.recipe.steps.map(s => [s.label, s.instruction, ...s.equipment].join('\n')).join('\n')],
+  ];
+  const rank = c => { const i = CATEGORY_ORDER.indexOf(c); return i < 0 ? CATEGORY_ORDER.length : i; };
   const render = () => {
     const q = input.value.trim().toLowerCase();
+    if (q) {
+      const seen = new Set();
+      list.innerHTML = broken + (TIERS.map(([name, text]) => {
+        const hits = library.filter(e => e.recipe && !seen.has(e) && text(e).toLowerCase().includes(q));
+        hits.forEach(e => seen.add(e));
+        return hits.length ? header(name, hits.length) + hits.map(row).join('') : '';
+      }).join('') || '<li class="empty">Nothing found</li>');
+      return;
+    }
+    const open = store.get('open', {}); // categories start folded; what you unfold stays unfolded
     const groups = new Map();
-    library.filter(e => !q || matches(e, q)).forEach(e => groups.set(category(e), [...(groups.get(category(e)) || []), e]));
-    list.innerHTML = [...groups.keys()].sort((a, b) => a.localeCompare(b))
-      .map(key => (key ? `<li class="section">${esc(key)}</li>` : '') + groups.get(key).map(row).join('')).join('') || '<li class="empty">Nothing found</li>';
+    library.filter(e => e.recipe).forEach(e => { const key = e.recipe.category || ''; groups.set(key, [...(groups.get(key) || []), e]); });
+    list.innerHTML = broken + [...groups.keys()].sort((a, b) => rank(a) - rank(b) || a.localeCompare(b))
+      .map(key => header(key, groups.get(key).length, Boolean(open[key])) + (open[key] ? groups.get(key).map(row).join('') : '')).join('');
   };
   input.addEventListener('input', render);
+  list.addEventListener('click', e => {
+    const button = e.target.closest('[data-toggle]');
+    if (!button || input.value.trim()) return;
+    const open = store.get('open', {});
+    open[button.dataset.toggle] = !open[button.dataset.toggle];
+    store.set('open', open);
+    render();
+  });
   render();
 }
 
@@ -91,6 +123,7 @@ function showRecipe(entry) {
   const { portions, factor, system } = settings(entry);
   const current = store.get(`step/${id}`, 0);
   const oven = recipe.steps.map(s => s.oven).find(Boolean);
+  const shopping = store.get('shopping', false); // the sectioned list is for the shop; the map already lists everything
   keepAwake(true);
   app.innerHTML = `
     <header class="bar"><a class="back" href="#/" aria-label="back">${ICON.back}</a></header>
@@ -98,20 +131,46 @@ function showRecipe(entry) {
       <h1 class="title">${esc(recipe.title)}</h1>
       ${oven ? `<p class="oven">Oven ${formatOven(oven, system)}</p>` : ''}
       <div class="controls">
-        <div class="seg stepper"><button data-portions="-1">−</button><span>${portions} ${portions === 1 ? 'portion' : 'portions'}</span><button data-portions="1">+</button></div>
+        <div class="seg stepper"><button data-portions="-1">−</button><button class="portions">${portionsLabel(portions)}</button><button data-portions="1">+</button></div>
         <div class="seg"><button data-units="metric" class="${system === 'metric' ? 'on' : ''}">metric</button><button data-units="imperial" class="${system === 'imperial' ? 'on' : ''}">US</button></div>
       </div>
-      <ul class="ingredients">${recipe.ingredients.map((i, k) =>
+      <button class="disclosure" id="shopping"><span>Shopping list</span><small>${recipe.ingredients.length}</small><i class="chev${shopping ? ' open' : ''}">${ICON.chevron}</i></button>
+      ${shopping ? `<ul class="ingredients">${recipe.ingredients.map((i, k) =>
         (i.section && i.section !== (k ? recipe.ingredients[k - 1].section : null) ? `<li class="section">${esc(i.section)}</li>` : '') +
-        `<li>${quantityHtml(i, factor, system)}</li>`).join('')}</ul>
+        `<li>${quantityHtml(i, factor, system)}</li>`).join('')}</ul>` : ''}
       <div class="map" id="map">${mapHtml(entry, factor, system, current)}</div>
     </div>
     <footer class="bar"><a class="big start" href="#/r/${id}/${current || 1}">${current > 1 ? `Continue at step ${current}` : 'Start cooking'}</a></footer>`;
-  app.querySelectorAll('[data-portions]').forEach(b => b.addEventListener('click', () => {
-    store.set(`portions/${id}`, Math.max(1, portions + Number(b.dataset.portions)));
-    route();
+  // Portions: tap − or + once, hold to keep going, tap the number to type one.
+  const label = app.querySelector('.portions');
+  let value = portions, hold = null;
+  const stop = () => {
+    document.removeEventListener('pointerup', stop);
+    document.removeEventListener('pointercancel', stop);
+    clearTimeout(hold);
+    clearInterval(hold);
+    if (value !== portions) { store.set(`portions/${id}`, value); route(); }
+  };
+  app.querySelectorAll('[data-portions]').forEach(b => b.addEventListener('pointerdown', e => {
+    e.preventDefault();
+    const bump = () => { value = Math.max(1, value + Number(b.dataset.portions)); label.textContent = portionsLabel(value); };
+    bump();
+    hold = setTimeout(() => { hold = setInterval(bump, 120); }, 450);
+    document.addEventListener('pointerup', stop);
+    document.addEventListener('pointercancel', stop);
   }));
+  label.addEventListener('click', () => {
+    const input = Object.assign(document.createElement('input'), { type: 'number', inputMode: 'numeric', min: 1, value: portions, className: 'portions' });
+    let done = false;
+    const commit = () => { if (done) return; done = true; store.set(`portions/${id}`, Math.max(1, Math.round(Number(input.value)) || portions)); route(); };
+    input.addEventListener('change', commit);
+    input.addEventListener('blur', commit);
+    label.replaceWith(input);
+    input.focus();
+    input.select();
+  });
   app.querySelectorAll('[data-units]').forEach(b => b.addEventListener('click', () => { store.set('units', b.dataset.units); route(); }));
+  document.getElementById('shopping').addEventListener('click', () => { store.set('shopping', !shopping); route(); });
   fitMap();
 }
 
@@ -153,7 +212,7 @@ function showStep(entry, n) {
   const next = recipe.steps[n];
   const gear = [...step.equipment, step.oven && `oven ${formatOven(step.oven, system)}`].filter(Boolean).join(' · ');
   const inputs = step.inputs.map(({ kind, index }) => kind === 'step'
-    ? `<li class="from"><b>step ${index + 1}</b><span>${esc(recipe.steps[index].label)}</span></li>`
+    ? `<li class="from"><b>${esc(stepRange(chainOf(recipe.steps, index)))}</b><span>${esc(recipe.steps[index].label)}</span></li>`
     : `<li>${quantityHtml(recipe.ingredients[index], factor, system, true)}</li>`).join('');
   const direction = shownStep && shownStep.id === id ? Math.sign(n - shownStep.n) : 0;
   shownStep = { id, n };
@@ -222,6 +281,8 @@ function refit() {
 
 function tick() {
   const now = Date.now();
+  const kept = timers.filter(t => t.endsAt > now - HOUR); // finished timers clear themselves after an hour
+  if (kept.length !== timers.length) { timers = kept; store.set('timers', timers); }
   const box = document.getElementById('timers');
   if (box) box.innerHTML = timers.map(t => `<button class="timerbar${t.endsAt <= now ? ' rang' : ''}" data-timer="${esc(t.key)}">${esc(t.label)} · ${t.endsAt <= now ? 'done' : clock((t.endsAt - now) / 1000)}</button>`).join('');
   const button = document.getElementById('timer');
@@ -263,7 +324,10 @@ app.addEventListener('touchend', e => {
 }, { passive: true });
 app.addEventListener('click', e => {
   const bar = e.target.closest('[data-timer]');
-  if (bar) { dismissTimer(bar.dataset.timer); refit(); }
+  if (!bar) return;
+  const timer = timers.find(t => t.key === bar.dataset.timer);
+  if (timer && timer.endsAt <= Date.now()) { dismissTimer(timer.key); refit(); } // a finished chip is dismissed; a running one leads to its step
+  else location.hash = `#/r/${bar.dataset.timer}`;
 });
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible' && wantAwake) keepAwake(true); });
 window.addEventListener('hashchange', route);

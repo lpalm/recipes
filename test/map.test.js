@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { parseRecipe } from '../parser.js';
-import { layoutMap } from '../map.js';
+import { layoutMap, chainOf } from '../map.js';
 
 const layout = text => {
   const recipe = parseRecipe(text);
@@ -74,4 +74,19 @@ m + r > z: Z.`);
   assert.deepEqual(place(cell.r), [4, 2, 1, 2]);
   assert.deepEqual(place(cell.z), [0, 6, 3, 1]);
   assert.equal(cell.e.colSpan, 1);
+});
+
+test('a pot chain runs back through single-pot steps only, and keeps step numbers even when other pots interleave', () => {
+  const { steps } = parseRecipe(`T
+portions 1
+1 a
+1 b
+1 c
+a > p: P.
+b > q: Q.
+p + c > r: R.
+r + q > z: Z.`);
+  assert.deepEqual(chainOf(steps, 2), [1, 3]);
+  assert.deepEqual(chainOf(steps, 1), [2]);
+  assert.deepEqual(chainOf(steps, 3), [4]);
 });
