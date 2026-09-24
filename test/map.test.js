@@ -7,7 +7,7 @@ const layout = text => {
   const recipe = parseRecipe(text);
   const { cells, ...size } = layoutMap(recipe);
   const named = {};
-  cells.forEach(c => { named[c.kind === 'step' ? recipe.steps[c.index].label : recipe.ingredients[c.index].name] = c; });
+  cells.forEach(c => { if (c.kind !== 'blank') named[c.kind === 'step' ? recipe.steps[c.index].label : recipe.ingredients[c.index].name] = c; });
   return { ...size, cell: named };
 };
 const place = ({ row, rowSpan, col, colSpan }) => [row, rowSpan, col, colSpan];
@@ -50,6 +50,7 @@ fry > rest: Rest.`);
   assert.equal(rowCount, 2);
   assert.deepEqual(place(cell.fry), [0, 1, 1, 1]);
   assert.deepEqual(place(cell.rest), [1, 1, 1, 1]);
+  assert.deepEqual(layoutMap(parseRecipe('T\nportions 1\n1 egg\negg > fry: Fry.\nfry > rest: Rest.')).cells.filter(c => c.kind === 'blank').map(place), [[1, 1, 0, 1]]);
 });
 
 test('a pot that waits for a later merge reaches across the columns in between', () => {

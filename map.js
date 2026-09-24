@@ -11,12 +11,13 @@ export function layoutMap({ ingredients, steps }) {
   let rowCount = 0;
   const ingredientRow = ingredients.map(() => null);
   const cellRows = steps.map(() => null);
+  const blankRows = []; // [row, step] for steps that add nothing: they still need a row, with an empty ingredient cell
   const placeRows = s => {
     const first = rowCount;
     pots[s].forEach(placeRows);
     const ownFirst = rowCount;
     added[s].forEach(i => { ingredientRow[i] = rowCount++; });
-    if (pots[s].length === 1 && !added[s].length) rowCount++; // a step that adds nothing still needs a row for its cell
+    if (pots[s].length === 1 && !added[s].length) blankRows.push([rowCount++, s]);
     cellRows[s] = pots[s].length >= 2 ? [first, rowCount - first] : [ownFirst, rowCount - ownFirst];
   };
   placeRows(steps.length - 1);
@@ -35,8 +36,10 @@ export function layoutMap({ ingredients, steps }) {
   };
   const cells = [
     ...ingredients.map((_, i) => ({ kind: 'ingredient', index: i, row: ingredientRow[i], rowSpan: 1, col: 0, colSpan: col[consumerOf.ingredient[i]] })),
+    ...blankRows.map(([row, s]) => ({ kind: 'blank', index: s, row, rowSpan: 1, col: 0, colSpan: col[s] })),
     ...steps.map((_, s) => ({
       kind: 'step', index: s, row: cellRows[s][0], rowSpan: cellRows[s][1], col: col[s], colSpan: endCol(s) - col[s],
+      merges: pots[s].length >= 2,
       continues: pots[s].length === 1,
       continued: consumerOf.step[s] !== null && pots[consumerOf.step[s]].length === 1,
     })),

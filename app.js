@@ -4,6 +4,8 @@ import { layoutMap } from './map.js';
 import { formatAmount, formatOven, formatDuration, clock } from './units.js';
 
 const app = document.getElementById('app');
+const MAP_FONT_PX = [11, 18]; // the map shrinks to fit the screen, never grows past a comfortable size
+const STEP_SCALE = [0.6, 1.15]; // same for the step text, as a multiple of its base size
 const store = {
   get(key, fallback) { const raw = localStorage.getItem(key); return raw === null ? fallback : JSON.parse(raw); },
   set(key, value) { localStorage.setItem(key, JSON.stringify(value)); },
@@ -15,8 +17,12 @@ let audio = null;
 let stepNav = null; // set while a step is shown: direction → move to the neighbouring step
 let shownStep = null; // last step shown, so the next one slides in from the right side
 
+const ICON = {
+  back: '<svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>',
+  map: '<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="4" width="7" height="6" rx="1.5"/><rect x="3" y="14" width="7" height="6" rx="1.5"/><rect x="14" y="4" width="7" height="16" rx="1.5"/></svg>',
+  play: '<svg viewBox="0 0 24 24" width="0.9em" height="0.9em" fill="currentColor"><path d="M7 4.5v15l12-7.5z"/></svg>',
+};
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-const quantity = (ingredient, factor, system) => [formatAmount(ingredient, factor, system), ingredient.name].filter(Boolean).join(' ');
 // Amount and name as two aligned columns; the name spans both when there is no amount.
 const quantityHtml = (ingredient, factor, system, withPrep = false) => {
   const amount = formatAmount(ingredient, factor, system);
@@ -81,7 +87,7 @@ function showRecipe(entry) {
   const oven = recipe.steps.map(s => s.oven).find(Boolean);
   keepAwake(true);
   app.innerHTML = `
-    <header class="bar"><a class="back" href="#/">‹</a></header>
+    <header class="bar"><a class="back" href="#/" aria-label="back">${ICON.back}</a></header>
     <div class="page">
       <h1 class="title">${esc(recipe.title)}</h1>
       ${oven ? `<p class="oven">Oven ${formatOven(oven, system)}</p>` : ''}
@@ -89,7 +95,9 @@ function showRecipe(entry) {
         <div class="seg stepper"><button data-portions="-1">−</button><span>${portions} ${portions === 1 ? 'portion' : 'portions'}</span><button data-portions="1">+</button></div>
         <div class="seg"><button data-units="metric" class="${system === 'metric' ? 'on' : ''}">metric</button><button data-units="imperial" class="${system === 'imperial' ? 'on' : ''}">US</button></div>
       </div>
-      <ul class="ingredients">${recipe.ingredients.map(i => `<li>${quantityHtml(i, factor, system)}</li>`).join('')}</ul>
+      <ul class="ingredients">${recipe.ingredients.map((i, k) =>
+        (i.section && i.section !== (k ? recipe.ingredients[k - 1].section : null) ? `<li class="section">${esc(i.section)}</li>` : '') +
+        `<li>${quantityHtml(i, factor, system)}</li>`).join('')}</ul>
       <div class="map" id="map">${mapHtml(entry, factor, system, current)}</div>
     </div>
     <footer class="bar"><a class="big start" href="#/r/${id}/${current || 1}">${current > 1 ? `Continue at step ${current}` : 'Start cooking'}</a></footer>`;
@@ -105,9 +113,13 @@ function mapHtml({ id, recipe }, factor, system, current) {
   const { colCount, cells } = layoutMap(recipe);
   const html = cells.map(c => {
     const style = `grid-row:${c.row + 1}/span ${c.rowSpan};grid-column:${c.col + 1}/span ${c.colSpan}`;
-    if (c.kind === 'ingredient') return `<div class="cell ingredient" style="${style}">${esc(quantity(recipe.ingredients[c.index], factor, system))}</div>`;
+    if (c.kind === 'blank') return `<div class="cell ingredient" style="${style}"></div>`;
+    if (c.kind === 'ingredient') {
+      const ingredient = recipe.ingredients[c.index], amount = formatAmount(ingredient, factor, system);
+      return `<div class="cell ingredient" style="${style}">${amount ? `<b>${esc(amount)}</b> ` : ''}${esc(ingredient.name)}</div>`;
+    }
     const step = recipe.steps[c.index], n = c.index + 1;
-    const classes = ['cell', 'step', n < current && 'done', n === current && 'current', c.continues && 'continues', c.continued && 'continued'].filter(Boolean).join(' ');
+    const classes = ['cell', 'step', n < current && 'done', n === current && 'current', c.merges && 'merges', c.continues && 'continues', c.continued && 'continued'].filter(Boolean).join(' ');
     return `<a class="${classes}" style="${style}" href="#/r/${id}/${n}">${esc(step.label)}${step.minutes ? `<small>${formatDuration(step.minutes)}</small>` : ''}</a>`;
   }).join('');
   return `<div class="grid" style="grid-template-columns:fit-content(45%) repeat(${colCount - 1}, auto)">${html}</div>`;
@@ -116,12 +128,12 @@ function mapHtml({ id, recipe }, factor, system, current) {
 // The largest font at which no word overflows its cell and the whole map fits the screen; below the minimum it scrolls.
 function fitMap() {
   const grid = app.querySelector('.grid');
-  const budget = window.innerHeight - app.querySelector('header').offsetHeight - app.querySelector('footer').offsetHeight - 24;
+  const budget = app.querySelector('.page').clientHeight - 24; // the visible area between the bars, inside the phone's safe areas
   const fits = size => {
     grid.style.fontSize = `${size}px`;
     return grid.offsetHeight <= budget && [...grid.children].every(c => c.scrollWidth <= c.clientWidth + 1);
   };
-  let lo = 11, hi = 24;
+  let [lo, hi] = MAP_FONT_PX;
   for (let i = 0; i < 6; i++) { const mid = (lo + hi) / 2; if (fits(mid)) lo = mid; else hi = mid; }
   fits(lo);
 }
@@ -143,7 +155,7 @@ function showStep(entry, n) {
   stepNav = d => { const to = n + d; if (to >= 1 && to <= recipe.steps.length) location.hash = `#/r/${id}/${to}`; };
   app.innerHTML = `
     <div class="progress"><i style="width:${(n / recipe.steps.length) * 100}%"></i></div>
-    <header class="bar"><a class="back" href="#/r/${id}">‹</a><span class="count">${n} of ${recipe.steps.length}</span><a class="maplink" href="#/r/${id}/map">map</a></header>
+    <header class="bar"><a class="back" href="#/r/${id}" aria-label="recipe">${ICON.back}</a><span class="count">${n} of ${recipe.steps.length}</span><a class="maplink" href="#/r/${id}/map" aria-label="map">${ICON.map}</a></header>
     <div class="timers" id="timers"></div>
     <main class="stepview ${direction > 0 ? 'enter-next' : direction < 0 ? 'enter-back' : ''}" id="step">
       <p class="label">${esc(step.label)}</p>
@@ -176,7 +188,7 @@ function showStep(entry, n) {
 function fitStep() {
   const main = document.getElementById('step');
   const fits = scale => { main.style.setProperty('--scale', scale); return main.scrollHeight <= main.clientHeight + 1; };
-  let lo = 0.6, hi = 1.8;
+  let [lo, hi] = STEP_SCALE;
   for (let i = 0; i < 7; i++) { const mid = (lo + hi) / 2; if (fits(mid)) lo = mid; else hi = mid; }
   fits(lo);
 }
@@ -209,7 +221,7 @@ function tick() {
   if (button) {
     const running = timers.find(t => t.key === button.dataset.timerFor);
     button.classList.toggle('running', Boolean(running));
-    button.textContent = running ? (running.endsAt <= now ? 'done' : clock((running.endsAt - now) / 1000)) : `▶ ${clock(Number(button.dataset.total))}`;
+    button.innerHTML = running ? (running.endsAt <= now ? 'done' : clock((running.endsAt - now) / 1000)) : `${ICON.play} ${clock(Number(button.dataset.total))}`;
   }
   if (audio && timers.some(t => t.endsAt <= now)) beep();
 }

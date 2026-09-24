@@ -6,13 +6,18 @@ One file per recipe in `recipes/`, named `<id>.txt`; add the id to `recipes/inde
 Title
 portions 2
 
-2 l water
+produce:
 3 cloves garlic, sliced thin
+spices:
 salt
+kitchen:
+2 l water
 
 water + salt > boil: Bring to a rolling boil. ~8 min [large pot]
 boil + garlic > cook: Cook until golden. ~4 min [oven 220 fan]
 ```
+
+A line ending in a colon starts a shopping section for the ingredient lines below it. Use the store's order: produce, meat, fish, dairy, bakery, pantry, spices, frozen, then kitchen for what is never bought (water).
 
 Ingredient line: `amount unit name, prep`. Amount (`2`, `1.5`, `1/2`, `1 1/2`) and unit are optional; unknown units become part of the name (`2 eggs`). Units that convert: g, kg, oz, lb; ml, l, tsp, tbsp, cup; cm, inch. Cups of flour or sugar convert to millilitres, not grams — weigh dry ingredients in grams when converting a US recipe. Names must be unique; use `salt for the water` for a second salt. Prep after the comma shows on the step that uses the ingredient.
 

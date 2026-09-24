@@ -6,6 +6,7 @@ const FRACTION_GLYPHS = { '½': 1 / 2, '⅓': 1 / 3, '⅔': 2 / 3, '¼': 1 / 4, 
 export function parseRecipe(text) {
   const recipe = { title: '', portions: null, ingredients: [], steps: [] };
   const names = new Map();
+  let section = null; // shopping section for the ingredient lines that follow a "produce:" header
   text.split(/\r?\n/).forEach((raw, i) => {
     const line = raw.trim();
     const at = `line ${i + 1}`;
@@ -19,7 +20,9 @@ export function parseRecipe(text) {
       recipe.steps.push(step);
       return;
     }
-    const ingredient = parseIngredient(line, at);
+    const header = line.match(/^([^:]+):$/);
+    if (header) { section = header[1].trim(); return; }
+    const ingredient = { ...parseIngredient(line, at), section };
     if (names.has(ingredient.name.toLowerCase())) throw new Error(`${at}: "${ingredient.name}" is already used as a name`);
     names.set(ingredient.name.toLowerCase(), { kind: 'ingredient', index: recipe.ingredients.length });
     recipe.ingredients.push(ingredient);

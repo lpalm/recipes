@@ -6,11 +6,16 @@ const recipe = (ingredients, steps) => parseRecipe(['T', 'portions 2', ...ingred
 
 test('ingredient amounts: mixed numbers, glyph fractions, unknown units become part of the name', () => {
   const r = recipe(['1 1/2 cups flour, sifted', '2 eggs', '½ tsp chili flakes', 'salt', '2 l water'], ['flour + eggs + chili flakes + salt + water > mix: Mix.']);
-  assert.deepEqual(r.ingredients[0], { name: 'flour', amount: 1.5, unit: 'cup', prep: 'sifted' });
-  assert.deepEqual(r.ingredients[1], { name: 'eggs', amount: 2, unit: null, prep: null });
+  assert.deepEqual(r.ingredients[0], { name: 'flour', amount: 1.5, unit: 'cup', prep: 'sifted', section: null });
+  assert.deepEqual(r.ingredients[1], { name: 'eggs', amount: 2, unit: null, prep: null, section: null });
   assert.equal(r.ingredients[2].amount, 0.5);
-  assert.deepEqual(r.ingredients[3], { name: 'salt', amount: null, unit: null, prep: null });
+  assert.deepEqual(r.ingredients[3], { name: 'salt', amount: null, unit: null, prep: null, section: null });
   assert.equal(r.ingredients[4].unit, 'l');
+});
+
+test('a "produce:" line is a shopping section for the ingredients below it, not an ingredient', () => {
+  const r = recipe(['1 egg', 'produce:', '1 onion', '2 carrots', 'spices:', 'salt'], ['egg + onion + carrots + salt > mix: Mix.']);
+  assert.deepEqual(r.ingredients.map(i => [i.name, i.section]), [['egg', null], ['onion', 'produce'], ['carrots', 'produce'], ['salt', 'spices']]);
 });
 
 test('step line: inputs, time, equipment and oven are split off the instruction', () => {
