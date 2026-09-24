@@ -50,8 +50,9 @@ input[type=search]::placeholder { color: var(--muted); }
 
 .grid { display: grid; column-gap: 6px; grid-auto-rows: minmax(2.3em, auto); line-height: 1.2; }
 .cell { overflow: hidden; overflow-wrap: normal; padding: 4px 8px; display: flex; flex-direction: column; justify-content: center; }
-.cell.ingredient { padding: 4px 10px 4px 0; display: block; align-content: center; }
+.cell.ingredient { padding: 4px 10px 4px 0; flex-direction: row; justify-content: flex-start; align-items: center; gap: 10px; }
 .cell.ingredient.ends { border-bottom: 1px solid var(--line); }
+.cell.ingredient.reaches::after { content: ''; flex: 1; min-width: 16px; border-top: 1px dotted var(--muted); opacity: 0.6; } /* leads past the pots it skips to the step it joins */
 .cell.ingredient b { color: var(--accent); font-variant-numeric: tabular-nums; }
 .cell.step { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; text-align: center; margin: 2px 0; font-weight: 600; transition: transform 0.1s, opacity 0.1s; }
 .cell.step.merges { background: var(--surface-2); }

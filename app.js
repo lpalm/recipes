@@ -119,11 +119,11 @@ function mapHtml({ id, recipe }, factor, system, current) {
   const { colCount, cells } = layoutMap(recipe);
   const html = cells.map(c => {
     const style = `grid-row:${c.row + 1}/span ${c.rowSpan};grid-column:${c.col + 1}/span ${c.colSpan}`;
-    const ingredientClass = c.endsGroup ? 'cell ingredient ends' : 'cell ingredient';
+    const ingredientClass = ['cell', 'ingredient', c.endsGroup && 'ends', c.kind === 'ingredient' && c.colSpan > 1 && 'reaches'].filter(Boolean).join(' ');
     if (c.kind === 'blank') return `<div class="${ingredientClass}" style="${style}"></div>`;
     if (c.kind === 'ingredient') {
       const ingredient = recipe.ingredients[c.index], amount = formatAmount(ingredient, factor, system);
-      return `<div class="${ingredientClass}" style="${style}">${amount ? `<b>${esc(amount)}</b> ` : ''}${esc(ingredient.name)}</div>`;
+      return `<div class="${ingredientClass}" style="${style}"><span>${amount ? `<b>${esc(amount)}</b> ` : ''}${esc(ingredient.name)}</span></div>`;
     }
     const step = recipe.steps[c.index], n = c.index + 1;
     const classes = ['cell', 'step', n < current && 'done', n === current && 'current', c.merges && 'merges', c.continues && 'continues', c.continued && 'continued'].filter(Boolean).join(' ');
