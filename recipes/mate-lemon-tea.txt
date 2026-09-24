@@ -1,0 +1,13 @@
+Mate lemon tea
+portions 6
+
+pantry:
+6 bags mate Leão
+6 packets Splenda
+produce:
+1 lime
+kitchen:
+water
+
+mate Leão + water > steep: Steep the tea bags in hot water. [jug]
+steep + Splenda + lime > sweeten: Stir in the Splenda and the juice of the lime, then chill.

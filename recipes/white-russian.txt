@@ -1,0 +1,12 @@
+White Russian
+portions 1
+
+bar:
+2 oz Kahlúa
+2 oz vodka
+dairy:
+1 oz double cream, or 2 oz single cream
+kitchen:
+ice
+
+Kahlúa + vodka + double cream + ice > build: Build in a short glass over ice. [short glass]

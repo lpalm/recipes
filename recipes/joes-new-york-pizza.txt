@@ -1,0 +1,23 @@
+Joe's New York pizza
+portions 2
+
+pantry:
+177 g All Trumps flour
+2.7 g sugar
+0.38 g active dry yeast
+101 g Nina tomatoes D.O.P
+4 g sugar for the sauce
+dairy:
+90 g Grande low-moisture part-skim mozzarella
+spices:
+4.8 g salt
+kitchen:
+101 g water, try 105
+
+All Trumps flour + water + salt + sugar + active dry yeast > dough: Mix into a dough. [mixer]
+dough > ferment: Room temperature 1.5 hours depending on the ambient temperature, then cold ferment 12 to 48 hours. ~1 h 30 min
+ferment > temper: Before baking, let the dough sit at room temperature. ~1 h 30 min
+Nina tomatoes D.O.P + sugar for the sauce > sauce: Run through a hand food mill (Tellier #3) and stir in the sugar; the sauce is used raw. Less sugar if the tomatoes are strained. [food mill]
+Grande low-moisture part-skim mozzarella > shred: Shred on the Pelican shredder; the grate decides how it melts. [Pelican shredder]
+temper + sauce + shred > build: Stretch to 12 inches, sauce, cheese.
+build > bake: Bake at 625 F measured at the back, about 2 minutes, then finish on a screen for even cooking. ~2 min [pizza oven 625 F]

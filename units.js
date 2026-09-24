@@ -12,7 +12,9 @@ const ALIASES = { cups: 'cup', lbs: 'lb', inch: 'in', inches: 'in' };
 // Words that count rather than measure; shown as written.
 const MEASURE_WORDS = new Set(['pinch', 'pinches', 'handful', 'handfuls', 'clove', 'cloves', 'can', 'cans', 'slice', 'slices',
   'bunch', 'bunches', 'sprig', 'sprigs', 'stick', 'sticks', 'stalk', 'stalks', 'head', 'heads', 'piece', 'pieces', 'leaf', 'leaves',
-  'sheet', 'sheets', 'knob', 'knobs', 'dash', 'splash', 'portion', 'portions']);
+  'sheet', 'sheets', 'knob', 'knobs', 'dash', 'dashes', 'drop', 'drops', 'splash', 'portion', 'portions', 'scoop', 'scoops',
+  'packet', 'packets', 'bag', 'bags', 'cube', 'cubes', 'block', 'blocks', 'pack', 'packs', 'bottle', 'bottles', 'fillet', 'fillets',
+  'ball', 'balls', 'tin', 'tins', 'jar', 'jars', 'tube', 'tubes']);
 const GLYPHS = [[1 / 8, '⅛'], [1 / 4, '¼'], [1 / 3, '⅓'], [3 / 8, '⅜'], [1 / 2, '½'], [5 / 8, '⅝'], [2 / 3, '⅔'], [3 / 4, '¾'], [7 / 8, '⅞']];
 const CUP_STEPS = [0, 1 / 4, 1 / 3, 1 / 2, 2 / 3, 3 / 4, 1];
 
@@ -47,10 +49,12 @@ function cups(ml) {
   return `${fraction(value)} ${value > 1 ? 'cups' : 'cup'}`;
 }
 
+// Spices are weighed in fractions of a gram; those stay in grams even in US mode, where an ounce would round to nothing.
+const grams = (g, converted) => g >= 1000 ? `${trim(g / 1000, 2)} kg` : g < 10 ? `${trim(g, 2)} g` : `${converted ? roundConverted(g, METRIC_WEIGHT_STEPS) : Math.round(g)} g`;
 const SHOW = {
   weight: {
-    metric: (g, converted) => g >= 1000 ? `${trim(g / 1000, 2)} kg` : `${converted ? roundConverted(g, METRIC_WEIGHT_STEPS) : Math.round(g)} g`,
-    imperial: g => { const oz = g / UNITS.oz.base; return oz < 16 ? `${trim(oz, 1)} oz` : `${trim(oz / 16, 1)} lb`; },
+    metric: grams,
+    imperial: g => { const oz = g / UNITS.oz.base; return oz < 0.125 ? grams(g, false) : oz < 16 ? `${trim(oz, 1)} oz` : `${trim(oz / 16, 1)} lb`; },
   },
   volume: {
     metric: (ml, converted) => ml >= 1000 ? `${trim(ml / 1000, 2)} l` : `${converted ? roundConverted(ml, METRIC_VOLUME_STEPS) : trim(ml, 1)} ml`,

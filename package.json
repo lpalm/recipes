@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "test": "node --test test/",
+    "check": "node tools/check.mjs",
     "serve": "node tools/serve.mjs",
     "shots": "node tools/shots.mjs",
     "icons": "node tools/icons.mjs"

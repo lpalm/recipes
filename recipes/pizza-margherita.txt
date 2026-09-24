@@ -1,0 +1,17 @@
+Pizza Margherita
+portions 1
+
+bakery:
+250 g Neapolitan pizza dough
+pantry:
+80 g tomato sauce
+6 g extra virgin olive oil
+produce:
+5 leaves fresh basil
+dairy:
+80 g fresh mozzarella, fior di latte or buffalo, drained and torn in 1 inch pieces
+10 g Parmigiano Reggiano
+
+Neapolitan pizza dough + tomato sauce + fresh basil + fresh mozzarella > build: Stretch the dough, spread the sauce, lay the basil, then the mozzarella.
+build > bake: Bake in the Ooni at about 80% of its maximum. ~2 min [Ooni]
+bake + extra virgin olive oil + Parmigiano Reggiano > finish: Drizzle with oil and grate the Parmigiano over.

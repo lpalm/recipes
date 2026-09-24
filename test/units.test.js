@@ -10,6 +10,8 @@ test('metric scales and keeps the written unit', () => {
   assert.equal(amount(400, 'g', 3, 'metric'), '1.2 kg');
   assert.equal(amount(1, null, 1.5, 'metric'), '1½');
   assert.equal(amount(1, 'cloves', 1 / 3, 'metric'), '⅓ cloves');
+  assert.equal(amount(0.4, 'g', 1, 'metric'), '0.4 g');
+  assert.equal(amount(0.4, 'g', 1, 'imperial'), '0.4 g');
   assert.equal(amount(null, 'g', 2, 'metric'), '');
 });
 

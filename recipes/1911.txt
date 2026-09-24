@@ -1,0 +1,11 @@
+1911 (The Stockade Tavern)
+portions 1
+
+bar:
+0.75 oz rye whiskey
+0.75 oz aged rum
+1 oz Punt e Mes
+1/2 oz Bénédictine
+1 dash mole bitters
+
+rye whiskey + aged rum + Punt e Mes + Bénédictine + mole bitters > stir: Stir with ice and strain into a glass. [mixing glass]

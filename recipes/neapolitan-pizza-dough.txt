@@ -1,0 +1,20 @@
+Neapolitan pizza dough
+portions 1
+
+pantry:
+160 g 00 flour
+0.2 g active dry yeast
+3 g olive oil
+sugar, a pinch
+spices:
+4.5 g salt
+kitchen:
+98 g water, warm
+
+active dry yeast + sugar > bloom: Mix the yeast with a splash of the warm water and a pinch of sugar; let foam 5 to 10 minutes. ~8 min [cup]
+water + salt > brine: Dissolve the salt in the remaining water. [bowl]
+brine + bloom + 00 flour + olive oil > mix: Add the yeast mixture and all the flour and mix by hand until shaggy and uniform.
+mix > knead: Knead about 5 minutes until tacky but cohesive, then rest covered 7 to 10 minutes. ~15 min
+knead > fold: Stretch and fold 4 to 5 times, rest 7 to 10 minutes, and repeat once or twice until smooth. ~20 min
+fold > bulk: Bulk ferment in a container at about 65 F; the dough should barely rise. ~24 h
+bulk > ball: Divide into 250 g balls in oiled containers and ferment 18 hours at about 65 F, then 4 to 6 hours at about 78 F, until soft, puffy and smooth. ~22 h
