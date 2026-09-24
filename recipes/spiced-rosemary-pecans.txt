@@ -1,5 +1,6 @@
 Spiced rosemary pecans
 portions 8
+category Snacks
 
 pantry:
 1 lb unsalted pecans, halves or whole

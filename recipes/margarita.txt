@@ -1,5 +1,6 @@
 Margarita
 portions 1
+category Cocktail
 
 bar:
 3 oz silver tequila

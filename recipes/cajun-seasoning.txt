@@ -1,5 +1,6 @@
 Cajun seasoning
 portions 1
+category Spice mixes
 
 spices:
 1 1/2 tbsp smoked paprika

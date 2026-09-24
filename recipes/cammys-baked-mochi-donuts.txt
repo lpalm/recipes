@@ -1,5 +1,6 @@
 Cammy's baked mochi donuts
 portions 12
+category Dessert
 
 pantry:
 100 g mochiko sweet rice flour

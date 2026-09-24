@@ -1,5 +1,6 @@
 Vegetable fried rice
 portions 4
+category Sides
 
 produce:
 2 cloves garlic, minced

@@ -1,5 +1,6 @@
 Vieux Carré
 portions 1
+category Cocktail
 
 bar:
 3/4 oz rye whiskey

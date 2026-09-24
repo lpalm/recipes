@@ -1,5 +1,6 @@
 Mushroom risotto
 portions 4
+category Non-vegan Mains
 
 produce:
 50 g dried porcini mushrooms

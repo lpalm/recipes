@@ -1,5 +1,6 @@
 Butter chicken
 portions 4
+category Non-vegan Mains
 
 meat:
 1 lb chicken, boneless and skinless, cut in 2 inch pieces

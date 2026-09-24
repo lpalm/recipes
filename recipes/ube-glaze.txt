@@ -1,5 +1,6 @@
 Ube glaze
 portions 12
+category Dessert
 
 pantry:
 2 tbsp ube halaya jam

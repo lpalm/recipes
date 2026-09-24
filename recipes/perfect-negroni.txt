@@ -1,5 +1,6 @@
 Perfect Negroni
 portions 1
+category Cocktail
 
 bar:
 1 oz gin, Gray Whale

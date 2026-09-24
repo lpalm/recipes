@@ -1,5 +1,6 @@
 Beefy barbecue biscuit cups
 portions 4
+category Non-vegan Mains
 
 meat:
 1 lb ground beef

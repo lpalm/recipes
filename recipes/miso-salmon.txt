@@ -1,5 +1,6 @@
 Miso salmon
 portions 2
+category Non-vegan Mains
 
 fish:
 2 salmon fillets, 6 oz each

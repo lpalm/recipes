@@ -1,5 +1,6 @@
 Cheese fondue
 portions 2
+category Non-vegan Mains
 
 dairy:
 200 g Gruyère, or Comté

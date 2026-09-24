@@ -1,5 +1,6 @@
 Rice pilaf
 portions 6
+category Sides
 
 pantry:
 2 2/3 cups low-sodium chicken broth

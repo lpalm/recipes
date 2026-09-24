@@ -1,5 +1,6 @@
 Four cheese rossa pizza
 portions 1
+category Pizza Making
 
 bakery:
 250 g Neapolitan pizza dough

@@ -1,5 +1,6 @@
 Allspice dram
 portions 1
+category Cocktail
 
 bar:
 750 ml white rum

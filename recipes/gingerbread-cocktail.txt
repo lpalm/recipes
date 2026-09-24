@@ -1,5 +1,6 @@
 Gingerbread cocktail
 portions 1
+category Cocktail
 
 bar:
 1 oz ginger liqueur, Giffard Ginger of the Indies

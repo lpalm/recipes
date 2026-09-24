@@ -1,5 +1,6 @@
 Arugula salad
 portions 1
+category Sides
 
 produce:
 40 g arugula

@@ -1,5 +1,6 @@
 Couve for feijoada
 portions 2
+category Sides
 
 produce:
 200 g collard greens, stems removed, sliced very thin

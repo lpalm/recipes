@@ -1,5 +1,6 @@
 Negroni
 portions 1
+category Cocktail
 
 bar:
 40 ml gin

@@ -1,5 +1,6 @@
 Tomato soup
 portions 8
+category Sides
 
 dairy:
 4 tbsp unsalted butter

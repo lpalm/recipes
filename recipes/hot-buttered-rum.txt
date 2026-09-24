@@ -1,5 +1,6 @@
 Hot buttered rum
 portions 1
+category Cocktail
 
 dairy:
 1 tbsp slightly salted butter

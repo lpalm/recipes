@@ -1,5 +1,6 @@
 White chicken chili
 portions 6
+category Non-vegan Mains
 
 meat:
 3 boneless skinless chicken breasts, cut in thirds

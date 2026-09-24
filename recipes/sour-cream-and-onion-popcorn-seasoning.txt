@@ -1,5 +1,6 @@
 Sour cream and onion popcorn seasoning
 portions 1
+category Snacks
 
 pantry:
 2 tbsp powdered milk

@@ -1,5 +1,6 @@
 Popcorn rum
 portions 1
+category Cocktail
 
 pantry:
 4 oz Diet Coke

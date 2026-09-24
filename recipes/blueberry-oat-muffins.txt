@@ -1,5 +1,6 @@
 Blueberry oat muffins
 portions 12
+category Toddler
 
 pantry:
 1 cup rolled oats

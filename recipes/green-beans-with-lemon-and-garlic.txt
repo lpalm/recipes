@@ -1,5 +1,6 @@
 Green beans with lemon and garlic
 portions 6
+category Sides
 
 produce:
 2 lb green beans, ends trimmed

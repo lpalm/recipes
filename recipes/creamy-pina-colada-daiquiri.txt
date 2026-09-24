@@ -1,5 +1,6 @@
 Creamy piña colada daiquiri
 portions 1
+category Cocktail
 
 bar:
 30 ml dark rum

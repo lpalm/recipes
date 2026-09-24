@@ -1,5 +1,6 @@
 Neapolitan pizza dough
 portions 1
+category Pizza Making
 
 pantry:
 160 g 00 flour

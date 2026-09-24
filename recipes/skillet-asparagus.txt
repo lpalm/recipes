@@ -1,5 +1,6 @@
 Skillet asparagus with lemon and Parmigiano
 portions 2
+category Sides
 
 produce:
 8 g garlic, thinly sliced

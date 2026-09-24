@@ -1,5 +1,6 @@
 Chili
 portions 10
+category Non-vegan Mains
 
 meat:
 2 lb ground turkey, 99% fat free

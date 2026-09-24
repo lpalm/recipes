@@ -1,5 +1,6 @@
 Vinagrete
 portions 4
+category Sides
 
 produce:
 1/2 cup onion, diced

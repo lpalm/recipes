@@ -1,5 +1,6 @@
 Refried black beans
 portions 2
+category Sides
 
 pantry:
 1 can refried black beans

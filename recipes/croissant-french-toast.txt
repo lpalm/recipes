@@ -1,5 +1,6 @@
 Croissant French toast
 portions 2
+category Breakfast
 
 dairy:
 2 eggs

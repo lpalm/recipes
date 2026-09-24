@@ -1,5 +1,6 @@
 Butternut squash soup
 portions 4
+category Sides
 
 produce:
 1 small onion, peeled and quartered

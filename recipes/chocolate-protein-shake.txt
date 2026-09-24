@@ -1,5 +1,6 @@
 Chocolate protein shake
 portions 1
+category Creami
 
 pantry:
 30 g chocolate protein powder

@@ -1,5 +1,6 @@
 Scrambled eggs
 portions 1
+category Breakfast
 
 dairy:
 1 egg

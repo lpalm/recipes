@@ -1,5 +1,6 @@
 Vanilla maple walnut liqueur
 portions 1
+category Cocktail
 
 bar:
 1 cup vodka

@@ -44,7 +44,8 @@ input[type=search]::placeholder { color: var(--muted); }
 .ingredients li, .inputs li { display: grid; grid-template-columns: max-content 1fr; gap: 0 12px; padding: 7px 0; border-bottom: 1px solid var(--line); }
 .ingredients b, .inputs b { color: var(--accent); font-variant-numeric: tabular-nums; }
 .only { grid-column: 1 / -1; }
-.ingredients .section { grid-column: 1 / -1; border: 0; padding: 18px 0 2px; color: var(--muted); font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; }
+.section { grid-column: 1 / -1; border: 0; padding: 18px 0 2px; color: var(--muted); font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; }
+.list .section { padding: 24px 0 4px; }
 .start { flex: 1; margin: 0 4px; color: var(--accent-ink); background: var(--accent); font-weight: 600; font-size: 20px; }
 
 .grid { display: grid; column-gap: 6px; grid-auto-rows: minmax(2.3em, auto); line-height: 1.2; }

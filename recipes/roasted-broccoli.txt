@@ -1,5 +1,6 @@
 Roasted broccoli with Parmesan and lemon
 portions 4
+category Sides
 
 produce:
 1 1/2 lb broccoli, cut in even florets

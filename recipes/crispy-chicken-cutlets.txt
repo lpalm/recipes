@@ -1,5 +1,6 @@
 Crispy chicken cutlets
 portions 4
+category Non-vegan Mains
 
 meat:
 1 1/2 lb chicken cutlets

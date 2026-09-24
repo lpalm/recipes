@@ -4,7 +4,7 @@ import { normalizeUnit } from './units.js';
 const FRACTION_GLYPHS = { '½': 1 / 2, '⅓': 1 / 3, '⅔': 2 / 3, '¼': 1 / 4, '¾': 3 / 4, '⅛': 1 / 8, '⅜': 3 / 8, '⅝': 5 / 8, '⅞': 7 / 8 };
 
 export function parseRecipe(text) {
-  const recipe = { title: '', portions: null, ingredients: [], steps: [] };
+  const recipe = { title: '', portions: null, category: null, ingredients: [], steps: [] };
   const names = new Map();
   let section = null; // shopping section for the ingredient lines that follow a "produce:" header
   text.split(/\r?\n/).forEach((raw, i) => {
@@ -14,6 +14,8 @@ export function parseRecipe(text) {
     if (!recipe.title) { recipe.title = line; return; }
     const portions = line.match(/^portions\s+(\d+)$/i);
     if (portions) { recipe.portions = Number(portions[1]); return; }
+    const category = line.match(/^category\s+(.+)$/i);
+    if (category) { recipe.category = category[1].trim(); return; }
     if (line.includes(' > ')) {
       const step = parseStep(line, at, names);
       names.set(step.label.toLowerCase(), { kind: 'step', index: recipe.steps.length });

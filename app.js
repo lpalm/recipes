@@ -69,12 +69,18 @@ function showLibrary() {
       <ul class="list" id="list"></ul>
     </div>`;
   const input = document.getElementById('search'), list = document.getElementById('list');
-  const matches = (e, q) => e.id.includes(q) || (e.recipe && (e.recipe.title.toLowerCase().includes(q) || e.recipe.ingredients.some(i => i.name.toLowerCase().includes(q))));
+  const category = e => (e.recipe && e.recipe.category) || '';
+  const matches = (e, q) => e.id.includes(q) || category(e).toLowerCase().includes(q)
+    || (e.recipe && (e.recipe.title.toLowerCase().includes(q) || e.recipe.ingredients.some(i => i.name.toLowerCase().includes(q))));
+  const row = e => e.recipe
+    ? `<li><a href="#/r/${e.id}"><span class="name">${esc(e.recipe.title)}</span><span class="meta">${e.recipe.steps.length} steps · ${e.recipe.ingredients.length} ingredients</span></a></li>`
+    : `<li class="broken">${esc(e.id)}.txt<small>${esc(e.error)}</small></li>`;
   const render = () => {
     const q = input.value.trim().toLowerCase();
-    list.innerHTML = library.filter(e => !q || matches(e, q)).map(e => e.recipe
-      ? `<li><a href="#/r/${e.id}"><span class="name">${esc(e.recipe.title)}</span><span class="meta">${e.recipe.steps.length} steps · ${e.recipe.ingredients.length} ingredients</span></a></li>`
-      : `<li class="broken">${esc(e.id)}.txt<small>${esc(e.error)}</small></li>`).join('') || '<li class="empty">Nothing found</li>';
+    const groups = new Map();
+    library.filter(e => !q || matches(e, q)).forEach(e => groups.set(category(e), [...(groups.get(category(e)) || []), e]));
+    list.innerHTML = [...groups.keys()].sort((a, b) => a.localeCompare(b))
+      .map(key => (key ? `<li class="section">${esc(key)}</li>` : '') + groups.get(key).map(row).join('')).join('') || '<li class="empty">Nothing found</li>';
   };
   input.addEventListener('input', render);
   render();

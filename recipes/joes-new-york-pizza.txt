@@ -1,5 +1,6 @@
 Joe's New York pizza
 portions 2
+category Pizza Making
 
 pantry:
 177 g All Trumps flour

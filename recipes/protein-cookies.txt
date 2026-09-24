@@ -1,5 +1,6 @@
 Protein cookies
 portions 16
+category Dessert
 
 pantry:
 500 g peanut butter

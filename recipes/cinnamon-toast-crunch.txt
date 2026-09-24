@@ -1,5 +1,6 @@
 Cinnamon Toast Crunch
 portions 1
+category Cocktail
 
 bar:
 2 oz RumChata

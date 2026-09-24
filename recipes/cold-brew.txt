@@ -1,5 +1,6 @@
 Cold brew
 portions 8
+category Breakfast
 
 pantry:
 350 g coffee beans, ground coarse at 10 (mocca)

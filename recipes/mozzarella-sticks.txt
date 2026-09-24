@@ -1,5 +1,6 @@
 Mozzarella sticks
 portions 4
+category Snacks
 
 dairy:
 6 string cheese sticks, cold, cut crosswise in half

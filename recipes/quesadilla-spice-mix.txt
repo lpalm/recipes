@@ -1,5 +1,6 @@
 Quesadilla spice mix
 portions 1
+category Spice mixes
 
 spices:
 2 tbsp paprika, try smoked

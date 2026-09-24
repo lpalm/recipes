@@ -1,5 +1,6 @@
 Beef noodle soup
 portions 8
+category Non-vegan Mains
 
 meat:
 4 lb stew beef

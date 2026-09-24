@@ -1,5 +1,6 @@
 Edamame with miso sesame sauce
 portions 2
+category Sides
 
 frozen:
 1 lb frozen edamame

@@ -1,5 +1,6 @@
 Vermont farmhouse egg cream
 portions 1
+category Cocktail
 
 dairy:
 1 oz half and half

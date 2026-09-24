@@ -1,5 +1,6 @@
 Peanut protein ice cream
 portions 1
+category Creami
 
 dairy:
 1/2 cup full fat Greek yogurt

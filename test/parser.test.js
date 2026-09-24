@@ -14,8 +14,9 @@ test('ingredient amounts: mixed numbers, glyph fractions, unknown units become p
 });
 
 test('a "produce:" line is a shopping section for the ingredients below it, not an ingredient', () => {
-  const r = recipe(['1 egg', 'produce:', '1 onion', '2 carrots', 'spices:', 'salt'], ['egg + onion + carrots + salt > mix: Mix.']);
+  const r = recipe(['category Sides', '1 egg', 'produce:', '1 onion', '2 carrots', 'spices:', 'salt'], ['egg + onion + carrots + salt > mix: Mix.']);
   assert.deepEqual(r.ingredients.map(i => [i.name, i.section]), [['egg', null], ['onion', 'produce'], ['carrots', 'produce'], ['salt', 'spices']]);
+  assert.equal(r.category, 'Sides');
 });
 
 test('step line: inputs, time, equipment and oven are split off the instruction', () => {

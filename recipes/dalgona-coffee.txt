@@ -1,5 +1,6 @@
 Dalgona coffee
 portions 1
+category Drinks
 
 pantry:
 6 g decaf instant coffee

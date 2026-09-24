@@ -1,5 +1,6 @@
 Pão de queijo
 portions 4
+category Snacks
 
 pantry:
 250 g Amafil pão de queijo mix

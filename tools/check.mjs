@@ -11,6 +11,7 @@ for (const id of files) {
   try {
     const recipe = parseRecipe(await readFile(new URL(`${id}.txt`, dir), 'utf8'));
     layoutMap(recipe);
+    if (!recipe.category) console.log(`${id}: no category`);
   } catch (e) {
     bad++;
     console.log(`${id}: ${e.message}`);

@@ -1,5 +1,6 @@
 Ramen Ichiban
 portions 2
+category Non-vegan Mains
 
 pantry:
 2 packs instant ramen, noodles and soup packets

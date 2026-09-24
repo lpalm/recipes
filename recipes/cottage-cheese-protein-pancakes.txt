@@ -1,5 +1,6 @@
 Cottage cheese protein pancakes
 portions 4
+category Breakfast
 
 dairy:
 2 cups cottage cheese

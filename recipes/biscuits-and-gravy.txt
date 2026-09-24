@@ -1,5 +1,6 @@
 Biscuits and gravy
 portions 4
+category Breakfast
 
 meat:
 1 lb hot breakfast sausage

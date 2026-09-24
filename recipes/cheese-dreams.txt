@@ -1,5 +1,6 @@
 Cheese dreams
 portions 8
+category Sides
 
 dairy:
 2 cups sharp Cheddar, finely grated from a block

@@ -1,5 +1,6 @@
 Matcha glaze
 portions 9
+category Dessert
 
 pantry:
 100 g white chocolate

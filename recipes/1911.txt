@@ -1,5 +1,6 @@
 1911 (The Stockade Tavern)
 portions 1
+category Cocktail
 
 bar:
 0.75 oz rye whiskey

@@ -1,5 +1,6 @@
 Oatmeal banana pancakes
 portions 4
+category Breakfast
 
 pantry:
 1 1/2 cups uncooked oatmeal

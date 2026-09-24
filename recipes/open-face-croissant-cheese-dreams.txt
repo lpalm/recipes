@@ -1,5 +1,6 @@
 Open-face croissant cheese dreams
 portions 6
+category Sides
 
 dairy:
 175 g medium cheddar, shredded

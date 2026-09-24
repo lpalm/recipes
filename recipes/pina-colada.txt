@@ -1,5 +1,6 @@
 Piña colada
 portions 1
+category Cocktail
 
 pantry:
 4 oz pineapple juice

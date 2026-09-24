@@ -1,5 +1,6 @@
 Mudslide
 portions 1
+category Cocktail
 
 bar:
 1 oz vodka

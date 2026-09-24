@@ -1,5 +1,6 @@
 Feijoada
 portions 12
+category Non-vegan Mains
 
 pantry:
 1 kg dry black beans

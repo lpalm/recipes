@@ -1,5 +1,6 @@
 Crème brûlée
 portions 4
+category Dessert
 
 dairy:
 500 g heavy cream

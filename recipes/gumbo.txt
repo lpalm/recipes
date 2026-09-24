@@ -1,5 +1,6 @@
 Gumbo
 portions 8
+category Non-vegan Mains
 
 meat:
 2 lb andouille sausage, cut in 1/2 inch slices

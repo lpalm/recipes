@@ -1,5 +1,6 @@
 Detroit pizza
 portions 2
+category Pizza Making
 
 pantry:
 160 g bread flour

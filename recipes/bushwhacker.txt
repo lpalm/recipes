@@ -1,5 +1,6 @@
 Bushwhacker
 portions 1
+category Cocktail
 
 bar:
 1.5 oz Kahlúa

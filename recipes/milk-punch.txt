@@ -1,5 +1,6 @@
 Milk punch
 portions 1
+category Cocktail
 
 dairy:
 3 oz milk

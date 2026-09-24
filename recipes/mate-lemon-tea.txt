@@ -1,5 +1,6 @@
 Mate lemon tea
 portions 6
+category Drinks
 
 pantry:
 6 bags mate Leão

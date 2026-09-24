@@ -1,5 +1,6 @@
 Vegetable stir fry
 portions 2
+category Tofu Vegan Mains
 
 frozen:
 200 g stir fry vegetables

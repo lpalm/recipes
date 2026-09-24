@@ -1,5 +1,6 @@
 Philly cheesesteak
 portions 2
+category Non-vegan Mains
 
 meat:
 350 g thin-sliced beef, shaved ribeye

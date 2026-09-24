@@ -1,5 +1,6 @@
 Caipirinha
 portions 1
+category Cocktail
 
 produce:
 1 1/2 limes, cut in 8 wedges, pith removed, washed

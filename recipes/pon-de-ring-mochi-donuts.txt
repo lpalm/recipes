@@ -1,5 +1,6 @@
 Pon de ring baked mochi donuts
 portions 9
+category Dessert
 
 pantry:
 30 g sugar

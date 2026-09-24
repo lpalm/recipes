@@ -1,5 +1,6 @@
 Beef taco stuffed peppers
 portions 4
+category Non-vegan Mains
 
 meat:
 1 lb lean ground beef
