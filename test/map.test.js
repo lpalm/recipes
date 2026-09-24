@@ -39,6 +39,7 @@ cook + sizzle + parsley > toss: Toss.`);
   assert.equal(cell.cook.continued, false);
   assert.equal(cell.sizzle.continues, false);
   assert.equal(cell.toss.continues, false);
+  assert.deepEqual(['water', 'salt', 'spaghetti', 'olive oil', 'garlic', 'parsley'].map(n => cell[n].endsGroup), [false, true, true, false, true, true]);
 });
 
 test('a step that adds nothing gets a row of its own', () => {

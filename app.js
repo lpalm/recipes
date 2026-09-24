@@ -113,10 +113,11 @@ function mapHtml({ id, recipe }, factor, system, current) {
   const { colCount, cells } = layoutMap(recipe);
   const html = cells.map(c => {
     const style = `grid-row:${c.row + 1}/span ${c.rowSpan};grid-column:${c.col + 1}/span ${c.colSpan}`;
-    if (c.kind === 'blank') return `<div class="cell ingredient" style="${style}"></div>`;
+    const ingredientClass = c.endsGroup ? 'cell ingredient ends' : 'cell ingredient';
+    if (c.kind === 'blank') return `<div class="${ingredientClass}" style="${style}"></div>`;
     if (c.kind === 'ingredient') {
       const ingredient = recipe.ingredients[c.index], amount = formatAmount(ingredient, factor, system);
-      return `<div class="cell ingredient" style="${style}">${amount ? `<b>${esc(amount)}</b> ` : ''}${esc(ingredient.name)}</div>`;
+      return `<div class="${ingredientClass}" style="${style}">${amount ? `<b>${esc(amount)}</b> ` : ''}${esc(ingredient.name)}</div>`;
     }
     const step = recipe.steps[c.index], n = c.index + 1;
     const classes = ['cell', 'step', n < current && 'done', n === current && 'current', c.merges && 'merges', c.continues && 'continues', c.continued && 'continued'].filter(Boolean).join(' ');

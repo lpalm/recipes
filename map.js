@@ -34,9 +34,14 @@ export function layoutMap({ ingredients, steps }) {
     while (c !== null && col[c] === col[s]) c = consumerOf.step[c];
     return c === null ? colCount : col[c];
   };
+  // Rows are grouped by the step that takes them in; the last row of a group gets a rule under it.
+  const stepOfRow = [];
+  ingredients.forEach((_, i) => { stepOfRow[ingredientRow[i]] = consumerOf.ingredient[i]; });
+  blankRows.forEach(([row, s]) => { stepOfRow[row] = s; });
+  const endsGroup = row => stepOfRow[row + 1] !== stepOfRow[row];
   const cells = [
-    ...ingredients.map((_, i) => ({ kind: 'ingredient', index: i, row: ingredientRow[i], rowSpan: 1, col: 0, colSpan: col[consumerOf.ingredient[i]] })),
-    ...blankRows.map(([row, s]) => ({ kind: 'blank', index: s, row, rowSpan: 1, col: 0, colSpan: col[s] })),
+    ...ingredients.map((_, i) => ({ kind: 'ingredient', index: i, row: ingredientRow[i], rowSpan: 1, col: 0, colSpan: col[consumerOf.ingredient[i]], endsGroup: endsGroup(ingredientRow[i]) })),
+    ...blankRows.map(([row, s]) => ({ kind: 'blank', index: s, row, rowSpan: 1, col: 0, colSpan: col[s], endsGroup: endsGroup(row) })),
     ...steps.map((_, s) => ({
       kind: 'step', index: s, row: cellRows[s][0], rowSpan: cellRows[s][1], col: col[s], colSpan: endCol(s) - col[s],
       merges: pots[s].length >= 2,
