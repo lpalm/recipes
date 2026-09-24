@@ -127,7 +127,7 @@ function mapHtml({ id, recipe }, factor, system, current) {
     }
     const step = recipe.steps[c.index], n = c.index + 1;
     const classes = ['cell', 'step', n < current && 'done', n === current && 'current', c.merges && 'merges', c.continues && 'continues', c.continued && 'continued'].filter(Boolean).join(' ');
-    return `<a class="${classes}" style="${style}" href="#/r/${id}/${n}">${esc(step.label)}${step.minutes ? `<small>${formatDuration(step.minutes)}</small>` : ''}</a>`;
+    return `<a class="${classes}" style="${style}" href="#/r/${id}/${n}"><span><i class="n">${n}</i>${esc(step.label)}</span>${step.minutes ? `<small>${formatDuration(step.minutes)}</small>` : ''}</a>`;
   }).join('');
   return `<div class="grid" style="grid-template-columns:fit-content(45%) repeat(${colCount - 1}, auto)">${html}</div>`;
 }

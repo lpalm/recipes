@@ -55,6 +55,7 @@ input[type=search]::placeholder { color: var(--muted); }
 .cell.ingredient.reaches::after { content: ''; flex: 1; min-width: 16px; border-top: 1px dotted var(--muted); opacity: 0.6; } /* leads past the pots it skips to the step it joins */
 .cell.ingredient b { color: var(--accent); font-variant-numeric: tabular-nums; }
 .cell.step { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; text-align: center; margin: 2px 0; font-weight: 600; transition: transform 0.1s, opacity 0.1s; }
+.cell.step .n { font-style: normal; font-weight: 500; font-size: 0.78em; color: var(--muted); margin-right: 0.4em; } /* the cooking order, which a column alone does not show */
 .cell.step.merges { background: var(--surface-2); }
 .cell.step.continues { margin-top: 0; border-top: 1px solid var(--line); border-top-left-radius: 0; border-top-right-radius: 0; }
 .cell.step.continued { margin-bottom: 0; border-bottom: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }

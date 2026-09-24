@@ -12,9 +12,10 @@ export function layoutMap({ ingredients, steps }) {
   const ingredientRow = ingredients.map(() => null);
   const cellRows = steps.map(() => null);
   const blankRows = []; // [row, step] for steps that add nothing: they still need a row, with an empty ingredient cell
+  const firstStep = s => Math.min(s, ...pots[s].map(firstStep));
   const placeRows = s => {
     const first = rowCount;
-    pots[s].forEach(placeRows);
+    [...pots[s]].sort((a, b) => firstStep(a) - firstStep(b)).forEach(placeRows); // pots stack in cooking order, whatever order the step lists them
     const ownFirst = rowCount;
     added[s].forEach(i => { ingredientRow[i] = rowCount++; });
     if (pots[s].length === 1 && !added[s].length) blankRows.push([rowCount++, s]);
