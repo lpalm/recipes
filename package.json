@@ -1,0 +1,14 @@
+{
+  "name": "recipes",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/",
+    "serve": "node tools/serve.mjs",
+    "shots": "node tools/shots.mjs",
+    "icons": "node tools/icons.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.63.0"
+  }
+}
