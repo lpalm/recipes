@@ -70,6 +70,8 @@ export function formatAmount({ amount, unit }, factor, system) {
   if (amount === null) return '';
   const scaled = amount * factor;
   const known = UNITS[unit];
+  // Native cup amounts must keep eighths; kitchen rounding is for converted volumes.
+  if (unit === 'cup' && system === 'imperial') return `${fraction(scaled)} ${scaled > 1 ? 'cups' : 'cup'}`;
   if (!known) return unit ? `${fraction(scaled)} ${unit}` : fraction(scaled);
   return SHOW[known.family][system](scaled * known.base, known.system !== system);
 }

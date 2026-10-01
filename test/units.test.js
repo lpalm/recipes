@@ -33,6 +33,13 @@ test('US units written in the file survive the round trip in US mode', () => {
   assert.equal(amount(12, 'oz', 2, 'imperial'), '1.5 lb');
 });
 
+test('US cup quantities preserve eighths in recipe amounts and portion scaling', () => {
+  assert.equal(amount(3 / 8, 'cup', 1, 'imperial'), '⅜ cup');
+  assert.equal(amount(1 + 1 / 8, 'cup', 1, 'imperial'), '1⅛ cups');
+  assert.equal(amount(1 / 4, 'cup', 1.5, 'imperial'), '⅜ cup');
+  assert.equal(amount(3 / 4, 'cup', 1.5, 'imperial'), '1⅛ cups');
+});
+
 test('imperial picks oz or lb by weight and cups, tbsp or tsp by volume', () => {
   assert.equal(amount(200, 'g', 1, 'imperial'), '7.1 oz');
   assert.equal(amount(600, 'g', 1, 'imperial'), '1.3 lb');
