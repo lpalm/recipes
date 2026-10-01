@@ -13,6 +13,13 @@ test('ingredient amounts: mixed numbers, glyph fractions, unknown units become p
   assert.equal(r.ingredients[4].unit, 'l');
 });
 
+test('calories metadata is parsed as calories per serving', () => {
+  const r = parseRecipe(['T', 'portions 2', 'calories 425', '1 egg', 'egg > cook: Cook.'].join('\n'));
+  assert.equal(r.calories, 425);
+  const without = recipe(['1 egg'], ['egg > cook: Cook.']);
+  assert.equal(without.calories, null);
+});
+
 test('a "produce:" line is a shopping section for the ingredients below it, not an ingredient', () => {
   const r = recipe(['category Sides', '1 egg', 'produce:', '1 onion', '2 carrots', 'spices:', 'salt'], ['egg + onion + carrots + salt > mix: Mix.']);
   assert.deepEqual(r.ingredients.map(i => [i.name, i.section]), [['egg', null], ['onion', 'produce'], ['carrots', 'produce'], ['salt', 'spices']]);
