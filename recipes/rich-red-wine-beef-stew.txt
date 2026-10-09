@@ -3,7 +3,7 @@ portions 12
 category Non-vegan Mains
 
 meat:
-2 kg boneless chuck-eye roast
+2 kg boneless beef shoulder roast, butcher-trimmed (arm roast or cross-rib)
 produce:
 1.1 kg Yukon Gold potatoes, cut into 3 cm chunks
 550 g carrots, cut into 2 cm pieces
@@ -25,15 +25,14 @@ kitchen:
 90 ml cold water
 optional:
 120 g celery, diced
-1 bay leaf
 15 g fresh parsley, chopped
 5 ml red wine vinegar
 
-boneless chuck-eye roast + salt + black pepper > prep beef: Trim gristle, thick fat seams and silverskin. Cut into 4–5 cm cubes, pat dry and season. ~10 min
-prep beef + neutral oil > brown: Set Instant Pot to Sauté (High). Brown beef in batches, then transfer to a plate. ~25 min [8-quart Instant Pot]
-yellow onion + celery + garlic + tomato paste > aromatics: In the same pot cook the onion and optional celery for 5–7 minutes. Add garlic and tomato paste; cook 1 more minute. ~8 min
-aromatics + dry red wine > deglaze: Add wine, scrape the bottom completely clean and simmer until reduced by half. ~5 min
-brown + deglaze + low-sodium beef stock + Worcestershire sauce + MSG + dried thyme + bay leaf > pressure: Return beef with its juices. Add stock and seasonings (bay leaf optional). Seal and cook at High Pressure for 40 minutes; let pressure release naturally. If beef is still chewy, pressure cook 8–10 minutes more and release naturally. ~1 h 15 min
-pressure + Yukon Gold potatoes + carrots > vegetables: Add potatoes and carrots. Sauté (Normal) uncovered, simmering 25–40 minutes and stirring occasionally until tender. Add a splash of water if needed. ~35 min
+boneless beef shoulder roast + salt + black pepper > prep beef: Remove only large exterior fat lumps; leave marbling and small seams. Cut into 4–5 cm cubes, pat dry and season. ~10 min
+prep beef + neutral oil > brown: Sauté (High): brown about one-third of the beef in 2 batches; set aside with the remaining uncooked beef. ~15 min [8-quart Instant Pot]
+yellow onion + celery + garlic + tomato paste > aromatics: Sauté (Normal): cook onion and optional celery 5–7 minutes. Add garlic and tomato paste; cook 1 minute. ~8 min
+aromatics + dry red wine > deglaze: Pour in wine, scrape the bottom completely clean and simmer until reduced by half. Press Cancel. ~5 min
+brown + deglaze + low-sodium beef stock + Worcestershire sauce + MSG + dried thyme > pressure: Add all the beef and juices, stock and seasonings. Seal and cook on High Pressure for 45 minutes. Allow full natural pressure release. If still chewy, cook another 8–10 minutes under pressure and let release naturally. ~1 h 25 min
+pressure + Yukon Gold potatoes + carrots > vegetables: Add potatoes and carrots. On Sauté (Normal), simmer uncovered for 25–40 minutes, stirring occasionally, until tender. Add a splash of water if needed. ~35 min
 cornstarch + cold water > slurry: Whisk until smooth. [bowl]
-vegetables + slurry + fresh parsley + red wine vinegar > finish: Stir in slurry gradually while simmering; cook 1–2 minutes until gravy is thick. Adjust salt, remove bay leaf and add optional parsley and vinegar to taste. ~3 min
+vegetables + slurry + fresh parsley + red wine vinegar > finish: Stir in slurry gradually while simmering; cook 1–2 minutes until gravy is thick. Adjust salt; add optional parsley and vinegar to taste. ~3 min
