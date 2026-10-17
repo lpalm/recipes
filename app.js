@@ -129,7 +129,7 @@ function showRecipe(entry) {
     <header class="bar"><a class="back" href="#/" aria-label="back">${ICON.back}</a></header>
     <div class="page">
       <h1 class="title">${esc(recipe.title)}</h1>
-      ${oven ? `<p class="oven">Oven ${formatOven(oven, system)}</p>` : ''}
+      ${[recipe.calories && `${recipe.calories} cal / serving`, oven && `Oven ${formatOven(oven, system)}`].filter(Boolean).length ? `<p class="oven">${[recipe.calories && `${recipe.calories} cal / serving`, oven && `Oven ${formatOven(oven, system)}`].filter(Boolean).join(' · ')}</p>` : ''}
       <div class="controls">
         <div class="seg stepper"><button data-portions="-1">−</button><button class="portions">${portionsLabel(portions)}</button><button data-portions="1">+</button></div>
         <div class="seg"><button data-units="metric" class="${system === 'metric' ? 'on' : ''}">metric</button><button data-units="imperial" class="${system === 'imperial' ? 'on' : ''}">US</button></div>

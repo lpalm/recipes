@@ -5,6 +5,7 @@ One file per recipe in `recipes/`, named `<id>.txt`; add the id to `recipes/inde
 ```
 Title
 portions 2
+calories 320
 category Sides
 
 produce:
@@ -17,6 +18,8 @@ kitchen:
 water + salt > boil: Bring to a rolling boil. ~8 min [large pot]
 boil + garlic > cook: Cook until golden. ~4 min [oven 220 fan]
 ```
+
+`calories N` is optional and records estimated calories per serving at the recipe's base portion size; the recipe screen shows it as `N cal / serving`.
 
 `category` groups the library; reuse an existing name (Breakfast, Cocktail, Creami, Dessert, Drinks, Non-vegan Mains, Other Vegan Mains, Pizza Making, Sides, Snacks, Spice mixes, Toddler, Tofu Vegan Mains) and it is searchable. A line ending in a colon starts a shopping section for the ingredient lines below it. Use the store's order: produce, meat, fish, dairy, bakery, pantry, spices, frozen, then kitchen for what is never bought (water).
 
