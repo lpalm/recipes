@@ -129,7 +129,7 @@ function showRecipe(entry) {
     <header class="bar"><a class="back" href="#/" aria-label="back">${ICON.back}</a></header>
     <div class="page">
       <h1 class="title">${esc(recipe.title)}</h1>
-      ${oven ? `<p class="oven">Oven ${formatOven(oven, system)}</p>` : ''}
+      ${oven ? `<p class="oven">Oven ${formatOven(oven)}</p>` : ''}
       <div class="controls">
         <div class="seg stepper"><button data-portions="-1">−</button><button class="portions">${portionsLabel(portions)}</button><button data-portions="1">+</button></div>
         <div class="seg"><button data-units="metric" class="${system === 'metric' ? 'on' : ''}">metric</button><button data-units="imperial" class="${system === 'imperial' ? 'on' : ''}">US</button></div>
@@ -210,7 +210,7 @@ function showStep(entry, n) {
   if (!step) { location.replace(`#/r/${id}`); return; }
   const { factor, system } = settings(entry);
   const next = recipe.steps[n];
-  const gear = [...step.equipment, step.oven && `oven ${formatOven(step.oven, system)}`].filter(Boolean).join(' · ');
+  const gear = [...step.equipment, step.oven && `oven ${formatOven(step.oven)}`].filter(Boolean).join(' · ');
   const inputs = step.inputs.map(({ kind, index }) => kind === 'step'
     ? `<li class="from"><b>${esc(stepRange(chainOf(recipe.steps, index)))}</b><span>${esc(recipe.steps[index].label)}</span></li>`
     : `<li>${quantityHtml(recipe.ingredients[index], factor, system, true)}</li>`).join('');

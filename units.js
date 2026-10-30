@@ -1,4 +1,4 @@
-// Scales quantities to the chosen portions and shows them in metric or US units; units of the other system are converted.
+// Scales quantities to the chosen portions in metric or US units; temperatures always use Fahrenheit.
 
 const UNITS = {
   g: { family: 'weight', system: 'metric', base: 1 }, kg: { family: 'weight', system: 'metric', base: 1000 },
@@ -77,9 +77,8 @@ export function formatAmount({ amount, unit }, factor, system) {
 }
 
 // US ovens are marked in 25 °F steps, so 220 °C reads as 425 °F rather than 428.
-export function formatOven({ celsius, fan }, system) {
-  const value = system === 'imperial' ? `${roundTo(celsius * 9 / 5 + 32, 25)} °F` : `${roundTo(celsius, 5)} °C`;
-  return value + (fan ? (system === 'imperial' ? ' convection' : ' fan') : '');
+export function formatOven({ celsius, fan }) {
+  return `${roundTo(celsius * 9 / 5 + 32, 25)} °F${fan ? ' convection' : ''}`;
 }
 
 export function formatDuration(minutes) {

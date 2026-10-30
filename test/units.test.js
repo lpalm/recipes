@@ -51,11 +51,11 @@ test('imperial picks oz or lb by weight and cups, tbsp or tsp by volume', () => 
   assert.equal(amount(1, 'tbsp', 1, 'imperial'), '1 tbsp');
 });
 
-test('oven temperatures land on the 25 °F marks', () => {
-  assert.equal(formatOven({ celsius: 220, fan: true }, 'imperial'), '425 °F convection');
-  assert.equal(formatOven({ celsius: 180, fan: false }, 'imperial'), '350 °F');
-  assert.equal(formatOven({ celsius: 220, fan: true }, 'metric'), '220 °C fan');
-  assert.equal(formatOven({ celsius: (425 - 32) * 5 / 9, fan: false }, 'metric'), '220 °C');
+test('oven temperatures always use Fahrenheit at the 25 °F marks', () => {
+  assert.equal(formatOven({ celsius: 220, fan: true }), '425 °F convection');
+  assert.equal(formatOven({ celsius: 180, fan: false }), '350 °F');
+  assert.equal(formatOven({ celsius: 130, fan: false }), '275 °F');
+  assert.equal(formatOven({ celsius: (425 - 32) * 5 / 9, fan: false }), '425 °F');
 });
 
 test('durations and clocks', () => {

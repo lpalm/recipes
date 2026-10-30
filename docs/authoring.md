@@ -1,6 +1,6 @@
 # Writing a recipe
 
-One file per recipe in `recipes/`, named `<id>.txt`; add the id to `recipes/index.txt`. Write quantities in the units the source uses; the app shows either system and converts the other.
+One file per recipe in `recipes/`, named `<id>.txt`; add the id to `recipes/index.txt`. Write quantities in the units the source uses; the app shows either system and converts the other. Temperatures always display in Fahrenheit, including in metric mode.
 
 ```
 Title
@@ -22,7 +22,7 @@ boil + garlic > cook: Cook until golden. ~4 min [oven 220 fan]
 
 Ingredient line: `amount unit name, prep`. Amount (`2`, `1.5`, `1/2`, `1 1/2`) and unit are optional; unknown units become part of the name (`2 eggs`). Units that convert: g, kg, oz, lb; ml, l, tsp, tbsp, cup; cm, inch. Cups of flour or sugar convert to millilitres, not grams — weigh dry ingredients in grams when converting a US recipe. Names must be unique; use `salt for the water` for a second salt. Prep after the comma shows on the step that uses the ingredient.
 
-Step line, in cooking order: `inputs > label: instruction ~time [equipment]`. Inputs are ingredient names or labels of earlier steps, joined with `+`. `~8 min`, `~1 h 30 min` gives the step a timer. `[oven 220 fan]` is an oven setting in °C (`[oven 425 F]` for Fahrenheit; drop `fan` for conventional); other brackets are equipment.
+Step line, in cooking order: `inputs > label: instruction ~time [equipment]`. Inputs are ingredient names or labels of earlier steps, joined with `+`. `~8 min`, `~1 h 30 min` gives the step a timer. `[oven 220 fan]` is an oven setting in °C (`[oven 425 F]` for Fahrenheit; drop `fan` for conventional); other brackets are equipment. Write temperatures directly in instructions, ingredient prep, or equipment labels (including air fryers) in Fahrenheit.
 
 Rules the parser enforces: every ingredient feeds exactly one step, every step feeds exactly one later step, the last step is the dish.
 
