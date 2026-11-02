@@ -28,6 +28,7 @@ kitchen:
 2 1/4 cups water
 
 ground turkey breast + eggs + panko breadcrumbs + garlic + scallions + ground ginger + kosher salt + fresh cracked pepper > form: Combine in a large mixing bowl and form 4 equal meatballs per portion, about 1.5 oz each. [mixing bowl]
-form + cooking spray > bake: Spray a mini muffin tin liberally, or use a baking sheet, one meatball per cup, and bake. ~15 min [oven 375 F] [mini muffin tin]
-hoisin sauce + reduced sodium soy sauce + rice wine vinegar + cornstarch + water + garlic for the glaze + ginger > glaze: Whisk together in a saucepan and cook over medium, stirring often, until thickened. ~10 min [saucepan]
-glaze + bake + sesame seeds + scallions for garnish > coat: Add the meatballs to the sauce, cook a minute or two, and garnish with sesame seeds and scallions. ~2 min
+form + cooking spray > bake: Lightly spray a broiler-safe metal baking sheet and the meatballs. Leave 2 cm between them; use extra sheets as needed. If lining the sheet, use foil, not parchment. Bake at 375°F, checking from 10 minutes, until the centers reach 150–155°F, about 10–12 minutes. Finish cooking in the broil step. ~10 min [oven 375 F] [metal baking sheet]
+hoisin sauce + reduced sodium soy sauce + rice wine vinegar + cornstarch + water + garlic for the glaze + ginger > glaze: While the meatballs bake, whisk together in a saucepan and cook over medium, stirring often, until thickened. Keep warm. ~10 min [saucepan]
+bake > broil: Remove the tray while the broiler heats on HIGH. Position the meatballs about 6 inches below the element. Broil one tray at a time for 2–4 minutes until browned, watching continuously. Check a few meatballs reach 165°F in the center. If browned before reaching 165°F, finish baking at 375°F. Add the glaze only afterward so it does not burn. ~2 min [broiler on HIGH]
+glaze + broil + sesame seeds + scallions for garnish > coat: Add the meatballs to the sauce, cook a minute or two, and garnish with sesame seeds and scallions. ~2 min
