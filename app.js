@@ -2,11 +2,11 @@
 import { parseRecipe } from './parser.js';
 import { layoutMap, chainOf } from './map.js';
 import { formatAmount, formatOven, formatDuration, clock } from './units.js';
+import { libraryView } from './library.js';
 
 const app = document.getElementById('app');
 const MAP_FONT_PX = [11, 18]; // the map shrinks to fit the screen, never grows past a comfortable size
 const STEP_SCALE = [0.6, 1.15]; // same for the step text, as a multiple of its base size
-const CATEGORY_ORDER = ['Breakfast', 'Non-vegan Mains', 'Other Vegan Mains', 'Tofu Vegan Mains', 'Pizza Making', 'Sides', 'Snacks', 'Toddler', 'Dessert', 'Creami', 'Drinks', 'Cocktail', 'Spice mixes'];
 const HOUR = 3600000;
 const store = {
   get(key, fallback) { const raw = localStorage.getItem(key); return raw === null ? fallback : JSON.parse(raw); },
@@ -61,6 +61,8 @@ function route() {
   stepNav = null;
   if (entry && entry.recipe) {
     store.set('last', location.hash);
+    const recent = store.get('recent', []);
+    if (recent[0] !== entry.id) store.set('recent', [entry.id, ...recent.filter(id => id !== entry.id)]);
     if (parts[2] && parts[2] !== 'map') return showStep(entry, Number(parts[2]));
     showRecipe(entry);
     if (parts[2] === 'map') document.getElementById('map').scrollIntoView();
@@ -80,31 +82,15 @@ function showLibrary() {
     </div>`;
   const input = document.getElementById('search'), list = document.getElementById('list');
   const row = e => `<li><a href="#/r/${e.id}"><span class="name">${esc(e.recipe.title)}</span><span class="meta">${e.recipe.steps.length} steps · ${e.recipe.ingredients.length} ingredients</span></a></li>`;
-  const header = (key, count, open) => `<li class="section"><button data-toggle="${esc(key)}"><span>${esc(key)}</span><small>${count}</small>${open === undefined ? '' : `<i class="chev${open ? ' open' : ''}">${ICON.chevron}</i>`}</button></li>`;
+  const header = (key, count, open) => `<li class="section"><button${open === undefined ? '' : ` data-toggle="${esc(key)}"`}><span>${esc(key)}</span><small>${count}</small>${open === undefined ? '' : `<i class="chev${open ? ' open' : ''}">${ICON.chevron}</i>`}</button></li>`;
   const broken = library.filter(e => !e.recipe).map(e => `<li class="broken">${esc(e.id)}.txt<small>${esc(e.error)}</small></li>`).join('');
-  // Search ranks by where the words appear: title first, then category, ingredients, steps.
-  const TIERS = [
-    ['Title', e => e.recipe.title], ['Category', e => e.recipe.category || ''],
-    ['Ingredients', e => e.recipe.ingredients.map(i => i.name).join('\n')],
-    ['Steps', e => e.recipe.steps.map(s => [s.label, s.instruction, ...s.equipment].join('\n')).join('\n')],
-  ];
-  const rank = c => { const i = CATEGORY_ORDER.indexOf(c); return i < 0 ? CATEGORY_ORDER.length : i; };
   const render = () => {
-    const q = input.value.trim().toLowerCase();
-    if (q) {
-      const seen = new Set();
-      list.innerHTML = broken + (TIERS.map(([name, text]) => {
-        const hits = library.filter(e => e.recipe && !seen.has(e) && text(e).toLowerCase().includes(q));
-        hits.forEach(e => seen.add(e));
-        return hits.length ? header(name, hits.length) + hits.map(row).join('') : '';
-      }).join('') || '<li class="empty">Nothing found</li>');
-      return;
-    }
+    const q = input.value.trim();
+    const { recent, groups } = libraryView(library, q, store.get('recent', []));
     const open = store.get('open', {}); // categories start folded; what you unfold stays unfolded
-    const groups = new Map();
-    library.filter(e => e.recipe).forEach(e => { const key = e.recipe.category || ''; groups.set(key, [...(groups.get(key) || []), e]); });
-    list.innerHTML = broken + [...groups.keys()].sort((a, b) => rank(a) - rank(b) || a.localeCompare(b))
-      .map(key => header(key, groups.get(key).length, Boolean(open[key])) + (open[key] ? groups.get(key).map(row).join('') : '')).join('');
+    list.innerHTML = broken + ((recent.length ? header('Recently opened', recent.length) + recent.map(row).join('') : '') +
+      groups.map(({ name, entries }) => header(name, entries.length, q ? undefined : Boolean(open[name])) +
+        (q || open[name] ? entries.map(row).join('') : '')).join('') || (q ? '<li class="empty">Nothing found</li>' : ''));
   };
   input.addEventListener('input', render);
   list.addEventListener('click', e => {
