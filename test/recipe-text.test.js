@@ -25,6 +25,14 @@ test('instruction amounts and ranges scale without changing temperatures, times 
   assert.equal(formatText('{1/2 cup} water', 0.5, 'metric'), '59.15 ml water');
 });
 
+test('measurements written with a or an must declare scaling too', () => {
+  for (const text of ['a cup of milk', 'an ounce of cheese', 'a tbsp at a time', 'a teaspoon of vanilla', 'a pinch of sugar']) {
+    assert.throws(() => parseText(text), /unmarked quantity/, text);
+  }
+  assert.equal(formatText('Add {1 cup} milk, {=1 tbsp} at a time.', 2, 'imperial'), 'Add 2 cups milk, 1 tbsp at a time.');
+  assert.equal(formatText('Combine in a jar with a lid.', 2, 'metric'), 'Combine in a jar with a lid.');
+});
+
 test('ambiguous or malformed prose quantities fail instead of silently remaining unchanged', () => {
   for (const text of ['or 180 g cream', 'two small jars', 'twenty grams', 'half a lemon', '{2 grams}', '{2 to 1 g}', '{1/0 g}', '{=}', '{2 g', '2 g}']) {
     assert.throws(() => parseText(text), undefined, text);

@@ -22,7 +22,7 @@ boil + garlic > cook: Cook until golden. ~4 min [oven 220 fan]
 
 Ingredient line: `amount unit name, prep`. Amount (`2`, `1.5`, `1/2`, `1 1/2`) and unit are optional; unknown units become part of the name (`2 eggs`). Units that convert: g, kg, oz, lb; ml, l, tsp, tbsp, cup; cm, inch. Cups of flour or sugar convert to milliliters, not grams; weigh dry ingredients in grams when converting a US recipe. Names must be unique; use `salt for the water` for a second salt. Prep after the comma shows on the step that uses the ingredient.
 
-Every number in prep or instructions must declare its scaling. Use `{180 g}` for an amount that changes with portions, including substitutes, total package counts and quantities mentioned in instructions. Use `{=15 oz}` for a fixed package size, time, temperature, ratio or per-piece measurement. Number words such as `two` and `half` follow the same rule. The parser rejects unmarked numbers. Examples:
+Every number in prep or instructions must declare its scaling. Use `{180 g}` for an amount that changes with portions, including substitutes, total package counts and quantities mentioned in instructions. Use `{=15 oz}` for a fixed package size, time, temperature, ratio or per-piece measurement. Number words such as `two` and `half`, and measurements such as `a cup` or `a pinch`, follow the same rule. The parser rejects these unmarked quantities. Examples:
 
 ```
 100 g heavy cream, or {180 g} half-and-half
@@ -30,9 +30,16 @@ Every number in prep or instructions must declare its scaling. Use `{180 g}` for
 1 bag rice, {=175 to 200 g} per bag
 ```
 
-In instructions, `add {2 to 3 tbsp} jam` scales both ends of the range; `bake at {=350°F} for {=15 minutes}` stays fixed. A proportional instruction such as `use {=half} the sauce` stays proportional as the sauce amount changes. Keep repeated amounts in the ingredient list and refer to the ingredient in prose instead of duplicating its quantity. Use extra pans, containers or batches when increasing portions; pan sizes and per-piece sizes stay fixed.
+In instructions, `add {2 to 3 tbsp} jam` scales both ends of the range; `bake at {=350°F} for {=15 minutes}` stays fixed. A proportional instruction such as `use {=half} the sauce` stays proportional as the sauce amount changes. `Add the water {=1 tbsp} at a time` keeps each addition fixed while the ingredient list supplies the scaled total. Keep repeated amounts in the ingredient list and refer to the ingredient in prose instead of duplicating its quantity. Use extra pans, containers or batches when increasing portions; pan sizes and per-piece sizes stay fixed.
 
-`npm test` validates all recipe text as well as the scaling regressions. `npm run check` also validates each recipe's cooking map. Ingredient amounts retain small fractions and decimal precision instead of rounding to spoon-size steps.
+Before adding or changing a recipe:
+
+1. Match every ingredient, substitute and amount to the source, including its base portions. Never invent an omitted amount or silently label it "to taste"; resolve it with the recipe owner.
+2. Put each total amount at the start of its ingredient line. Mark any remaining quantities in prep or instructions as scalable or fixed using the rules above. Do not mark a batch total fixed just to pass validation.
+3. Compare the base recipe and double portions: all ingredient totals, substitutes, counts and ranges must double; times, temperatures, package sizes and per-piece sizes must stay fixed. Check metric and US display.
+4. Run `npm run validate` before committing or publishing. It runs the parser, map, unit, rendered-app and recipe validation tests, then checks every recipe's cooking map and index.
+
+The checks catch unmarked quantities and scaling regressions; source review determines whether a quantity or substitution is correct. Ingredient amounts retain small fractions and decimal precision instead of rounding to spoon-size steps.
 
 Step line, in cooking order: `inputs > label: instruction ~time [equipment]`. Inputs are ingredient names or labels of earlier steps, joined with `+`. `~8 min`, `~1 h 30 min` gives the step a timer. `[oven 220 fan]` is an oven setting in °C (`[oven 425 F]` for Fahrenheit; drop `fan` for conventional); other brackets are equipment. Write temperatures directly in instructions, ingredient prep, or equipment labels (including air fryers) in Fahrenheit.
 
@@ -44,4 +51,4 @@ Converting a recipe:
 - Order the steps as you would cook them; the map is derived from the inputs, the cooking sequence from the line order.
 - Prep that takes real time (marinate, rise) is its own step; otherwise it goes after the comma.
 - Preheating is not a step: the recipe screen shows the oven setting of the first step that has one.
-- Amounts that don't scale (`salt`) get no number.
+- Omit a number only for an intentionally unmeasured amount, such as `salt, to taste` or oil for greasing a pan. A missing source quantity is unresolved recipe data, not a fixed amount.

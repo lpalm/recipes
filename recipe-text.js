@@ -3,11 +3,13 @@ import { formatAmount, normalizeUnit, readNumber } from './units.js';
 
 const UNMARKED_NUMBER = /\d|[½⅓⅔¼¾⅛⅜⅝⅞]|\b(?:zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|thousand|dozen|both|half|quarter|third)\b/i;
 
+const UNMARKED_MEASURE = /\b(?:a|an)\s+(?:g|kg|oz|lb|ml|l|tsp|tbsp|cup|teaspoon|tablespoon|ounce|pound|gram|kilogram|milliliter|liter|pint|quart|gallon|cm|inch|pinch|dash)\b/i;
+
 export function parseText(text, at = 'text') {
   return text.split(/(\{[^{}]*\})/).filter(Boolean).map(part => {
     if (!part.startsWith('{') || !part.endsWith('}')) {
       if (/[{}]/.test(part)) throw new Error(`${at}: malformed quantity annotation`);
-      if (UNMARKED_NUMBER.test(part.replace(/\bhalf-and-half\b/gi, ''))) throw new Error(`${at}: unmarked quantity in "${part.trim()}"; use {amount unit} to scale or {=text} to keep fixed`);
+      if (UNMARKED_NUMBER.test(part.replace(/\bhalf-and-half\b/gi, '')) || UNMARKED_MEASURE.test(part)) throw new Error(`${at}: unmarked quantity in "${part.trim()}"; use {amount unit} to scale or {=text} to keep fixed`);
       return part;
     }
     const value = part.slice(1, -1).trim();

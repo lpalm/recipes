@@ -6,13 +6,13 @@ pantry:
 160 g 00 flour
 0.2 g active dry yeast
 3 g olive oil
-sugar, a pinch
+1 pinch sugar
 spices:
 4.5 g salt
 kitchen:
 98 g water, warm
 
-active dry yeast + sugar + water + salt + 00 flour + olive oil > mix: Foam the yeast in a splash of the warm water with a pinch of sugar {=5} to {=10} minutes; dissolve the salt in the rest of the water, add the yeast, all the flour and the oil and mix by hand until shaggy and uniform. ~8 min [bowl]
+active dry yeast + sugar + water + salt + 00 flour + olive oil > mix: Foam the yeast in a splash of the warm water with the sugar {=5} to {=10} minutes; dissolve the salt in the rest of the water, add the yeast, all the flour and the oil and mix by hand until shaggy and uniform. ~8 min [bowl]
 mix > knead: Knead about {=5} minutes until tacky but cohesive and rest covered {=7} to {=10} minutes; stretch and fold {=4} to {=5} times, rest {=7} to {=10} minutes, and repeat once or twice until smooth. ~35 min
 knead > bulk: Bulk ferment in a container at about {=65} F; the dough should barely rise. ~24 h
 bulk > ball: Divide into {=250} g balls in oiled containers and ferment {=18} hours at about {=65} F, then {=4} to {=6} hours at about {=78} F, until soft, puffy and smooth. ~22 h

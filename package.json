@@ -5,6 +5,7 @@
   "scripts": {
     "test": "node --test test/",
     "check": "node tools/check.mjs",
+    "validate": "npm test && npm run check",
     "serve": "node tools/serve.mjs",
     "shots": "node tools/shots.mjs",
     "icons": "node tools/icons.mjs"
