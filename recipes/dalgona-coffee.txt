@@ -6,7 +6,7 @@ pantry:
 6 g decaf instant coffee
 12 g sugar
 dairy:
-full fat milk, cow or oat
+300 ml full fat milk, cow or oat
 kitchen:
 15 g hot water
 ice

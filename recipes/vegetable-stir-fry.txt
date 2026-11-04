@@ -15,7 +15,7 @@ pantry:
 produce:
 4 cloves garlic, sliced thin
 spices:
-ginger, powder or fresh
+1/2 tsp ginger, ground, or {2 tsp} finely grated fresh ginger
 kitchen:
 125 ml water
 

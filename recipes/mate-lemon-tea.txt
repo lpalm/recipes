@@ -8,6 +8,6 @@ pantry:
 produce:
 1 lime
 kitchen:
-water
+1.2 l water
 
 mate Leão + water + Splenda + lime > steep: Steep the bags in hot water, stir in the Splenda and the juice of the lime, then chill. [jug]

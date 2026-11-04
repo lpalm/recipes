@@ -5,6 +5,6 @@ category Breakfast
 pantry:
 350 g coffee beans, ground coarse at {=10} (mocca)
 kitchen:
-water
+8 cups water
 
-coffee beans + water > steep: Coffee into the paper filter bag in the Toddy maker, water over it until the top is {=half} full, then steep at room temperature and drain into the glass jug. ~18 h [Toddy maker]
+coffee beans + water > steep: Put the coffee into the paper filter bag in the Toddy maker and pour the measured water over the grounds. Steep at room temperature, then drain into the glass jug. For larger quantities, split the coffee and water proportionally across separate batches. ~18 h [Toddy maker]
