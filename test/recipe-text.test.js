@@ -22,7 +22,7 @@ test('total package counts scale while the amount in each package stays fixed', 
 test('instruction amounts and ranges scale without changing temperatures, times or piece sizes', () => {
   const text = 'Add {2 to 3 tbsp} jam and {1/8 tsp} extract. Bake {=1 inch} pieces at {=350°F} for {=15 minutes}.';
   assert.equal(formatText(text, 2, 'imperial'), 'Add 4 to 6 tbsp jam and ¼ tsp extract. Bake 1 inch pieces at 350°F for 15 minutes.');
-  assert.equal(formatText('{1/2 cup} water', 0.5, 'metric'), '59.15 ml water');
+  assert.equal(formatText('{1/2 cup} water', 0.5, 'metric'), '59.2 ml water');
 });
 
 test('measurements written with a or an must declare scaling too', () => {

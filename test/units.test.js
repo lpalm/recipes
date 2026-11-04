@@ -25,14 +25,19 @@ test('metric scales and keeps the written unit', () => {
   assert.equal(amount(null, 'g', 2, 'metric'), '');
 });
 
-test('conversion preserves small and fractional quantities instead of rounding them to kitchen steps', () => {
-  assert.equal(amount(1 / 8, 'tsp', 1, 'metric'), '0.61625 ml');
-  assert.equal(amount(1 / 8, 'tsp', 2, 'metric'), '1.2325 ml');
-  assert.equal(amount(1, 'tbsp', 1, 'metric'), '14.79 ml');
-  assert.equal(amount(1, 'cup', 1, 'metric'), '236.6 ml');
-  assert.equal(amount(8, 'oz', 1, 'metric'), '226.8 g');
-  assert.equal(amount(1, 'lb', 1, 'metric'), '453.6 g');
+test('converted amounts use at most three significant digits after scaling, preserving small quantities', () => {
+  assert.equal(amount(1 / 8, 'tsp', 1, 'metric'), '0.616 ml');
+  assert.equal(amount(1 / 8, 'tsp', 2, 'metric'), '1.23 ml');
+  assert.equal(amount(1 / 2, 'tsp', 1, 'metric'), '2.47 ml');
+  assert.equal(amount(1, 'tbsp', 1, 'metric'), '14.8 ml');
+  assert.equal(amount(1, 'cup', 1, 'metric'), '237 ml');
+  assert.equal(amount(6, 'cup', 1, 'metric'), '1.42 l');
+  assert.equal(amount(8, 'oz', 1, 'metric'), '227 g');
+  assert.equal(amount(1, 'lb', 1, 'metric'), '454 g');
+  assert.equal(amount(1, 'lb', 2, 'metric'), '907 g');
   assert.equal(amount(2, 'in', 1, 'metric'), '5.08 cm');
+  assert.equal(amount(100, 'ml', 1, 'imperial'), '0.423 cup');
+  assert.equal(amount(0.0000123456, 'g', 1, 'metric'), '0.0000123 g');
 });
 
 test('US units written in the file survive the round trip in US mode', () => {
@@ -66,6 +71,7 @@ test('fraction formatting does not round decimal amounts to a nearby fraction or
   assert.equal(fraction(1.3), '1.3');
   assert.equal(fraction(2.98), '2.98');
   assert.equal(fraction(0.005), '0.005');
+  assert.equal(fraction(1.23456), '1.23');
 });
 
 test('oven temperatures always use Fahrenheit at the 25 °F marks', () => {

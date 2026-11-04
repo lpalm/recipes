@@ -25,7 +25,7 @@ export function normalizeUnit(word) {
   return MEASURE_WORDS.has(word) ? word : null;
 }
 
-const decimal = x => String(Number(x.toPrecision(6)));
+const decimal = new Intl.NumberFormat('en-US', { maximumSignificantDigits: 3, useGrouping: false }).format;
 const roundTo = (x, step) => Number((Math.round(x / step) * step).toFixed(4));
 
 // Only exact fractions get glyphs; rounding nearby amounts can hide a portion change.

@@ -39,7 +39,7 @@ Before adding or changing a recipe:
 3. Compare the base recipe and double portions: all ingredient totals, substitutes, counts and ranges must double; times, temperatures, package sizes and per-piece sizes must stay fixed. Check metric and US display.
 4. Run `npm run validate` before committing or publishing. It runs the parser, map, unit, rendered-app and recipe validation tests, then checks every recipe's cooking map and index.
 
-The checks catch unmarked quantities and scaling regressions; source review determines whether a quantity or substitution is correct. Ingredient amounts retain small fractions and decimal precision instead of rounding to spoon-size steps.
+The checks catch unmarked quantities and scaling regressions; source review determines whether a quantity or substitution is correct. Keep source amounts at full precision: scaling and conversion happen before display rounding. Decimal quantities display at most three significant digits, while exact kitchen fractions stay fractions.
 
 Step line, in cooking order: `inputs > label: instruction ~time [equipment]`. Inputs are ingredient names or labels of earlier steps, joined with `+`. `~8 min`, `~1 h 30 min` gives the step a timer. `[oven 220 fan]` is an oven setting in °C (`[oven 425 F]` for Fahrenheit; drop `fan` for conventional); other brackets are equipment. Write temperatures directly in instructions, ingredient prep, or equipment labels (including air fryers) in Fahrenheit.
 

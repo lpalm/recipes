@@ -69,7 +69,7 @@ cream + sauce + spice + beans > mix: Add {2 to 3 tbsp} water. Heat for {=5 minut
   assert.ok(html.includes('<b>200 g</b><span>cream<i>, or 360 g half-and-half</i>'));
   assert.ok(html.includes('<b>2.6 kg</b><span>sauce<i>, 4 small jars</i>'));
   assert.ok(html.includes('15 oz per can'));
-  assert.ok(html.includes('Add 59.16 to 88.74 ml water. Heat for 5 minutes.'));
+  assert.ok(html.includes('Add 59.2 to 88.7 ml water. Heat for 5 minutes.'));
   assert.doesNotMatch(html, /[{}]/);
 
   navigate('#/r/sample');
