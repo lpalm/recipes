@@ -4,6 +4,16 @@ import { formatAmount, formatOven, formatDuration, clock, fraction } from '../un
 
 const amount = (n, unit, factor, system) => formatAmount({ amount: n, unit }, factor, system);
 
+test('native spoon fractions and ounce amounts do not collapse before or after scaling', () => {
+  assert.equal(amount(1 / 8, 'tsp', 1, 'imperial'), '⅛ tsp');
+  assert.equal(amount(1 / 8, 'tsp', 2, 'imperial'), '¼ tsp');
+  assert.equal(amount(1 / 8, 'tsp', 0.5, 'imperial'), '0.0625 tsp');
+  assert.equal(amount(1 / 8, 'tbsp', 1, 'imperial'), '⅛ tbsp');
+  assert.equal(amount(0.75, 'oz', 1, 'imperial'), '0.75 oz');
+  assert.equal(amount(0.35, 'oz', 2, 'imperial'), '0.7 oz');
+  assert.equal(amount(25, 'g', 0.5, 'metric'), '12.5 g');
+});
+
 test('metric scales and keeps the written unit', () => {
   assert.equal(amount(200, 'g', 1.5, 'metric'), '300 g');
   assert.equal(amount(1.5, 'kg', 1 / 3, 'metric'), '500 g');
@@ -15,20 +25,20 @@ test('metric scales and keeps the written unit', () => {
   assert.equal(amount(null, 'g', 2, 'metric'), '');
 });
 
-test('US units written in the file convert to metric at kitchen rounding', () => {
-  assert.equal(amount(1, 'tsp', 1, 'metric'), '5 ml');
-  assert.equal(amount(1, 'tsp', 0.5, 'metric'), '2.5 ml');
-  assert.equal(amount(1, 'tbsp', 1, 'metric'), '15 ml');
-  assert.equal(amount(1, 'cup', 1, 'metric'), '240 ml');
-  assert.equal(amount(8, 'oz', 1, 'metric'), '225 g');
-  assert.equal(amount(1, 'lb', 1, 'metric'), '455 g');
-  assert.equal(amount(2, 'in', 1, 'metric'), '5.1 cm');
+test('conversion preserves small and fractional quantities instead of rounding them to kitchen steps', () => {
+  assert.equal(amount(1 / 8, 'tsp', 1, 'metric'), '0.61625 ml');
+  assert.equal(amount(1 / 8, 'tsp', 2, 'metric'), '1.2325 ml');
+  assert.equal(amount(1, 'tbsp', 1, 'metric'), '14.79 ml');
+  assert.equal(amount(1, 'cup', 1, 'metric'), '236.6 ml');
+  assert.equal(amount(8, 'oz', 1, 'metric'), '226.8 g');
+  assert.equal(amount(1, 'lb', 1, 'metric'), '453.6 g');
+  assert.equal(amount(2, 'in', 1, 'metric'), '5.08 cm');
 });
 
 test('US units written in the file survive the round trip in US mode', () => {
   assert.equal(amount(1, 'cup', 1, 'imperial'), '1 cup');
   assert.equal(amount(0.25, 'cup', 1, 'imperial'), '¼ cup');
-  assert.equal(amount(2, 'tsp', 1.5, 'imperial'), '1 tbsp');
+  assert.equal(amount(2, 'tsp', 1.5, 'imperial'), '3 tsp');
   assert.equal(amount(1, 'lb', 1, 'imperial'), '1 lb');
   assert.equal(amount(12, 'oz', 2, 'imperial'), '1.5 lb');
 });
@@ -40,15 +50,22 @@ test('US cup quantities preserve eighths in recipe amounts and portion scaling',
   assert.equal(amount(3 / 4, 'cup', 1.5, 'imperial'), '1⅛ cups');
 });
 
-test('imperial picks oz or lb by weight and cups, tbsp or tsp by volume', () => {
-  assert.equal(amount(200, 'g', 1, 'imperial'), '7.1 oz');
-  assert.equal(amount(600, 'g', 1, 'imperial'), '1.3 lb');
-  assert.equal(amount(150, 'ml', 1, 'imperial'), '⅔ cup');
-  assert.equal(amount(2, 'l', 1, 'imperial'), '8½ cups');
-  assert.equal(amount(30, 'ml', 1, 'imperial'), '2 tbsp');
-  assert.equal(amount(5, 'ml', 1, 'imperial'), '1 tsp');
-  assert.equal(amount(3, 'cm', 1, 'imperial'), '1¼ in');
+test('conversions use the matching physical dimension and preserve the scaled amount', () => {
+  assert.equal(amount(28.35, 'g', 2, 'imperial'), '2 oz');
+  assert.equal(amount(453.6, 'g', 2, 'imperial'), '2 lb');
+  assert.equal(amount(236.6, 'ml', 2, 'imperial'), '2 cups');
+  assert.equal(amount(14.79, 'ml', 2, 'imperial'), '2 tbsp');
+  assert.equal(amount(4.93, 'ml', 0.5, 'imperial'), '½ tsp');
+  assert.equal(amount(2.54, 'cm', 2, 'imperial'), '2 in');
   assert.equal(amount(1, 'tbsp', 1, 'imperial'), '1 tbsp');
+});
+
+test('fraction formatting does not round decimal amounts to a nearby fraction or whole number', () => {
+  assert.equal(fraction(1 / 3), '⅓');
+  assert.equal(fraction(0.33), '0.33');
+  assert.equal(fraction(1.3), '1.3');
+  assert.equal(fraction(2.98), '2.98');
+  assert.equal(fraction(0.005), '0.005');
 });
 
 test('oven temperatures always use Fahrenheit at the 25 °F marks', () => {
@@ -64,7 +81,4 @@ test('durations and clocks', () => {
   assert.equal(formatDuration(45), '45 min');
   assert.equal(clock(240), '4:00');
   assert.equal(clock(5400), '1:30:00');
-  assert.equal(fraction(0.33), '⅓');
-  assert.equal(fraction(1.3), '1.3');
-  assert.equal(fraction(2.98), '3');
 });

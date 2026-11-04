@@ -18,5 +18,5 @@ salted water
 ice water
 
 green beans + salted water + ice water > blanch: Blanch in well-salted boiling water until bright green and tender-crisp, then drain and shock in ice water. ~2 min [stock pot]
-extra virgin olive oil + butter + garlic + red pepper flakes > sizzle: Heat a large heavy skillet over medium, add the oil and butter, then the garlic and pepper flakes; sauté until fragrant, about 30 seconds. [heavy skillet]
+extra virgin olive oil + butter + garlic + red pepper flakes > sizzle: Heat a large heavy skillet over medium, add the oil and butter, then the garlic and pepper flakes; sauté until fragrant, about {=30} seconds. [heavy skillet]
 sizzle + blanch + lemon zest + salt and freshly ground black pepper > toss: Add the beans and sauté until coated and heated through, then add the lemon zest and season. ~5 min

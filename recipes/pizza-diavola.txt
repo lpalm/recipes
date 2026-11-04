@@ -11,9 +11,9 @@ pantry:
 dairy:
 80 g mozzarella, torn small
 meat:
-35 g spicy soppressata, 4 to 6 thin slices
+35 g spicy soppressata, {4 to 6} thin slices
 produce:
 4 leaves fresh basil
 
-Neapolitan pizza dough + tomato sauce + mozzarella + spicy soppressata + olive oil > bake: Spread the sauce leaving a 1 cm border, mozzarella sparingly, the soppressata, a drizzle of oil, and bake in the Ooni at about 80% of its maximum. ~2 min [Ooni]
+Neapolitan pizza dough + tomato sauce + mozzarella + spicy soppressata + olive oil > bake: Make a dough ball for each portion. Stretch each and distribute the toppings: spread the sauce leaving a {=1} cm border, mozzarella sparingly, the soppressata, a drizzle of oil, and bake in the Ooni at about {=80}% of its maximum. ~2 min [Ooni]
 bake + Calabrian chili oil + fresh basil > finish: Drizzle with the chili oil and add the basil.

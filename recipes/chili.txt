@@ -3,13 +3,13 @@ portions 10
 category Non-vegan Mains
 
 meat:
-2 lb ground turkey, 99% fat free
+2 lb ground turkey, {=99}% fat free
 produce:
 2 large yellow onions, diced
 2 red bell peppers, diced
 pantry:
 oil for the pan
-4 cubes Knorr beef bouillon, or 15 g powder
+4 cubes Knorr beef bouillon, or {15 g} powder
 1 l chicken broth, less salt
 14 oz canned fire-roasted green chiles, drained
 30 oz canned kidney beans, no salt, rinsed and drained

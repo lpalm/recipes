@@ -5,7 +5,7 @@ category Sides
 produce:
 40 g arugula
 dairy:
-10 g goat cheese, or 6 g shaved Parmesan
+10 g goat cheese, or {6 g} shaved Parmesan
 pantry:
 11 g olive oil
 8 g balsamic vinegar

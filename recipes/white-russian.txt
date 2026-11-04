@@ -6,7 +6,7 @@ bar:
 2 oz Kahlúa
 2 oz vodka
 dairy:
-1 oz double cream, or 2 oz single cream
+1 oz double cream, or {2 oz} single cream
 kitchen:
 ice
 

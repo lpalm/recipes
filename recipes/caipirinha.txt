@@ -3,7 +3,7 @@ portions 1
 category Cocktail
 
 produce:
-1 1/2 limes, cut in 8 wedges, pith removed, washed
+1 1/2 limes, each cut in {=8} wedges, pith removed, washed
 bar:
 3 oz unaged cachaça
 pantry:

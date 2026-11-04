@@ -3,7 +3,7 @@ portions 2
 category Other Vegan Mains
 
 pantry:
-2 1/2 cups cooked chickpeas, one 19 oz can
+2 1/2 cups cooked chickpeas, {1 can}, {=19 oz} per can
 1 tbsp olive oil
 produce:
 3 cloves garlic, minced

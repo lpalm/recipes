@@ -16,4 +16,4 @@ dairy:
 1 large egg
 
 rolled oats + ripe banana + whole milk Greek yogurt + unsweetened applesauce + large egg + vanilla extract + aluminum-free baking powder + lemon zest > blend: Add the oats first, then everything else, and blend until smooth. [blender]
-blend + blueberries > bake: Stir in half the blueberries, pour into a greased or lined 12-cup muffin pan, top with the rest and bake until a toothpick comes out clean; cool at least 10 minutes in the pan. ~45 min [oven 350 F]
+blend + blueberries > bake: Stir in {=half} the blueberries, pour into a greased or lined {=12}-cup muffin pan, top with the rest and bake until a toothpick comes out clean; cool at least {=10} minutes in the pan. ~45 min [oven 350 F]

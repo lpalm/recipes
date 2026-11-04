@@ -1,9 +1,11 @@
 // Groups matching recipes in display order, with recently opened matches first.
+import { formatText } from './recipe-text.js';
+
 const CATEGORY_ORDER = ['Breakfast', 'Non-vegan Mains', 'Other Vegan Mains', 'Tofu Vegan Mains', 'Pizza Making', 'Sides', 'Snacks', 'Toddler', 'Dessert', 'Creami', 'Drinks', 'Cocktail', 'Spice mixes'];
 const SEARCH_TIERS = [
   ['Title', e => e.recipe.title], ['Category', e => e.recipe.category || ''],
   ['Ingredients', e => e.recipe.ingredients.map(i => i.name).join('\n')],
-  ['Steps', e => e.recipe.steps.map(s => [s.label, s.instruction, ...s.equipment].join('\n')).join('\n')],
+  ['Steps', e => e.recipe.steps.map(s => [s.label, formatText(s.instruction, 1, 'metric'), ...s.equipment].join('\n')).join('\n')],
 ];
 const categoryRank = c => { const i = CATEGORY_ORDER.indexOf(c); return i < 0 ? CATEGORY_ORDER.length : i; };
 

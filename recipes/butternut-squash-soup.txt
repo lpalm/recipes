@@ -6,7 +6,7 @@ produce:
 1 small onion, peeled and quartered
 1/2 apple, peeled, cored and quartered
 1 small carrot, peeled and quartered
-460 g butternut squash, peeled and cut in 2.5 cm pieces
+460 g butternut squash, peeled and cut in {=2.5} cm pieces
 pantry:
 2 tbsp olive oil
 120 g raw cashews

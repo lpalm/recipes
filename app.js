@@ -3,6 +3,7 @@ import { parseRecipe } from './parser.js';
 import { layoutMap, chainOf } from './map.js';
 import { formatAmount, formatOven, formatDuration, clock } from './units.js';
 import { libraryView } from './library.js';
+import { formatText } from './recipe-text.js';
 
 const app = document.getElementById('app');
 const MAP_FONT_PX = [11, 18]; // the map shrinks to fit the screen, never grows past a comfortable size
@@ -36,7 +37,7 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;',
 // Amount and name as two aligned columns; the name spans both when there is no amount.
 const quantityHtml = (ingredient, factor, system, withPrep = false) => {
   const amount = formatAmount(ingredient, factor, system);
-  const name = esc(ingredient.name) + (withPrep && ingredient.prep ? `<i>, ${esc(ingredient.prep)}</i>` : '');
+  const name = esc(ingredient.name) + (withPrep && ingredient.prep ? `<i>, ${esc(formatText(ingredient.prep, factor, system))}</i>` : '');
   return amount ? `<b>${esc(amount)}</b><span>${name}</span>` : `<span class="only">${name}</span>`;
 };
 const settings = ({ id, recipe }) => {
@@ -211,7 +212,7 @@ function showStep(entry, n) {
     <div class="timers" id="timers"></div>
     <main class="stepview ${direction > 0 ? 'enter-next' : direction < 0 ? 'enter-back' : ''}" id="step">
       <p class="label">${esc(step.label)}</p>
-      <p class="instruction">${esc(step.instruction)}</p>
+      <p class="instruction">${esc(formatText(step.instruction, factor, system))}</p>
       <ul class="inputs">${inputs}</ul>
       ${gear ? `<p class="gear">${esc(gear)}</p>` : ''}
       ${step.minutes ? `<button class="big timer" id="timer" data-timer-for="${id}/${n}" data-total="${step.minutes * 60}"></button>` : ''}

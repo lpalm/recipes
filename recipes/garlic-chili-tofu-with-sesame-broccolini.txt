@@ -3,7 +3,7 @@ portions 2
 category Tofu Vegan Mains
 
 pantry:
-340 g extra firm tofu, cut in 15 mm cubes
+340 g extra firm tofu, cut in {=15} mm cubes
 8 g sesame oil
 4 g sesame oil for the broccolini
 9 g toasted sesame seeds
@@ -23,7 +23,7 @@ kitchen:
 25 g water
 40 g water for the sauce
 
-extra firm tofu + sesame oil > sear: Press the tofu firmly once between paper towels for 10 to 15 seconds; heat the oil in a wide nonstick pan over medium-high, add the tofu in one layer and cook 6 to 8 minutes without moving until golden underneath; flip and cook 3 to 4 more. Remove to a plate. ~11 min [wide nonstick pan]
-sesame oil for the broccolini + garlic + broccolini + water + salt + black pepper + toasted sesame seeds > greens: In the same pan cook the garlic in the oil about 1 minute; add the broccolini and water, cover 2 to 3 minutes (skip if frozen), uncover and cook on medium until the water is gone; add the salt, pepper and sesame seeds and mix. ~5 min
+extra firm tofu + sesame oil > sear: Press the tofu firmly once between paper towels for {=10} to {=15} seconds; heat the oil in a wide nonstick pan over medium-high, add the tofu in {=one} layer and cook {=6} to {=8} minutes without moving until golden underneath; flip and cook {=3} to {=4} more. Remove to a plate. ~11 min [wide nonstick pan]
+sesame oil for the broccolini + garlic + broccolini + water + salt + black pepper + toasted sesame seeds > greens: In the same pan cook the garlic in the oil about {=1} minute; add the broccolini and water, cover {=2} to {=3} minutes (skip if frozen), uncover and cook on medium until the water is gone; add the salt, pepper and sesame seeds and mix. ~5 min
 vegetable oil + garlic for the sauce + red pepper flakes + soy sauce + rice vinegar + sugar + water for the sauce > sauce: Mix in a bowl. [bowl]
 greens + sear + sauce > glaze: Return the tofu, pour in the sauce and cook, stirring, until glossy and slightly reduced. Serve at once. ~2 min

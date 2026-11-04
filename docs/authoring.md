@@ -20,7 +20,19 @@ boil + garlic > cook: Cook until golden. ~4 min [oven 220 fan]
 
 `category` groups the library; reuse an existing name (Breakfast, Cocktail, Creami, Dessert, Drinks, Non-vegan Mains, Other Vegan Mains, Pizza Making, Sides, Snacks, Spice mixes, Toddler, Tofu Vegan Mains) and it is searchable. A line ending in a colon starts a shopping section for the ingredient lines below it. Use the store's order: produce, meat, fish, dairy, bakery, pantry, spices, frozen, then kitchen for what is never bought (water).
 
-Ingredient line: `amount unit name, prep`. Amount (`2`, `1.5`, `1/2`, `1 1/2`) and unit are optional; unknown units become part of the name (`2 eggs`). Units that convert: g, kg, oz, lb; ml, l, tsp, tbsp, cup; cm, inch. Cups of flour or sugar convert to millilitres, not grams — weigh dry ingredients in grams when converting a US recipe. Names must be unique; use `salt for the water` for a second salt. Prep after the comma shows on the step that uses the ingredient.
+Ingredient line: `amount unit name, prep`. Amount (`2`, `1.5`, `1/2`, `1 1/2`) and unit are optional; unknown units become part of the name (`2 eggs`). Units that convert: g, kg, oz, lb; ml, l, tsp, tbsp, cup; cm, inch. Cups of flour or sugar convert to milliliters, not grams; weigh dry ingredients in grams when converting a US recipe. Names must be unique; use `salt for the water` for a second salt. Prep after the comma shows on the step that uses the ingredient.
+
+Every number in prep or instructions must declare its scaling. Use `{180 g}` for an amount that changes with portions, including substitutes, total package counts and quantities mentioned in instructions. Use `{=15 oz}` for a fixed package size, time, temperature, ratio or per-piece measurement. Number words such as `two` and `half` follow the same rule. The parser rejects unmarked numbers. Examples:
+
+```
+100 g heavy cream, or {180 g} half-and-half
+30 oz beans, {2 cans}, {=15 oz} per can
+1 bag rice, {=175 to 200 g} per bag
+```
+
+In instructions, `add {2 to 3 tbsp} jam` scales both ends of the range; `bake at {=350°F} for {=15 minutes}` stays fixed. A proportional instruction such as `use {=half} the sauce` stays proportional as the sauce amount changes. Keep repeated amounts in the ingredient list and refer to the ingredient in prose instead of duplicating its quantity. Use extra pans, containers or batches when increasing portions; pan sizes and per-piece sizes stay fixed.
+
+`npm test` validates all recipe text as well as the scaling regressions. `npm run check` also validates each recipe's cooking map. Ingredient amounts retain small fractions and decimal precision instead of rounding to spoon-size steps.
 
 Step line, in cooking order: `inputs > label: instruction ~time [equipment]`. Inputs are ingredient names or labels of earlier steps, joined with `+`. `~8 min`, `~1 h 30 min` gives the step a timer. `[oven 220 fan]` is an oven setting in °C (`[oven 425 F]` for Fahrenheit; drop `fan` for conventional); other brackets are equipment. Write temperatures directly in instructions, ingredient prep, or equipment labels (including air fryers) in Fahrenheit.
 

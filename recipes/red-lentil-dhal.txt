@@ -5,8 +5,8 @@ category Other Vegan Mains
 pantry:
 4 tbsp olive oil
 4 cups dried red lentils, rinsed and drained
-4 cans chopped tomatoes, 400 ml each
-4 cans coconut milk, 400 ml each
+4 cans chopped tomatoes, {=400} ml each
+4 cans coconut milk, {=400} ml each
 5 cubes vegetable stock
 produce:
 8 yellow onions, diced
@@ -22,4 +22,4 @@ spices:
 1 tsp black pepper
 
 olive oil + yellow onions > caramelize: In the instant pot on high pressure, caramelize the onions in the oil. ~40 min [instant pot]
-caramelize + garlic + fresh ginger + chopped tomatoes + dried red lentils + coconut milk + vegetable stock + dried chili flakes + cumin seeds + coriander seeds + mustard seeds + ground turmeric + garam masala + black pepper > pressure: Purée the garlic and ginger, pulse the tomatoes smaller, add everything and stir; there should be enough liquid to fill the 8 quart pot to the brim. Cook on high pressure. Serve with rice, naan or poppadom. ~40 min [food processor]
+caramelize + garlic + fresh ginger + chopped tomatoes + dried red lentils + coconut milk + vegetable stock + dried chili flakes + cumin seeds + coriander seeds + mustard seeds + ground turmeric + garam masala + black pepper > pressure: Purée the garlic and ginger, pulse the tomatoes smaller, add everything and stir; divide into batches as needed so the food and liquid stay below the cooker's {=half}-fill mark for expanding foods. Cook on high pressure. Serve with rice, naan or poppadom. ~40 min [food processor]

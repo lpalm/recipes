@@ -13,8 +13,8 @@ produce:
 pantry:
 1 tbsp neutral oil
 5 cups low-sodium chicken broth
-9 oz canned green chiles, two 4.5 oz cans
-30 oz canned white beans, two 15 oz cans, drained and rinsed
+9 oz canned green chiles, {2 cans}, {=4.5 oz} per can
+30 oz canned white beans, {2 cans}, {=15 oz} per can, drained and rinsed
 1/4 cup crushed tortilla chips, for serving
 frozen:
 1 1/2 cups frozen corn
@@ -27,8 +27,8 @@ spices:
 kosher salt
 freshly ground black pepper
 
-neutral oil + medium yellow onion + jalapeño + garlic + dried oregano + ground cumin > soften: In a large pot over medium, cook the onion and jalapeño until softened, about 8 minutes; add the garlic, oregano and cumin and cook 1 minute until fragrant. ~9 min [large pot]
+neutral oil + medium yellow onion + jalapeño + garlic + dried oregano + ground cumin > soften: In a large pot over medium, cook the onion and jalapeño until softened, about {=8} minutes; add the garlic, oregano and cumin and cook {=1} minute until fragrant. ~9 min [large pot]
 soften + boneless skinless chicken breasts + low-sodium chicken broth + canned green chiles + kosher salt + freshly ground black pepper > poach: Add, season, bring to a boil, then simmer uncovered until the chicken is cooked through. ~11 min
-poach + canned white beans > beans: Move the chicken to a plate and shred it with two forks; add the beans to the pot, bring to a simmer and cook, smashing a quarter of them, until slightly thickened. ~10 min
-beans + frozen corn + sour cream > finish: Add the corn and the shredded chicken and cook 1 minute until heated through; off the heat stir in the sour cream. ~1 min
+poach + canned white beans > beans: Move the chicken to a plate and shred it with {=two} forks; add the beans to the pot, bring to a simmer and cook, smashing a {=quarter} of them, until slightly thickened. ~10 min
+beans + frozen corn + sour cream > finish: Add the corn and the shredded chicken and cook {=1} minute until heated through; off the heat stir in the sour cream. ~1 min
 finish + avocado + fresh cilantro + crushed tortilla chips + Monterey Jack > serve: Ladle into bowls and top.

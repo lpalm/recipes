@@ -18,4 +18,4 @@ kitchen:
 60 g water
 
 peanut butter + micellar casein + all-purpose flour + sucralose + vanilla extract + baking powder + white miso paste + xanthan gum + large eggs + water + dark chocolate chips > dough: Mix everything but the chips into a dough, then fold in the chocolate chips. [mixer]
-dough > bake: Scoop 60 g balls onto a lined baking sheet, flatten to 1/2 inch (they barely spread) and bake until the edges are slightly golden; cool 5 minutes on the sheet, then on a rack. ~15 min [oven 350 F]
+dough > bake: Scoop {=60} g balls onto a lined baking sheet, flatten to {=1/2} inch (they barely spread) and bake until the edges are slightly golden; cool {=5} minutes on the sheet, then on a rack. ~15 min [oven 350 F]

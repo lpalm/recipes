@@ -3,7 +3,7 @@ portions 2
 category Tofu Vegan Mains
 
 pantry:
-16 oz super firm tofu, pressed 30 minutes, cut in 2 inch cubes
+16 oz super firm tofu, pressed {=30} minutes, cut in {=2} inch cubes
 1/2 cup cornstarch
 1 tbsp olive oil
 1/4 cup low-sodium soy sauce
@@ -16,6 +16,6 @@ produce:
 2 cloves garlic, minced
 1 tsp ginger, grated
 
-super firm tofu + cornstarch + olive oil > air fry: Coat the tofu with the cornstarch in a zip bag, toss with the olive oil and air fry at 375 F, shaking after 10 minutes. ~14 min [air fryer 375 F]
+super firm tofu + cornstarch + olive oil > air fry: Coat the tofu with the cornstarch in a zip bag, toss with the olive oil and air fry at {=375} F, shaking after {=10} minutes. ~14 min [air fryer 375 F]
 low-sodium soy sauce + chili garlic sauce + rice wine vinegar + brown sugar + garlic + ginger > sauce: Mix in a skillet and bring to a boil. [skillet]
-sauce + toasted sesame oil + air fry + toasted sesame seeds > glaze: Add the sesame oil and tofu, cook 1 minute and serve with sesame seeds. ~1 min
+sauce + toasted sesame oil + air fry + toasted sesame seeds > glaze: Add the sesame oil and tofu, cook {=1} minute and serve with sesame seeds. ~1 min

@@ -1,7 +1,6 @@
 // Turns a recipe text file into its ingredients and steps; each step names the ingredients and earlier steps it takes in.
-import { normalizeUnit } from './units.js';
-
-const FRACTION_GLYPHS = { '½': 1 / 2, '⅓': 1 / 3, '⅔': 2 / 3, '¼': 1 / 4, '¾': 3 / 4, '⅛': 1 / 8, '⅜': 3 / 8, '⅝': 5 / 8, '⅞': 7 / 8 };
+import { normalizeUnit, readNumber } from './units.js';
+import { parseText } from './recipe-text.js';
 
 export function parseRecipe(text) {
   const recipe = { title: '', portions: null, category: null, ingredients: [], steps: [] };
@@ -38,8 +37,10 @@ function parseIngredient(line, at) {
   const comma = line.indexOf(',');
   const head = comma < 0 ? line : line.slice(0, comma);
   const prep = comma < 0 ? null : line.slice(comma + 1).trim() || null;
+  if (prep) parseText(prep, at);
   const words = head.trim().split(/\s+/);
   const number = readNumber(words);
+  if (!number) parseText(head, at);
   let amount = null, unit = null;
   if (number) {
     amount = number.value;
@@ -49,22 +50,6 @@ function parseIngredient(line, at) {
   const name = words.join(' ');
   if (!name) throw new Error(`${at}: ingredient line needs a name`);
   return { name, amount, unit, prep };
-}
-
-// Reads "2", "1.5", "1/2", "1½" or "1 1/2" from the start of the words.
-function readNumber(words) {
-  const first = /^\d+(\.\d+)?$/.test(words[0]) ? Number(words[0]) : parseFraction(words[0]);
-  if (first === null) return null;
-  const second = words.length > 1 ? parseFraction(words[1]) : null;
-  return second === null ? { value: first, words: 1 } : { value: first + second, words: 2 };
-}
-
-function parseFraction(word) {
-  const slash = word.match(/^(\d+)\/(\d+)$/);
-  if (slash) return Number(slash[1]) / Number(slash[2]);
-  const glyph = word.match(/^(\d+)?([½⅓⅔¼¾⅛⅜⅝⅞])$/);
-  if (glyph) return Number(glyph[1] || 0) + FRACTION_GLYPHS[glyph[2]];
-  return null;
 }
 
 // "water + salt > boil: Bring to a boil. ~8 min [large pot] [oven 220 fan]" — oven degrees are °C unless followed by F.
@@ -94,6 +79,7 @@ function parseStep(line, at, names) {
   });
   step.instruction = rest.replace(/\s+/g, ' ').trim();
   if (!step.instruction) throw new Error(`${at}: step "${label}" needs an instruction`);
+  parseText(step.instruction, at);
   return step;
 }
 

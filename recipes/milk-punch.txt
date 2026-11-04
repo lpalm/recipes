@@ -5,7 +5,7 @@ category Cocktail
 dairy:
 3 oz milk
 bar:
-2 oz bourbon, Four Roses yellow label
+2 oz bourbon, {=Four} Roses yellow label
 pantry:
 1 oz simple syrup
 1 tsp vanilla extract

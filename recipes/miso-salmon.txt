@@ -3,7 +3,7 @@ portions 2
 category Non-vegan Mains
 
 fish:
-2 salmon fillets, 6 oz each
+2 salmon fillets, {=6} oz each
 pantry:
 2 tbsp miso paste
 1 tbsp soy sauce
@@ -16,6 +16,6 @@ sesame seeds, for garnish
 spices:
 salt and pepper
 
-miso paste + soy sauce + tamari + mirin + brown sugar + rice vinegar + sesame oil + salmon fillets + salt and pepper > marinate: Whisk the marinade until smooth and reserve 1 tbsp for the glaze; salt and pepper the salmon and marinate it 1 to 3 hours. ~1 h [bowl]
+miso paste + soy sauce + tamari + mirin + brown sugar + rice vinegar + sesame oil + salmon fillets + salt and pepper > marinate: Whisk the marinade until smooth and reserve {1 tbsp} for the glaze; salt and pepper the salmon and marinate it {=1} to {=3} hours. ~1 h [bowl]
 marinate > bake: Discard the marinade, put the salmon in a large skillet and bake until almost done and opaque. ~13 min [oven 375 F]
-bake + sesame seeds > broil: Brush with the reserved glaze and broil on high until 125 to 130 F in the centre; sprinkle with sesame seeds. ~2 min
+bake + sesame seeds > broil: Brush with the reserved glaze and broil on high until {=125} to {=130} F in the centre; sprinkle with sesame seeds. ~2 min

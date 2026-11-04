@@ -9,5 +9,5 @@ dairy:
 spices:
 1 pinch salt and pepper
 
-egg + salt and pepper > beat: Crack the egg into a measuring jug, add a tiny pinch of salt and pepper and beat well with a fork. [jug]
+egg + salt and pepper > beat: Crack the eggs into a measuring jug, add the measured salt and pepper and beat well with a fork. [jug]
 butter + beat + Parmigiano Reggiano > scramble: Melt the butter slowly in a frying pan over low heat until it bubbles, pour in the egg and stir slowly right to the edges until silky and a little underdone; off the heat fold in the Parmigiano. Serve with buttered toast. [frying pan]

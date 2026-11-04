@@ -11,9 +11,9 @@ dairy:
 80 g mozzarella
 5 g Parmigiano Reggiano, shaved or grated
 meat:
-35 g prosciutto, 2 to 3 thin slices, chopped
+35 g prosciutto, {2 to 3} thin slices, chopped
 produce:
-12 g arugula, a small handful
+12 g arugula, about {1 handful}
 
-Neapolitan pizza dough + tomato sauce + mozzarella > bake: Stretch, sauce, mozzarella, and bake in the Ooni at about 80% of its maximum. ~2 min [Ooni]
+Neapolitan pizza dough + tomato sauce + mozzarella > bake: Make a dough ball for each portion. Stretch each, distribute the sauce and mozzarella, and bake in the Ooni at about {=80}% of its maximum. ~2 min [Ooni]
 bake + prosciutto + arugula + Parmigiano Reggiano + olive oil > finish: Top with the prosciutto, arugula, Parmigiano and a drizzle of oil.

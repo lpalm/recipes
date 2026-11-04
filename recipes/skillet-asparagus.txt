@@ -13,6 +13,6 @@ dairy:
 spices:
 1 g black pepper
 
-olive oil + garlic > sizzle: Heat a wide frying pan on medium, add the oil and garlic and cook 30 to 45 seconds until fragrant, without browning. [wide frying pan]
+olive oil + garlic > sizzle: Heat a wide frying pan on medium, add the oil and garlic and cook {=30} to {=45} seconds until fragrant, without browning. [wide frying pan]
 sizzle + asparagus > cook: Add the asparagus, raise to medium-high and cook uncovered, tossing now and then, until lightly browned. ~7 min
-cook + lemon juice + black pepper + Parmigiano Reggiano > finish: Push the asparagus aside, let the lemon juice reduce by half on the empty part of the pan, turn off the heat, add the pepper and Parmigiano, toss and serve.
+cook + lemon juice + black pepper + Parmigiano Reggiano > finish: Push the asparagus aside, let the lemon juice reduce by {=half} on the empty part of the pan, turn off the heat, add the pepper and Parmigiano, toss and serve.

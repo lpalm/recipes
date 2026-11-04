@@ -4,6 +4,13 @@ import { parseRecipe } from '../parser.js';
 
 const recipe = (ingredients, steps) => parseRecipe(['T', 'portions 2', ...ingredients, ...steps].join('\n'));
 
+test('quantities hidden in notes and instructions must declare how they scale', () => {
+  assert.throws(() => recipe(['100 g cream, or 180 g half-and-half'], ['cream > mix: Mix.']), /unmarked quantity/);
+  assert.throws(() => recipe(['100 g sauce, two small jars'], ['sauce > mix: Mix.']), /unmarked quantity/);
+  assert.throws(() => recipe(['1 egg'], ['egg > mix: Add 2 tbsp water.']), /unmarked quantity/);
+  assert.throws(() => recipe(['two eggs'], ['two eggs > mix: Mix.']), /unmarked quantity/);
+});
+
 test('ingredient amounts: mixed numbers, glyph fractions, unknown units become part of the name', () => {
   const r = recipe(['1 1/2 cups flour, sifted', '2 eggs', '½ tsp chili flakes', 'salt', '2 l water'], ['flour + eggs + chili flakes + salt + water > mix: Mix.']);
   assert.deepEqual(r.ingredients[0], { name: 'flour', amount: 1.5, unit: 'cup', prep: 'sifted', section: null });

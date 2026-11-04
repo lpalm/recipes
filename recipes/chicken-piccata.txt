@@ -3,7 +3,7 @@ portions 4
 category Non-vegan Mains
 
 meat:
-4 chicken breast cutlets, about 12 oz total
+4 chicken breast cutlets, about {12 oz} total
 produce:
 1 large lemon, zested
 1/4 cup lemon juice, from the same lemon, more if needed
@@ -22,6 +22,6 @@ fine salt
 freshly cracked black pepper
 
 large lemon + Dijon mustard + chicken breast cutlets + all-purpose flour > dredge: Stir the zest into the mustard in a shallow bowl, coat the cutlets evenly, then dredge in the flour. [shallow bowl]
-olive oil + dredge > fry: Fry in shimmering oil over medium-high, in batches if needed, until deep golden, about 3 minutes a side and 160 F inside; keep warm on a plate. ~6 min [large skillet]
-dry white wine + low-sodium chicken stock + lemon juice + unsalted butter + capers in brine + fine salt + freshly cracked black pepper + fresh parsley > sauce: With the chicken out, add the wine and stock to the skillet, whisk up the browned bits and reduce by a quarter; whisk in the lemon juice, then the butter until smooth; stir in the capers, taste, add lemon, salt and pepper as needed, and off the heat half the parsley. ~5 min
-fry + sauce > plate: Plate the cutlets, spoon 2 tbsp to 1/4 cup of sauce over each and sprinkle with the rest of the parsley.
+olive oil + dredge > fry: Fry in shimmering oil over medium-high, in batches if needed, until deep golden, about {=3} minutes a side and {=160} F inside; keep warm on a plate. ~6 min [large skillet]
+dry white wine + low-sodium chicken stock + lemon juice + unsalted butter + capers in brine + fine salt + freshly cracked black pepper + fresh parsley > sauce: With the chicken out, add the wine and stock to the skillet, whisk up the browned bits and reduce by a {=quarter}; whisk in the lemon juice, then the butter until smooth; stir in the capers, taste, add lemon, salt and pepper as needed, and off the heat {=half} the parsley. ~5 min
+fry + sauce > plate: Plate the cutlets, spoon {=2} tbsp to {=1/4} cup of sauce over each and sprinkle with the rest of the parsley.
