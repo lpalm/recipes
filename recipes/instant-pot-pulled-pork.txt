@@ -3,24 +3,23 @@ portions 24
 category Non-vegan Mains
 
 meat:
-5 kg boneless skinless Boston butt, shopping weight before trimming
+10 lb boneless skinless Boston butt, shopping weight before trimming
 pantry:
 520 g unsalted chicken stock, use {=520 g} in each batch in the {=8}-quart Instant Pot
-19 g Worcestershire sauce
-1.1 g hickory liquid smoke
-17 g apple cider vinegar
+18 g Worcestershire sauce
+1 g hickory liquid smoke
+16 g apple cider vinegar
 spices:
-36 g kosher salt
-16 g smoked paprika
-13.5 g garlic powder
-11.3 g onion powder
-5.6 g ground black pepper
-1.1 g cayenne
+33 g kosher salt
+15 g smoked paprika
+13 g garlic powder
+11 g onion powder
+6 g ground black pepper
+1 g cayenne
 
 boneless skinless Boston butt > cut pork: Trim the outside fat to at most {=6 mm}. Leave the marbling. Cut the thawed pork into {=5 cm} chunks.
-cut pork + unsalted chicken stock > check fit: Pour the stock into the pot. Add pork up to PC MAX, keeping every piece at or below the line. Lift out and weigh the pork that fit. Refrigerate or freeze any extra raw pieces. If making more than fits, use separate batches. [8-quart Instant Pot]
-check fit + kosher salt + smoked paprika + garlic powder + onion powder + ground black pepper + cayenne + Worcestershire sauce > season: The flavoring amounts are for {4.5 kg} of trimmed pork. If the weight in the pot differs, multiply the rub, Worcestershire, smoke, vinegar and finishing juices by the actual weight divided by that reference weight. Toss the pork with the dry spices. Stir the Worcestershire into the stock, return the pork and recheck the PC MAX line.
-season > pressure cook: Lock the lid, set the vent to sealing and cook on High Pressure for {=45} minutes. ~45 min
-pressure cook > release: Leave the vent sealed until the float valve drops on its own. Test a large chunk with a fork. If it resists when you twist, cook on High for another {=10} minutes and let the pressure release naturally again.
-release + hickory liquid smoke + apple cider vinegar > shred: Shred the pork with forks. Skim the fat from the pot juices. Stir the liquid smoke and cider vinegar into {170 g} of the skimmed juices and toss with the pork.
+cut pork + kosher salt + smoked paprika + garlic powder + onion powder + ground black pepper + cayenne > season: Toss the pork with the dry spices.
+season + unsalted chicken stock + Worcestershire sauce > pressure cook: Add the stock, Worcestershire sauce, and pork to the pot. Cook on High Pressure for {=45} minutes, in batches if needed to stay below PC MAX. ~45 min [8-quart Instant Pot]
+pressure cook > release: Let the pressure release naturally. If a large chunk doesn’t pull apart with a fork, cook on High Pressure for {=10} more minutes, then let the pressure release naturally again.
+release + hickory liquid smoke + apple cider vinegar > shred: Shred the pork with forks. Skim the fat from the pot juices. Stir the liquid smoke and cider vinegar into {154 g} of the skimmed juices and toss with the pork.
 shred > broil: Spread the pork you are serving in a thin layer on a rimmed metal pan. Broil until the edges brown. Serve with mustard barbecue sauce on the side. ~5 min [broiler]
