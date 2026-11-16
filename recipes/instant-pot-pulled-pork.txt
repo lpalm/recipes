@@ -3,9 +3,9 @@ portions 24
 category Non-vegan Mains
 
 meat:
-10 lb boneless skinless Boston butt, shopping weight before trimming
+10 lb boneless skinless Boston butt, before trimming
 pantry:
-520 g unsalted chicken stock, use {=520 g} in each batch in the {=8}-quart Instant Pot
+520 g unsalted chicken stock
 18 g Worcestershire sauce
 1 g hickory liquid smoke
 16 g apple cider vinegar
@@ -17,9 +17,11 @@ spices:
 6 g ground black pepper
 1 g cayenne
 
-boneless skinless Boston butt > cut pork: Trim the outside fat to at most {=6 mm}. Leave the marbling. Cut the thawed pork into {=5 cm} chunks.
+boneless skinless Boston butt > cut pork: Trim the outer fat to at most {=6 mm} and cut the thawed pork into {=5 cm} chunks.
 cut pork + kosher salt + smoked paprika + garlic powder + onion powder + ground black pepper + cayenne > season: Toss the pork with the dry spices.
-season + unsalted chicken stock + Worcestershire sauce > pressure cook: Add the stock, Worcestershire sauce, and pork to the pot. Cook on High Pressure for {=45} minutes, in batches if needed to stay below PC MAX. ~45 min [8-quart Instant Pot]
-pressure cook > release: Let the pressure release naturally. If a large chunk doesn’t pull apart with a fork, cook on High Pressure for {=10} more minutes, then let the pressure release naturally again.
-release + hickory liquid smoke + apple cider vinegar > shred: Shred the pork with forks. Skim the fat from the pot juices. Stir the liquid smoke and cider vinegar into {154 g} of the skimmed juices and toss with the pork. Refrigerate the pork you’re freezing in shallow containers with its juices. Once cold, pack it into meal-size freezer bags, press out the air, and freeze flat. Thaw in the fridge and reheat to {=165°F} before broiling.
-shred > broil: Spread the pork you are serving in a thin layer on a rimmed metal pan. Broil until the edges brown. Serve with mustard barbecue sauce on the side. ~5 min [broiler]
+season + unsalted chicken stock + Worcestershire sauce > pressure cook: Add the stock, Worcestershire sauce, and pork to the pot. Cook on High Pressure for {=45} minutes. ~45 min [8-quart Instant Pot]
+pressure cook > release: Let the pressure release naturally. If the pork doesn’t shred easily, cook on High Pressure for {=10} more minutes, then release naturally again.
+release > save juices: Remove the pork. Skim the fat from the cooking liquid and reserve {154 g} of the juices.
+save juices + hickory liquid smoke + apple cider vinegar > shred & mix: Shred the pork. Mix the reserved juices, liquid smoke, and vinegar, then toss with the pork.
+shred & mix > portion: Portion the pork for freezing into {=½ cup} or {=1 cup} Souper Cubes. Refrigerate until cold, then freeze. Thaw in the fridge and reheat to {=165°F} before broiling.
+portion > broil: Spread the pork you are serving in a thin layer on a rimmed metal pan. Broil until the edges brown. Serve with mustard barbecue sauce on the side. ~5 min [broiler]
