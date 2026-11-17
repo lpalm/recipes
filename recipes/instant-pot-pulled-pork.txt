@@ -6,14 +6,14 @@ meat:
 4.5 kg boneless skinless Boston butt, weighed after removing the bone and trimming excess fat
 pantry:
 520 g unsalted chicken stock
-18 g Worcestershire sauce
+19 g Worcestershire sauce
 1 g hickory liquid smoke
-16 g apple cider vinegar
-mustard barbecue sauce, for serving
+17 g apple cider vinegar
+mustard barbecue sauce, to lightly coat the pork
 spices:
-33 g salt
-15 g smoked paprika
-13 g garlic powder
+36 g salt
+16 g smoked paprika
+14 g garlic powder
 11 g onion powder
 6 g ground black pepper
 1 g cayenne
@@ -22,7 +22,7 @@ boneless skinless Boston butt > cut pork: Cut the trimmed pork into roughly {=5 
 cut pork + salt + smoked paprika + garlic powder + onion powder + ground black pepper + cayenne > season: Toss the pork with the salt and spices.
 season + unsalted chicken stock + Worcestershire sauce > pressure cook: Add the stock, Worcestershire sauce, and pork to the pot. Cook on High Pressure for {=45} minutes. ~45 min [8-quart Instant Pot]
 pressure cook > release: Natural release. If the pork doesn’t shred easily, cook on High Pressure for {=10} more minutes, then natural release again.
-release > save juices: Remove the pork. Skim the fat from the cooking liquid and reserve about {160 g} of the juices.
+release > save juices: Remove the pork. Skim the fat from the cooking liquid and reserve about {170 g} of the juices.
 save juices + hickory liquid smoke + apple cider vinegar > shred & mix: Shred the pork. Mix the reserved juices, liquid smoke, and vinegar, then toss with all the shredded pork.
-shred & mix > portion: Portion the pork you’re freezing into your {=½-cup} and {=1-cup} Souper Cubes. Refrigerate the trays until cold, then freeze until solid. For later meals, reheat the pork to {=165°F} before broiling.
-portion + mustard barbecue sauce > broil: Spread the shredded pork in a loose, even layer about {=1 cm} thick on a rimmed metal pan. Broil until the edges brown, about {=5 minutes}. Serve with mustard barbecue sauce on the side. ~5 min [broiler]
+shred & mix + mustard barbecue sauce > broil: Spread all the shredded pork in a loose, even layer about {=1 cm} thick on a rimmed metal pan. Broil {=one} tray at a time until the edges brown, about {=5 minutes} per tray. Toss all the browned pork with enough mustard barbecue sauce to lightly coat it. ~5 min [broiler]
+broil > portion: Portion the pork you’re freezing into your {=½-cup} and {=1-cup} Souper Cubes. Refrigerate the trays until cold, then freeze until solid. For later meals, reheat the pork to {=165°F}.
