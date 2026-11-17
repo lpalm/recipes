@@ -25,4 +25,4 @@ pressure cook > release: Natural release. If the pork doesn’t shred easily, co
 release > save juices: Remove the pork. Skim the fat from the cooking liquid and reserve about {160 g} of the juices.
 save juices + hickory liquid smoke + apple cider vinegar > shred & mix: Shred the pork. Mix the reserved juices, liquid smoke, and vinegar, then toss with all the shredded pork.
 shred & mix > portion: Portion the pork you’re freezing into your {=½-cup} and {=1-cup} Souper Cubes. Refrigerate the trays until cold, then freeze until solid. For later meals, reheat the pork to {=165°F} before broiling.
-portion + mustard barbecue sauce > broil: Spread the pork you are serving in a thin layer on a rimmed metal pan. Broil until the edges brown, about {=5 minutes}. Serve with mustard barbecue sauce on the side. ~5 min [broiler]
+portion + mustard barbecue sauce > broil: Spread the shredded pork in a loose, even layer about {=1 cm} thick on a rimmed metal pan. Broil until the edges brown, about {=5 minutes}. Serve with mustard barbecue sauce on the side. ~5 min [broiler]
