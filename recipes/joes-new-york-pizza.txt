@@ -3,17 +3,17 @@ portions 2
 category Pizza Making
 
 pantry:
-177 g All Trumps flour
-2.7 g sugar
-0.38 g active dry yeast
-101 g Nina tomatoes D.O.P
+176.89 g All Trumps flour
+2.65 g sugar
+0.38 g active dry yeast, or {0.28 g} instant dry yeast or {0.89 g} fresh yeast
+100.89 g Nina tomatoes D.O.P
 4 g sugar for the sauce
 dairy:
 90 g Grande low-moisture part-skim mozzarella
 spices:
-4.8 g salt
+4.76 g salt
 kitchen:
-101 g water
+100.89 g water
 
 All Trumps flour + water + salt + sugar + active dry yeast > dough: Mix into a dough. [mixer]
 dough > ferment: Room temperature {=1.5} hours depending on the ambient temperature, cold ferment {=12} to {=48} hours, then {=1.5} hours at room temperature before baking. ~1 h 30 min

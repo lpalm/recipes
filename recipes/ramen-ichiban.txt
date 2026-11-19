@@ -10,6 +10,9 @@ pantry:
 1 tbsp mirin for the chicken
 1 tsp sugar
 1 tbsp neutral oil
+1 tbsp soy sauce for glaze, optional
+1 tbsp mirin for glaze, optional
+1/2 tsp sesame oil for glaze, optional
 dairy:
 4 eggs
 meat:
@@ -23,4 +26,4 @@ boil eggs + soy sauce + mirin > marinate eggs: Marinate the peeled eggs in the s
 boneless chicken breast + soy sauce for the chicken + mirin for the chicken + sugar > marinate chicken: Marinate {=20} minutes at room temperature, or up to {=60} in the fridge. ~20 min [bowl]
 neutral oil + marinate chicken + water for the chicken > cook chicken: Heat the oil and sear {=2} minutes a side on high; add the water, cover and steam {=7} to {=10} minutes until {=165} F inside; rest {=3} minutes and slice {=3} to {=4} mm thick. ~12 min [pan]
 water + instant ramen > noodles: Boil the water, add all the noodles, cook {=2} minutes {=30} seconds, turn off the heat and stir in all the soup packets. ~3 min [pot]
-noodles + marinate eggs + cook chicken > bowls: Pour into bowls and top with the eggs and chicken.
+noodles + marinate eggs + cook chicken + soy sauce for glaze + mirin for glaze + sesame oil for glaze > bowls: For the optional glaze, simmer the glaze ingredients for {=1} minute and brush onto the sliced chicken. Pour into bowls and top with the eggs and chicken.

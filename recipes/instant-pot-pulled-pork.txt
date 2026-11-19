@@ -18,10 +18,7 @@ spices:
 1 g cayenne
 
 boneless skinless Boston butt > cut pork: Cut the trimmed pork into roughly {=5 cm} chunks.
-cut pork + salt > season: Toss the pork with the salt.
-season > pressure cook: Cook the salted pork on High Pressure for {=45} minutes. ~45 min [8-quart Instant Pot]
-pressure cook > release: Natural release.
-release > save juices: Lift out the pork and reserve about {170 g} of the hot cooking juices.
-save juices + smoked paprika + garlic powder + onion powder + ground black pepper + cayenne + Worcestershire sauce + hickory liquid smoke + apple cider vinegar > shred & mix: Whisk the smoked paprika, garlic powder, onion powder, black pepper, and cayenne with a little of the reserved juices to make a paste. Stir in the Worcestershire sauce, liquid smoke, vinegar, and remaining reserved juices. Shred the pork and toss it with the entire mixture.
+cut pork + salt > pressure cook: Toss the pork with the salt. Cook on High Pressure for {=45} minutes and let the pressure release naturally. Lift out the pork and reserve about {170 g} of the hot cooking juices. ~45 min [8-quart Instant Pot]
+pressure cook + smoked paprika + garlic powder + onion powder + ground black pepper + cayenne + Worcestershire sauce + hickory liquid smoke + apple cider vinegar > shred & mix: Whisk the smoked paprika, garlic powder, onion powder, black pepper, and cayenne with a little of the reserved juices to make a paste. Stir in the Worcestershire sauce, liquid smoke, vinegar, and remaining reserved juices. Shred the pork and toss it with the entire mixture.
 shred & mix > broil: Spread all the shredded pork in a loose, even layer about {=1 cm} thick on a rimmed metal pan. Broil {=one} tray at a time until the edges brown, about {=5 minutes} per tray. ~5 min [broiler]
-broil + mustard barbecue sauce > portion & serve: Portion the pork you’re freezing into your {=½-cup} and {=1-cup} Souper Cubes. Refrigerate the trays until cold, then freeze until solid. For later meals, reheat the pork to {=165°F}. Serve the mustard barbecue sauce on the side.
+broil + mustard barbecue sauce > portion & serve: Portion the pork you’re freezing into your {=½-cup} and {=1-cup} Souper Cubes. Refrigerate the trays until cold, then freeze until solid. For later meals, reheat the pork to {=165°F}. Grill the bread for {=2 minutes} until toasted. Serve the mustard barbecue sauce on the side.

@@ -5,14 +5,14 @@ category Breakfast
 dairy:
 2 eggs
 60 ml milk, or heavy cream
-butter for the pan
+butter for the pan, or oil
 pantry:
 1/2 tbsp sugar, or maple syrup
 1 tsp vanilla extract
 bakery:
 4 slices croissant bread
 spices:
-1/4 tsp cinnamon
+1/4 tsp cinnamon, optional
 
 eggs + milk + sugar + vanilla extract + cinnamon > whisk: Whisk until smooth. [bowl]
-whisk + croissant bread + butter for the pan > fry: Dip each slice in the egg mixture on {=both} sides and fry in a lightly buttered non-stick pan over medium heat until golden, {=3} to {=5} minutes a side. [non-stick pan]
+whisk + croissant bread + butter for the pan > fry: Dip each slice in the egg mixture on {=both} sides and fry in a lightly greased non-stick pan over medium heat until golden, {=3} to {=5} minutes a side. [non-stick pan]

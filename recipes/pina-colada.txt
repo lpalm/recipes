@@ -2,11 +2,16 @@ Piña colada
 portions 1
 category Cocktail
 
-pantry:
-4 oz pineapple juice
-2 oz coconut cream, the fat from the top of the can
 bar:
-2 oz white rum
-1 oz aged rum
+40 ml dark rum
+15 ml pineapple liqueur
+10 ml coconut liqueur
+pantry:
+60 ml pineapple juice
+25 ml coconut milk
+produce:
+15 ml lime juice
+dairy:
+10 ml single cream
 
-pineapple juice + coconut cream + white rum + aged rum > blend: Everything frozen beforehand; blend until smooth. [blender]
+dark rum + pineapple liqueur + coconut liqueur + pineapple juice + lime juice + coconut milk + single cream > mix: Combine the ingredients.

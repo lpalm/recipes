@@ -8,7 +8,7 @@ pantry:
 80 g tomato sauce
 6 g extra virgin olive oil
 produce:
-5 leaves fresh basil
+4 leaves fresh basil, up to {6 leaves}
 dairy:
 80 g fresh mozzarella, fior di latte or buffalo, drained and torn in {=1} inch pieces
 10 g Parmigiano Reggiano

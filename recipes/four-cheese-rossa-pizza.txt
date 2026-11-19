@@ -13,7 +13,7 @@ dairy:
 15 g Fontina, or Taleggio
 15 g Parmigiano Reggiano
 produce:
-3 leaves fresh basil
+2 leaves fresh basil, up to {3 leaves}
 
 Neapolitan pizza dough + tomato sauce + fior di latte mozzarella + Gorgonzola dolce + Fontina + Parmigiano Reggiano + fresh basil > bake: Make a dough ball for each portion. Stretch each, distribute the sauce, the cheeses and the basil, and bake in the Ooni at about {=80}% of its maximum. ~2 min [Ooni]
 bake + olive oil > finish: Drizzle with oil.

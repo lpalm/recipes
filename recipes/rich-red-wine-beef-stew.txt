@@ -1,38 +1,39 @@
 Rich red wine beef stew (Instant Pot)
-portions 12
+portions 16
 category Non-vegan Mains
 
 meat:
-2 kg boneless beef shoulder roast, butcher-trimmed (arm roast or cross-rib)
+2.5 kg boneless beef shoulder roast, butcher-trimmed usable weight
 produce:
-1.1 kg Yukon Gold potatoes, cut into {=3} cm chunks
-550 g carrots, cut into {=2} cm pieces
-300 g yellow onion, diced
-20 g garlic, minced
+1.75 kg Yukon Gold potatoes, cut into {=3 cm} chunks
+900 g carrots, cut into {=3 cm} chunks
+480 g yellow onion, diced
+32 g garlic, minced
 pantry:
-35 g tomato paste
-225 ml dry red wine
-1 l low-sodium beef stock
-25 ml Worcestershire sauce
-45 g cornstarch
-35 ml neutral oil
+55 g tomato paste
+360 ml dry red wine
+20 g Knorr granulated beef bouillon
+40 ml Worcestershire sauce
+70 g cornstarch
+50 ml neutral oil
 spices:
-2 g MSG
-2 g dried thyme
-12 g salt, plus more to taste
-2 g black pepper
+3 g MSG
+3 g dried thyme
+5 g salt, plus more to taste
+3 g black pepper
 kitchen:
-90 ml cold water
+1.6 l water for the bouillon
+150 ml cold water for the slurry
 optional:
-120 g celery, diced
-15 g fresh parsley, chopped
-5 ml red wine vinegar
+180 g celery, diced
+20 g fresh parsley, chopped
 
-boneless beef shoulder roast + salt + black pepper > prep beef: Remove only large exterior fat lumps; leave marbling and small seams. Cut into {=4}–{=5} cm cubes, pat dry and season. ~10 min
-prep beef + neutral oil > brown: Sauté (High): brown about {=one}-{=third} of the beef in uncrowded batches; set aside with the remaining uncooked beef. ~15 min [8-quart Instant Pot]
-yellow onion + celery + garlic + tomato paste > aromatics: Sauté (Normal): cook onion and optional celery {=5}–{=7} minutes. Add garlic and tomato paste; cook {=1} minute. ~8 min
-aromatics + dry red wine > deglaze: Pour in wine, scrape the bottom completely clean and simmer until reduced by {=half}. Press Cancel. ~5 min
-brown + deglaze + low-sodium beef stock + Worcestershire sauce + MSG + dried thyme > pressure: Add all the beef and juices, stock and seasonings. Seal and cook on High Pressure for {=45} minutes. Allow full natural pressure release. If still chewy, cook another {=8}–{=10} minutes under pressure and let release naturally. ~1 h 25 min
-pressure + Yukon Gold potatoes + carrots > vegetables: Add potatoes and carrots. On Sauté (Normal), simmer uncovered for {=25}–{=40} minutes, stirring occasionally, until tender. Add a splash of water if needed. ~35 min
-cornstarch + cold water > slurry: Whisk until smooth. [bowl]
-vegetables + slurry + fresh parsley + red wine vinegar > finish: Stir in slurry gradually while simmering; cook {=1}–{=2} minutes until gravy is thick. Adjust salt; add optional parsley and vinegar to taste. ~3 min
+boneless beef shoulder roast + salt + black pepper > prep beef: Remove obvious exterior fat lumps, cut into {=2}–{=3} cm cubes, pat dry and season.
+prep beef + neutral oil > brown: On Sauté High, brown about {=one-third} of the beef in uncrowded batches with the oil. Set aside with the remaining uncooked beef. [8-quart Instant Pot]
+yellow onion + celery + garlic + tomato paste > aromatics: On Sauté Normal, cook the onion and optional celery for {=5}–{=7} minutes. Add the garlic and tomato paste and cook for {=1} minute.
+aromatics + dry red wine > deglaze: Add the wine, scrape the bottom clean and press Cancel.
+Knorr granulated beef bouillon + water for the bouillon > bouillon: Dissolve the granules in the water. Reserve {500 ml} for the finish.
+deglaze + brown + bouillon + Worcestershire sauce + MSG + dried thyme > pressure cook: Add {1.1 l} prepared bouillon, the Worcestershire, MSG, thyme, beef and juices. Stir and cook on High Pressure for {=35} minutes. Let pressure release naturally. If the beef is still chewy, pressure-cook for {=5}–{=10} more minutes and release naturally. ~35 min
+pressure cook + Yukon Gold potatoes + carrots > vegetables: Lift the beef and about {300 ml} cooking liquid into a bowl. Add the potatoes and carrots to the liquid in the pot. Cook on High Pressure for {=5} minutes and quick-release immediately. ~5 min
+cornstarch + cold water for the slurry > slurry: Whisk the cornstarch and cold water together.
+vegetables + slurry + fresh parsley > finish: Return the beef and its juices to the pot. Add the reserved bouillon and bring to a simmer on Sauté Normal. Stir in the slurry gradually and cook {=1}–{=2} minutes until thickened. Adjust salt, add optional parsley and serve. Makes {16 to 18} servings.

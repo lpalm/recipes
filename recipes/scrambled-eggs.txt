@@ -3,11 +3,11 @@ portions 1
 category Breakfast
 
 dairy:
-1 egg
-1/2 tbsp butter
-20 g Parmigiano Reggiano, grated
+2 eggs
+1 tbsp butter
+1 tbsp Parmigiano Reggiano
 spices:
-1 pinch salt and pepper
+1/4 tsp salt
+1/4 tsp black pepper
 
-egg + salt and pepper > beat: Crack the eggs into a measuring jug, add the measured salt and pepper and beat well with a fork. [jug]
-butter + beat + Parmigiano Reggiano > scramble: Melt the butter slowly in a frying pan over low heat until it bubbles, pour in the egg and stir slowly right to the edges until silky and a little underdone; off the heat fold in the Parmigiano. Serve with buttered toast. [frying pan]
+eggs + butter + Parmigiano Reggiano + salt + black pepper > scramble: Beat the eggs and cook over low heat with the butter, Parmesan, salt and pepper.
